@@ -4,12 +4,26 @@
   "EP000": {
    "envoye_le": "2026-10-18T22:51:05.667489+00:00",
    "message_id": 5,
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "instagram": {
+     "id": "6ad54dec0b0d72757a40673e",
+     "message": "BROUILLON (rien publié)"
+    },
+    "tiktok": {
+     "id": "6ad54deb769b457934e1bb71",
+     "message": "BROUILLON (rien publié)"
+    },
+    "youtube": {
+     "id": "6ad54dec938409f1d0ed2d44",
+     "message": "BROUILLON (rien publié)"
+    }
+   },
+   "statut": "brouillon",
    "test": true,
-   "titre": "The Last One (TEST technique)"
+   "titre": "The Last One (TEST technique)",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP000.mp4"
   }
  },
- "offset": 611525749,
+ "offset": 611525756,
  "pause": false
 }
