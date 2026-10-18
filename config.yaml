@@ -1,0 +1,35 @@
+# Shape Saga — réglages du robot. Ce fichier ne contient AUCUN secret
+# (les clés sont dans les « Secrets » de GitHub : TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, BUFFER_API_KEY).
+
+identite:
+  nom_compte: "Shape Saga"
+  # Comptes : TikTok @Shape.Saga · YouTube @Shape_Saga · Instagram @Shape.Saga_
+
+cadence:
+  fuseau: "Europe/Paris"
+  creneaux: ["12:00", "19:00"]     # 2 vidéos par jour
+  marge_minutes: 30                # jamais de créneau qui commence dans moins de 30 min
+
+validation:
+  delai_heures: 48                 # sans réponse après 48 h : l'épisode n'est PAS publié
+  rappel_heures: 24
+  max_en_attente: 4                # nombre maximal de vidéos en attente de ton ✅ / ❌
+
+publication:
+  plateformes: ["tiktok", "youtube", "instagram"]
+  publieurs: { tiktok: "buffer", youtube: "buffer", instagram: "buffer" }
+  limite_file_par_canal: 10        # limite annoncée pour l'offre gratuite (à confirmer au premier essai)
+  # Étiquette « contenu IA » : false car les images sont dessinées par du code (pas d'image générée
+  # ni de voix de synthèse réaliste). À passer à true si une plateforme l'exige pour ce contenu.
+  contenu_ia: false
+  buffer:
+    organisation_id: ""            # vide = trouvé automatiquement
+    canaux: { tiktok: "", youtube: "", instagram: "" }
+    youtube_categorie: "24"        # 24 = Divertissement
+  hebergement:
+    depot: ""                      # vide = le dépôt du projet (il doit être PUBLIC)
+    tag_release: "videos"
+    conserver_jours: 10
+
+alertes:
+  repetition_heures: 12

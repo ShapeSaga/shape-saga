@@ -1,0 +1,45 @@
+# Le robot : toutes les heures, lit Telegram (✅ ❌), envoie les nouvelles vidéos, programme les validées.
+name: Cycle du robot
+
+on:
+  schedule:
+    - cron: "7 * * * *"          # toutes les heures à h+07 (UTC)
+  workflow_dispatch: {}          # bouton « Run workflow »
+
+concurrency:
+  group: cycle-robot
+  cancel-in-progress: false
+
+permissions:
+  contents: write                # sauvegarde de etat/ + hébergement des vidéos (Release)
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: Cycle
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m robot cycle
+      - name: Sauvegarde de l'état
+        if: always()
+        run: |
+          git config user.name "robot-shape-saga"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add etat/
+          if git diff --cached --quiet; then
+            echo "Rien à sauvegarder"
+          else
+            git commit -q -m "État du robot ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+            git pull -q --rebase && git push -q
+          fi
