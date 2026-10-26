@@ -2,9 +2,9 @@
  "alertes": {},
  "annonce": "2026-10-26",
  "diag_telegram": {
-  "en_attente_avant": 1,
+  "en_attente_avant": 0,
   "evenements": 0,
-  "heure": "2026-10-26T06:20:50+00:00",
+  "heure": "2026-10-26T06:46:41+00:00",
   "maj_lues": 0,
   "webhook": ""
  },
