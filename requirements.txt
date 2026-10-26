@@ -1,2 +1,7 @@
-requests>=2.31
-PyYAML>=6.0
+# Versions figées = celles avec lesquelles les vidéos ont été validées (même numéro = même vidéo)
+requests==2.34.2
+PyYAML==6.0.3
+pymunk==7.3.1
+pycairo==1.29.2
+numpy==2.5.3
+scipy==1.18.1

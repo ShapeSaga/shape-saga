@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *.tmp
+# Les vidéos générées sont refaites au besoin (même numéro = même épisode)
+episodes/*.mp4
+episodes/*.wav
+!episodes/EP000.mp4
+moteur/sortie/

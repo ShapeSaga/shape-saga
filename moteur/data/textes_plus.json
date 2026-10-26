@@ -1,0 +1,194 @@
+{
+ "cadre_intro": [
+  "Four friends. One exit.",
+  "The flood is rising.",
+  "Only one way out.",
+  "Nobody said it would be easy.",
+  "The water never waits.",
+  "Four shapes. One chance.",
+  "Higher. Always higher.",
+  "Everyone starts equal.",
+  "The climb begins.",
+  "Today, someone breaks through.",
+  "No map. No mercy.",
+  "They only have each other.",
+  "The tide is coming.",
+  "One door at the top."
+ ],
+ "espoir": [
+  "I can see the exit!",
+  "Just a little higher!",
+  "Almost there...",
+  "The light! I see the light!",
+  "Keep going... keep going!",
+  "It's right there!",
+  "I can make it!",
+  "Don't stop now!",
+  "So close I can feel it!",
+  "Up! Up! Up!",
+  "One more jump!",
+  "I'm not giving up!"
+ ],
+ "presque_chute": [
+  "So close...",
+  "No... not now!",
+  "Just one step more...",
+  "It was right there!",
+  "Not like this...",
+  "I almost had it!",
+  "Why now?!",
+  "The exit... it's gone...",
+  "I can't reach it!",
+  "Please... one more second!",
+  "It slipped away...",
+  "NOOO!"
+ ],
+ "adieu": [
+  "Next time. I'll make it.",
+  "We tried, my friends.",
+  "I'll be back.",
+  "It was worth it.",
+  "The top can wait.",
+  "We'll climb again.",
+  "Thank you for the ride.",
+  "Even falling, I flew.",
+  "Someone will make it.",
+  "See you at the top.",
+  "I gave it everything.",
+  "Not today. But soon."
+ ],
+ "rival_defi": [
+  "Not this time!",
+  "You won't beat me!",
+  "The exit is mine!",
+  "Get out of my way!",
+  "I won't lose to you!",
+  "Try and stop me!",
+  "This ends here!",
+  "I've waited for this!",
+  "Out of my way!",
+  "Faster! FASTER!",
+  "Only one of us!",
+  "Don't look back!"
+ ],
+ "hero_defi": [
+  "Watch me!",
+  "Not a chance!",
+  "I'm going first!",
+  "Catch me if you can!",
+  "I won't stop!",
+  "Together we fell, alone I rise!",
+  "I'm going all the way!",
+  "This is MY moment!",
+  "Not today, rival!",
+  "Keep up!",
+  "I can't lose now!",
+  "For all of us!"
+ ],
+ "vainqueur": [
+  "That was close...",
+  "You pushed me to the limit.",
+  "I couldn't have done it alone.",
+  "We both gave everything.",
+  "What a race...",
+  "I made it... barely.",
+  "Thank you, rival.",
+  "That's how legends are made.",
+  "My heart is still racing.",
+  "Close. So close."
+ ],
+ "perdant": [
+  "You deserved it...",
+  "Next time, it's mine!",
+  "I was right behind you...",
+  "So that's what winning looks like.",
+  "Go. Make it count.",
+  "I'll beat you someday.",
+  "Congratulations... I think.",
+  "It was a good race.",
+  "Almost... almost...",
+  "Tell them I was fast."
+ ],
+ "prison_cadre": [
+  "Four prisoners. One door.",
+  "Only the last one standing walks out.",
+  "The cell is closing in.",
+  "Nobody leaves unless they win.",
+  "The door opens for one.",
+  "Four enter. One leaves.",
+  "No rules. No mercy.",
+  "The walls are getting closer."
+ ],
+ "prison_defi": [
+  "Last one standing!",
+  "Nobody leaves but me!",
+  "Come and get it!",
+  "I'm not afraid of you!",
+  "This is MY cell!",
+  "Try me!"
+ ],
+ "prison_perdu": [
+  "It's... over...",
+  "Go. Take the door.",
+  "You earned it.",
+  "I'll remember this.",
+  "Not like this..."
+ ],
+ "sacrifice_hero": [
+  "Go! I'll hold them back!",
+  "Take my place!",
+  "Climb on me!",
+  "Live for both of us!",
+  "Go! Don't look back!",
+  "You can make it!"
+ ],
+ "sacrifice_ben": [
+  "No! Don't do this!",
+  "Why would you...",
+  "I'll never forget you!",
+  "Wait! Come with me!",
+  "Thank you... my friend..."
+ ],
+ "sacrifice_adieu": [
+  "It was worth it.",
+  "Tell them I was brave.",
+  "Go on without me.",
+  "I'm glad it was you.",
+  "Remember me."
+ ],
+ "trahison_hero": [
+  "I had no choice...",
+  "It was you or me.",
+  "Forgive me...",
+  "Only one can leave.",
+  "I'm sorry... but I'm going."
+ ],
+ "trahison_victime": [
+  "You PUSHED me?!",
+  "Traitor!",
+  "How could you?!",
+  "I trusted you!",
+  "You'll regret this!"
+ ],
+ "trahison_fin": [
+  "I had to...",
+  "I'll carry this forever.",
+  "Was it worth it?",
+  "I'm free... but alone."
+ ],
+ "ensemble": [
+  "We made it... together!",
+  "Nobody gets left behind!",
+  "Each of us carried the others.",
+  "Look how far we came!",
+  "We did it, all of us!",
+  "Friends make the exit wider.",
+  "Together, always together!"
+ ],
+ "ensemble_cadre": [
+  "They made it out together.",
+  "No one climbs alone.",
+  "Four hearts. One exit.",
+  "Everyone gave something."
+ ]
+}

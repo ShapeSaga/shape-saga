@@ -237,6 +237,14 @@ class Orchestrateur:
             tete = "📝 Brouillons créés dans Buffer (test, rien de publié)" if test else "📅 Programmé"
             self.bot.envoyer_message(f"{tete} — <b>{echapper(cle)}</b>\n" + "\n".join(lignes), reponse_a=f["message_id"])
 
+    def echecs_fabrication(self) -> None:
+        """Le générateur tourne avant le robot : s'il a échoué, Chahine doit le savoir (sinon rien n'arrive, sans explication)."""
+        fichier = RACINE / "etat" / "echecs_fabrication.json"
+        if not fichier.exists():
+            return
+        for e in json.loads(fichier.read_text(encoding="utf-8")):
+            self.alerter(f"fab-{e['episode']}", f"La vidéo {e['episode']} n'a pas pu être fabriquée : {e['erreur']}")
+
     def menage(self) -> None:
         jours = self.conf["publication"]["hebergement"]["conserver_jours"]
         for cle, f in self.etat.episodes.items():
@@ -263,7 +271,7 @@ class Orchestrateur:
         manquants = self.secrets.manquants()
         if manquants:
             raise SystemExit("Secrets manquants : " + ", ".join(manquants))
-        for nom, fn in (("Telegram", self.lire_telegram), ("délais", self.gerer_delais),
+        for nom, fn in (("fabrication", self.echecs_fabrication), ("Telegram", self.lire_telegram), ("délais", self.gerer_delais),
                         ("envoi des nouvelles vidéos", self.envoyer_nouveaux),
                         ("publication", self.publier_valides), ("ménage", self.menage)):
             self._etape(nom, fn)

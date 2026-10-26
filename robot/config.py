@@ -17,7 +17,7 @@ DEFAUTS = {
         "plateformes": ["tiktok", "youtube", "instagram"],
         "publieurs": {"tiktok": "buffer", "youtube": "buffer", "instagram": "buffer"},
         "limite_file_par_canal": 10,
-        "contenu_ia": False,
+        "contenu_ia": True,
         "buffer": {"organisation_id": "", "canaux": {"tiktok": "", "youtube": "", "instagram": ""},
                    "youtube_categorie": "24"},
         "hebergement": {"depot": "", "tag_release": "videos", "conserver_jours": 10},
