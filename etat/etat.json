@@ -1,6 +1,13 @@
 {
  "alertes": {},
  "annonce": "2026-10-26",
+ "diag_telegram": {
+  "en_attente_avant": 1,
+  "evenements": 0,
+  "heure": "2026-10-26T06:20:50+00:00",
+  "maj_lues": 0,
+  "webhook": ""
+ },
  "episodes": {
   "EP000": {
    "envoye_le": "2026-10-18T22:51:05.667489+00:00",
