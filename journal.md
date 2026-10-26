@@ -71,3 +71,10 @@ des obstacles animés, une musique plus puissante, des histoires variées (priso
   1er commentaire Instagram, puis la miniature en photo. La miniature = 1re planche forte (ne dévoile pas la fin), transmise à Buffer (thumbnailOffset).
 - Sondage : les vrais sondages à boutons n'existent pas dans l'API Buffer → vote en commentaires (ligne dans la légende + 1er commentaire Instagram).
 - Vérifié en local (faux Telegram) ; NON vérifié en réel : acceptation de firstComment et thumbnailOffset par Buffer.
+
+## 2026-10-26 (nuit, suite) — Calendrier quotidien (demande de Chahine)
+- Chaque soir dès 19 h (passage du robot vers 19 h 07–19 h 15), les 2 vidéos du LENDEMAIN arrivent sur Telegram, une par créneau (12 h et 20 h),
+  précédées d'un message « 🌙 Vidéos de mardi 27/10 ». Chahine valide quand il veut la nuit ; chaque vidéo validée est programmée dans Buffer à SON heure.
+- ❌ = remplacée au passage suivant (jusqu'à 10 h 30 le jour même). Non validée avant son heure = non publiée (⌛).
+- Nouveau `robot/planning.py` (calendrier partagé robot + fabrique) ; la fabrique ne fabrique que pour les créneaux libres.
+- 2e créneau passé de 19 h à 20 h. Tests : 11 OK, dont une journée complète simulée (envoi, ✅, ❌ + remplaçant, expiration).

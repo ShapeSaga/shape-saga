@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RACINE))
+from robot import planning  # noqa: E402  (calendrier partagé avec le robot)
 ETAT = RACINE / "etat" / "etat.json"
 ECHECS = RACINE / "etat" / "echecs_fabrication.json"     # lu par le robot, qui prévient sur Telegram
 EPISODES = RACINE / "episodes"
@@ -19,14 +21,17 @@ def numero(cle):
     return int(cle[2:]) if cle.startswith("EP") and cle[2:].isdigit() else None
 
 
-def a_fabriquer(episodes, max_attente=4):
-    """episodes : le dictionnaire etat["episodes"]. Renvoie la liste triée des numéros à fabriquer."""
+def a_fabriquer(episodes, max_attente=4, nouveaux_max=None):
+    """episodes : le dictionnaire etat["episodes"]. Renvoie la liste triée des numéros à fabriquer.
+    nouveaux_max : nombre de créneaux libres à remplir (calendrier quotidien) ; None = ancien fonctionnement (file d'attente)."""
     besoin = {numero(k) for k, f in episodes.items()
               if f.get("statut") in ("envoye", "valide")}
     attente = sum(1 for f in episodes.values() if f.get("statut") == "envoye")
     connus = [numero(k) for k in episodes if numero(k) is not None]
     prochain = max(connus + [0]) + 1
     place = min(max(max_attente - attente, 0), MAX_NOUVEAUX_PAR_PASSAGE)
+    if nouveaux_max is not None:
+        place = min(place, nouveaux_max)
     nouveaux = set(range(prochain, prochain + place))
     return sorted(n for n in (besoin | nouveaux) if n)
 
@@ -55,7 +60,16 @@ def main():
         episodes = json.loads(ETAT.read_text(encoding="utf-8")).get("episodes", {})
     EPISODES.mkdir(exist_ok=True)
     test, echecs = mode_test(), []
-    for n in a_fabriquer(episodes):
+    nouveaux_max = None
+    try:
+        import yaml
+        from datetime import datetime, timezone
+        cad = (yaml.safe_load((RACINE / "config.yaml").read_text(encoding="utf-8")) or {}).get("cadence", {})
+        if cad.get("envoi") and not test:
+            nouveaux_max = len(planning.places_libres(episodes, datetime.now(timezone.utc), cad)[1])
+    except Exception as exc:  # noqa: BLE001
+        print("Calendrier illisible, ancien fonctionnement :", exc, flush=True)
+    for n in a_fabriquer(episodes, nouveaux_max=nouveaux_max):
         ep = "EP%03d" % n
         if (EPISODES / (ep + ".mp4")).exists() and (EPISODES / (ep + ".json")).exists():
             continue

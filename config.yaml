@@ -12,6 +12,7 @@ identite:
 
 cadence:
   fuseau: "Europe/Paris"
+  envoi: "19:00"                   # chaque soir à cette heure : les vidéos du LENDEMAIN arrivent sur Telegram
   creneaux: ["12:00", "20:00"]     # 2 vidéos par jour (demande de Chahine : 12 h et 20 h)
   marge_minutes: 30                # jamais de créneau qui commence dans moins de 30 min
 

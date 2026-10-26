@@ -16,6 +16,7 @@ from zoneinfo import ZoneInfo
 
 from .config import RACINE, Secrets, charger_config
 from .etat import BROUILLON, ENVOYE, EXPIRE, PROGRAMME, PUBLIE, REFUSE, VALIDE, Etat
+from . import planning
 from .hebergement import ErreurHebergement, HebergeurGitHub
 from .publieurs import ErreurPublication, Publication, creer_publieurs
 from .telegram_bot import BotTelegram, echapper
@@ -140,13 +141,30 @@ class Orchestrateur:
         return "\n".join(lignes)
 
     def envoyer_nouveaux(self) -> None:
+        """Le soir (dès 19 h), une vidéo par créneau libre du lendemain ; la nuit, les vidéos refusées sont remplacées.
+        Les épisodes de test (brouillons) ne prennent pas de créneau."""
+        cad = self.conf["cadence"]
+        jour, libres = planning.places_libres(self.etat.episodes, self.maintenant(), cad)
         attente = sum(1 for f in self.etat.episodes.values() if f["statut"] == ENVOYE)
         place = self.conf["validation"]["max_en_attente"] - attente
         for ep in self.episodes_prets():
-            if place <= 0:
-                break
             if ep["id"] in self.etat.episodes:
                 continue
+            if ep.get("test"):
+                if place <= 0:
+                    continue
+                prevu = None
+            elif libres:
+                prevu = libres.pop(0)
+            else:
+                continue
+            if prevu and self.etat.donnees.get("annonce") != jour.isoformat():
+                self.etat.donnees["annonce"] = jour.isoformat()
+                self.bot.envoyer_message(
+                    f"🌙 <b>Vidéos de {planning.JOURS[jour.weekday()]} {jour:%d/%m}</b>\n"
+                    f"Valide-les quand tu veux ce soir ou cette nuit (✅ ou ❌). Chacune sera publiée à son heure ; "
+                    f"une vidéo refusée est remplacée dans l'heure.")
+            ep["_prevu"] = prevu
             avert = "⚠️ <b>TEST</b> : s'il est validé, il part en BROUILLON dans Buffer (rien n'est publié).\n\n" if ep.get("test") else ""
             legende = f"{avert}🎬 <b>{echapper(ep['id'])} — {echapper(ep.get('titre', ''))}</b>\n\n{echapper(self.legende(ep))}"
             vignette = ep["_fichier"].with_suffix(".jpg")
@@ -157,20 +175,19 @@ class Orchestrateur:
                     self.bot.envoyer_photo(couverture, f"🖼️ Miniature de {echapper(ep['id'])}", reponse_a=mid)
                 except Exception:  # noqa: BLE001
                     log.warning("Miniature de %s non envoyée", ep["id"])
-            self.etat.episodes[ep["id"]] = {"statut": ENVOYE, "message_id": mid, "titre": ep.get("titre", ""),
-                                            "test": bool(ep.get("test")), "envoye_le": self.maintenant().isoformat(),
-                                            "programme": {}}
+            fiche = {"statut": ENVOYE, "message_id": mid, "titre": ep.get("titre", ""), "test": bool(ep.get("test")),
+                     "envoye_le": self.maintenant().isoformat(), "programme": {}}
+            if prevu:
+                fiche["creneau_prevu"] = prevu.astimezone(timezone.utc).isoformat()
+            self.etat.episodes[ep["id"]] = fiche
             place -= 1
 
     def fiche(self, ep: dict) -> str:
         """Tout ce qui partira sur les réseaux, pour valider en un coup d'œil."""
-        tz = ZoneInfo(self.conf["cadence"]["fuseau"])
-        rang = sum(1 for f in self.etat.episodes.values() if f["statut"] == ENVOYE and not f.get("test"))
-        if ep.get("test"):
+        if ep.get("test") or not ep.get("_prevu"):
             quand = "aucune (test : brouillon Buffer seulement)"
         else:
-            d = self.creneaux_libres(rang + 1)[rang].astimezone(tz)
-            quand = d.strftime("%d/%m à %H:%M") + " (heure de Paris), si tu valides avant"
+            quand = planning.en_clair(ep["_prevu"], self.conf["cadence"]) + " (heure de Paris) — valide avant cette heure"
         s = ep.get("sondage") or {}
         lignes = [f"📋 <b>{echapper(ep['id'])}</b> — statut : en attente de ton ✅ ou ❌",
                   f"📅 Publication prévue : {echapper(quand)}",
@@ -189,7 +206,10 @@ class Orchestrateur:
             if f["statut"] != ENVOYE:
                 continue
             age = self.maintenant() - datetime.fromisoformat(f["envoye_le"])
-            if age > timedelta(hours=v["delai_heures"]):
+            if f.get("creneau_prevu") and self.maintenant() > datetime.fromisoformat(f["creneau_prevu"]):
+                f["statut"] = EXPIRE
+                self.marquer(f, cle, "⌛ NON VALIDÉ À TEMPS (non publié)")
+            elif age > timedelta(hours=v["delai_heures"]):
                 f["statut"] = EXPIRE
                 self.marquer(f, cle, "⌛ EXPIRÉ (aucune réponse, non publié)")
             elif age > timedelta(hours=v["rappel_heures"]) and not f.get("rappel"):
@@ -205,7 +225,7 @@ class Orchestrateur:
         out: list[datetime] = []
         tz = ZoneInfo(self.conf["cadence"]["fuseau"])
         now = self.maintenant().astimezone(tz)
-        pris = {f["creneau"] for f in self.etat.episodes.values() if f.get("creneau")}
+        pris = {f.get("creneau") or f.get("creneau_prevu") for f in self.etat.episodes.values() if f["statut"] in planning.ACTIFS}
         marge = timedelta(minutes=self.conf["cadence"]["marge_minutes"])
         heures = sorted(tuple(int(x) for x in h.split(":")) for h in self.conf["cadence"]["creneaux"])
         for d in range(90):
@@ -239,7 +259,15 @@ class Orchestrateur:
                 self.alerter(f"heberg-{cle}", f"Hébergement de {cle} impossible : {exc}")
                 return
         if not f.get("creneau") and not test:
-            f["creneau"] = self.prochain_creneau().astimezone(timezone.utc).isoformat()
+            marge = timedelta(minutes=self.conf["cadence"]["marge_minutes"])
+            prevu = f.get("creneau_prevu")
+            if prevu and datetime.fromisoformat(prevu) >= self.maintenant() + marge:
+                f["creneau"] = prevu
+            else:
+                f["creneau"] = self.prochain_creneau().astimezone(timezone.utc).isoformat()
+                if prevu:
+                    self.alerter(f"decale-{cle}", f"{cle} validé trop près de son heure : décalé au "
+                                 + planning.en_clair(datetime.fromisoformat(f["creneau"]), self.conf["cadence"]))
         date = datetime.fromisoformat(f["creneau"]) if f.get("creneau") else self.maintenant()
         tags = ep.get("hashtags", [])
         for plateforme in self.conf["publication"]["plateformes"]:
