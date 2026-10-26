@@ -1,5 +1,6 @@
 {
  "alertes": {},
+ "annonce": "2026-10-26",
  "episodes": {
   "EP000": {
    "envoye_le": "2026-10-18T22:51:05.667489+00:00",
@@ -54,6 +55,24 @@
    "statut": "refuse",
    "test": true,
    "titre": "[TEST] Bear: So Close to the Exit"
+  },
+  "EP005": {
+   "creneau_prevu": "2026-10-26T11:00:00+00:00",
+   "envoye_le": "2026-10-26T01:22:50.288790+00:00",
+   "message_id": 13,
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Snail Who Built a Maze"
+  },
+  "EP006": {
+   "creneau_prevu": "2026-10-26T19:00:00+00:00",
+   "envoye_le": "2026-10-26T01:22:53.669104+00:00",
+   "message_id": 16,
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Only One Left: Leopard and Kangaroo"
   }
  },
  "offset": 611525766,
