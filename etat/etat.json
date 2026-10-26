@@ -1,10 +1,10 @@
 {
  "alertes": {},
- "annonce": "2026-10-26",
+ "annonce": "2026-10-27",
  "diag_telegram": {
   "en_attente_avant": 0,
   "evenements": 0,
-  "heure": "2026-10-26T06:57:34+00:00",
+  "heure": "2026-10-26T22:36:09+00:00",
   "maj_lues": 0,
   "webhook": ""
  },
@@ -68,7 +68,7 @@
    "envoye_le": "2026-10-26T01:22:50.288790+00:00",
    "message_id": 13,
    "programme": {},
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "The Snail Who Built a Maze"
   },
@@ -77,9 +77,27 @@
    "envoye_le": "2026-10-26T01:22:53.669104+00:00",
    "message_id": 16,
    "programme": {},
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "Only One Left: Leopard and Kangaroo"
+  },
+  "EP007": {
+   "creneau_prevu": "2026-10-27T11:00:00+00:00",
+   "envoye_le": "2026-10-26T18:50:46.798345+00:00",
+   "message_id": 20,
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Race Between Mouse and Gorilla"
+  },
+  "EP008": {
+   "creneau_prevu": "2026-10-27T19:00:00+00:00",
+   "envoye_le": "2026-10-26T18:50:50.131279+00:00",
+   "message_id": 23,
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "United at the Top"
   }
  },
  "offset": 611525766,
