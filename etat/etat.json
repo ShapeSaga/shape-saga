@@ -35,7 +35,7 @@
    "envoye_le": "2026-10-26T00:36:03.242426+00:00",
    "message_id": 8,
    "programme": {},
-   "statut": "envoye",
+   "statut": "refuse",
    "test": true,
    "titre": "[TEST] Battle in the Cell: Wolf"
   },
@@ -43,7 +43,7 @@
    "envoye_le": "2026-10-26T00:52:44.756171+00:00",
    "message_id": 9,
    "programme": {},
-   "statut": "envoye",
+   "statut": "refuse",
    "test": true,
    "titre": "[TEST] The Last Gift of a Lioness"
   },
@@ -51,11 +51,11 @@
    "envoye_le": "2026-10-26T00:52:46.448087+00:00",
    "message_id": 10,
    "programme": {},
-   "statut": "envoye",
+   "statut": "refuse",
    "test": true,
    "titre": "[TEST] Bear: So Close to the Exit"
   }
  },
- "offset": 611525756,
+ "offset": 611525766,
  "pause": false
 }
