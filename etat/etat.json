@@ -1,11 +1,13 @@
 {
- "alertes": {},
+ "alertes": {
+  "absent-EP008": "2026-10-26T23:36:58.541452+00:00"
+ },
  "annonce": "2026-10-27",
  "diag_telegram": {
-  "en_attente_avant": 0,
-  "evenements": 0,
-  "heure": "2026-10-26T23:32:04+00:00",
-  "maj_lues": 0,
+  "bot": "@Shape_Saga_Bot",
+  "en_attente_avant": 2,
+  "evenements": 1,
+  "maj_lues": 26,
   "webhook": ""
  },
  "episodes": {
@@ -95,11 +97,160 @@
    "envoye_le": "2026-10-26T18:50:50.131279+00:00",
    "message_id": 23,
    "programme": {},
+   "statut": "valide",
+   "test": false,
+   "titre": "United at the Top",
+   "valide_le": "2026-10-26T23:36:36.185233+00:00"
+  },
+  "EP009": {
+   "creneau_prevu": "2026-10-28T11:00:00+00:00",
+   "envoye_le": "2026-10-26T23:36:38.669219+00:00",
+   "message_id": 27,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP009",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Green",
+      "Red"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🟢 Green · 🔴 Red",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "One Wall Too Many for Whale",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
    "statut": "envoye",
    "test": false,
-   "titre": "United at the Top"
+   "titre": "One Wall Too Many for Whale",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP009.mp4"
+  },
+  "EP010": {
+   "creneau_prevu": "2026-10-28T19:00:00+00:00",
+   "envoye_le": "2026-10-26T23:36:44.742458+00:00",
+   "message_id": 30,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP010",
+    "legende": "The shark won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 9.73,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "Four Entered. Shark Left.",
+    "youtube_description": "The shark won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Four Entered. Shark Left.",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP010.mp4"
+  },
+  "EP011": {
+   "creneau_prevu": "2026-10-29T11:00:00+00:00",
+   "envoye_le": "2026-10-26T23:36:48.782090+00:00",
+   "message_id": 33,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP011",
+    "legende": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 7.6,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Climb That Almost Worked",
+    "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Climb That Almost Worked",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP011.mp4"
+  },
+  "EP012": {
+   "creneau_prevu": "2026-10-29T19:00:00+00:00",
+   "envoye_le": "2026-10-26T23:36:56.188773+00:00",
+   "message_id": 36,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP012",
+    "legende": "Real friends lift you up. Who lifted you?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 6.05,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "A Friend Lifted Antelope Out",
+    "youtube_description": "Real friends lift you up. Who lifted you?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "A Friend Lifted Antelope Out",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP012.mp4"
   }
  },
- "offset": 611525766,
+ "offset": 611525792,
  "pause": false
 }
