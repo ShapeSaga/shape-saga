@@ -100,7 +100,7 @@ def test_parcours_complet(monde):
         assert "isAiGenerated" not in json.dumps(p["metadata"].get("youtube", {}) | p["metadata"].get("instagram", {}))
     yt = [p for p in vrais if "youtube" in p["metadata"]][0]
     assert yt["metadata"]["youtube"]["title"] == "Titre EP001" and yt["metadata"]["youtube"]["madeForKids"] is False
-    assert o.etat.episodes["EP001"]["creneau"].startswith("2026-10-20T10:00")        # 12 h Paris = 10 h UTC (heure d'été)
+    assert o.etat.episodes["EP001"]["creneau"].startswith("2026-10-20T18:00")        # midi est à moins de 3 h : 20 h Paris = 18 h UTC
 
 
 def test_refus_et_double_clic(monde):

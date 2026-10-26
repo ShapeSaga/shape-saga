@@ -1,9 +1,11 @@
-# Le robot : toutes les heures, lit Telegram (✅ ❌), envoie les nouvelles vidéos, programme les validées.
+# Le robot : toutes les 10 minutes, lit Telegram (✅ ❌), programme les vidéos validées, envoie les nouvelles.
+# Passage LÉGER (< 1 min) quand il n'y a rien à fabriquer ; les outils vidéo (ffmpeg, cairo…) ne sont installés
+# que lorsqu'il faut fabriquer de nouvelles vidéos (créneaux libres dans les 7 prochains jours).
 name: Cycle du robot
 
 on:
   schedule:
-    - cron: "7 * * * *"          # toutes les heures à h+07 (UTC)
+    - cron: "*/10 * * * *"       # toutes les 10 minutes (GitHub peut ajouter quelques minutes de retard)
   workflow_dispatch: {}          # bouton « Run workflow »
 
 concurrency:
@@ -16,20 +18,27 @@ permissions:
 jobs:
   cycle:
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.14"
           cache: pip
-      - name: Outils de fabrication des vidéos (ffmpeg, cairo, polices)
+      - name: Outils légers
+        run: pip install -q requests==2.34.2 PyYAML==6.0.3
+      - name: Faut-il fabriquer des vidéos ?
+        id: plan
+        run: python moteur/fabrique.py --liste
+      - name: Outils de fabrication des vidéos (seulement si besoin)
+        if: steps.plan.outputs.besoin == 'oui'
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q ffmpeg libcairo2-dev pkg-config fontconfig
+          sudo apt-get install -y -q --no-install-recommends ffmpeg libcairo2-dev pkg-config fontconfig
           mkdir -p ~/.fonts && cp moteur/polices/*.ttf ~/.fonts/ && fc-cache -f
-      - run: pip install -q -r requirements.txt
-      - name: Fabriquer les épisodes nécessaires
+          pip install -q -r requirements.txt
+      - name: Fabriquer les vidéos (seulement si besoin)
+        if: steps.plan.outputs.besoin == 'oui'
         run: python moteur/fabrique.py
       - name: Cycle
         env:
@@ -38,15 +47,18 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -m robot cycle
-      - name: Sauvegarde de l'état
+      - name: Sauvegarde de l'état (3 essais, l'état du robot l'emporte en cas de conflit)
         if: always()
         run: |
           git config user.name "robot-shape-saga"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add etat/
           if git diff --cached --quiet; then
-            echo "Rien à sauvegarder"
-          else
-            git commit -q -m "État du robot ($(date -u +'%Y-%m-%d %H:%M') UTC)"
-            git pull -q --rebase && git push -q
+            echo "Rien à sauvegarder"; exit 0
           fi
+          git commit -q -m "État du robot ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+          for essai in 1 2 3; do
+            if git pull -q --rebase -X theirs && git push -q; then echo "Sauvegardé"; exit 0; fi
+            echo "Essai $essai raté, nouvel essai"; git rebase --abort 2>/dev/null || true; sleep $((essai * 5))
+          done
+          echo "::error::Sauvegarde de l'état impossible après 3 essais"; exit 1

@@ -78,3 +78,18 @@ des obstacles animés, une musique plus puissante, des histoires variées (priso
 - ❌ = remplacée au passage suivant (jusqu'à 10 h 30 le jour même). Non validée avant son heure = non publiée (⌛).
 - Nouveau `robot/planning.py` (calendrier partagé robot + fabrique) ; la fabrique ne fabrique que pour les créneaux libres.
 - 2e créneau passé de 19 h à 20 h. Tests : 11 OK, dont une journée complète simulée (envoi, ✅, ❌ + remplaçant, expiration).
+
+## 2026-10-27 — Audit complet + corrections (du plus grave au moins grave) + planification 7 jours
+- Audit par un sous-agent indépendant : 17 constats. Cause n°1 probable des ✅/❌ perdus : un AUTRE programme lit le même bot
+  (ancien robot chat-malin : même secret, même cron, répond « Vidéo inconnue ») ; diagnostic réel : clic en attente puis 0 lu.
+- Corrigé : une seule lecture Telegram par passe, confirmation au passage suivant seulement (plus aucun clic perdu si un passage
+  plante) ; chaque clic traité à part ; alerte « un autre programme lit ton bot @… » ; commandes de secours /ok EP005 et /non EP005.
+- Corrigé : fiche enregistrée dès l'envoi Telegram (plus de vidéo envoyée deux fois) ; vidéo hébergée dès l'envoi (plus jamais
+  refabriquée) ; createPost Buffer sans nouvel essai automatique (plus de doublon) ; créneau raté -> prochain créneau + alerte ;
+  abandon après 3 refus définitifs (quota Buffer préservé) ; état sauvegardé après chaque réseau ; secrets masqués dans les journaux ;
+  ménage des vidéos refusées/expirées.
+- Rapidité : passage léger (< 1 min, sans ffmpeg/cairo) toutes les 10 min ; outils vidéo installés seulement s'il faut fabriquer ;
+  sauvegarde git avec 3 essais.
+- Planification : 7 jours d'avance (config cadence.jours_avance), envoi dès qu'il manque des vidéos, par paquets de 4, puis veille ;
+  Buffer ne reçoit que les 4 prochains jours (limite de 10 posts de l'offre gratuite), le reste attend validé dans l'état.
+- Tests : 16 OK. NON vérifié en réel : tout ce qui précède sur GitHub.

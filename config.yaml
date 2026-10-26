@@ -12,14 +12,16 @@ identite:
 
 cadence:
   fuseau: "Europe/Paris"
-  envoi: "19:00"                   # chaque soir à cette heure : les vidéos du LENDEMAIN arrivent sur Telegram
+  jours_avance: 7                  # le robot garde 7 jours de vidéos d'avance ; dès qu'il en manque, il en envoie (puis veille)
+  avance_min_heures: 3             # jamais d'envoi pour un créneau qui commence dans moins de 3 h
+  envoi: "19:00"                   # (ancien mode, utilisé seulement si jours_avance est retiré)
   creneaux: ["12:00", "20:00"]     # 2 vidéos par jour (demande de Chahine : 12 h et 20 h)
   marge_minutes: 30                # jamais de créneau qui commence dans moins de 30 min
 
 validation:
   delai_heures: 48                 # sans réponse après 48 h : l'épisode n'est PAS publié
   rappel_heures: 24
-  max_en_attente: 4                # nombre maximal de vidéos en attente de ton ✅ / ❌
+  max_en_attente: 14               # vidéos de TEST en attente (les vraies suivent les créneaux libres)
 
 publication:
   plateformes: ["tiktok", "youtube", "instagram"]

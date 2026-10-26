@@ -27,6 +27,7 @@ LIMITE_MESSAGE = 4096
 VALIDER, REFUSER, REFAIRE = "v", "r", "f"
 ACTIONS = {VALIDER: "valider", REFUSER: "refuser", REFAIRE: "refaire"}
 COMMANDES = ("statut", "pause", "reprendre", "rapport", "aide", "start")
+COMMANDES_EPISODE = {"ok": "valider", "valider": "valider", "non": "refuser", "refuser": "refuser"}   # /ok EP005
 
 
 class ErreurTelegram(RuntimeError):
@@ -155,15 +156,19 @@ class BotTelegram:
         return evenements, nouvel_offset
 
     def lire_tout(self, offset: int) -> tuple[list[Evenement], int]:
-        """Lit jusqu'à épuisement (plusieurs pages de 100)."""
-        tous: list[Evenement] = []
-        for _ in range(20):
-            evts, nouveau = self.lire(offset)
-            tous.extend(evts)
-            if nouveau == offset:
-                break
-            offset = nouveau
-        return tous, offset
+        """UNE seule lecture (100 max). Telegram supprime les clics dont l'identifiant est inférieur à l'offset demandé :
+        on ne redemande donc pas avec le nouvel offset dans la même passe. Le nouvel offset est enregistré dans l'état et
+        envoyé au passage SUIVANT, donc seulement après la sauvegarde réussie de cette passe. Si la sauvegarde échoue,
+        les mêmes clics reviennent et sont traités une 2e fois sans effet (statut déjà changé)."""
+        return self.lire(offset)
+
+    def moi(self) -> str:
+        """@nom du bot utilisé par le robot (pour vérifier que c'est bien celui qui envoie les vidéos)."""
+        try:
+            r = self.appel("getMe")
+            return "@" + r.get("username", "?") if isinstance(r, dict) else "?"
+        except Exception:  # noqa: BLE001
+            return "?"
 
     def _autorise(self, chat: dict | None) -> bool:
         return chat is not None and str(chat.get("id")) == self.chat_id
@@ -187,7 +192,12 @@ class BotTelegram:
                 return None
             texte = (message.get("text") or "").strip()
             if texte.startswith("/"):
-                commande = texte[1:].split()[0].split("@")[0].lower()
+                mots = texte[1:].split()
+                commande = mots[0].split("@")[0].lower() if mots else ""
+                if commande in COMMANDES_EPISODE and len(mots) > 1:
+                    cle = mots[1].upper()
+                    cle = cle if cle.startswith("EP") else "EP%03d" % int(cle) if cle.isdigit() else cle
+                    return Evenement("bouton", COMMANDES_EPISODE[commande], cle=cle, message_id=message.get("message_id"))
                 if commande in COMMANDES:
                     return Evenement("commande", "aide" if commande == "start" else commande,
                                      message_id=message.get("message_id"))

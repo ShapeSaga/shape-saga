@@ -38,7 +38,20 @@ def creneaux_du_jour(jour: date, cadence: dict) -> list[datetime]:
 
 
 def places_libres(episodes: dict, maintenant: datetime, cadence: dict) -> tuple[date | None, list[datetime]]:
-    """(jour cible, créneaux de ce jour qui n'ont pas encore de vidéo active)."""
+    """(premier jour concerné, créneaux sans vidéo active).
+    Mode « jours_avance » (ex. 7) : tous les créneaux libres des N prochains jours, dès qu'il en manque, à toute heure
+    (au moins `avance_min_heures` avant le créneau, pour laisser le temps de valider). Quand tout est couvert : veille.
+    Sans jours_avance : ancien mode « chaque soir les vidéos du lendemain »."""
+    if cadence.get("jours_avance"):
+        tz = ZoneInfo(cadence["fuseau"])
+        now = maintenant.astimezone(tz)
+        pris = {f.get("creneau") or f.get("creneau_prevu") for f in episodes.values() if f.get("statut") in ACTIFS}
+        debut = maintenant + timedelta(hours=cadence.get("avance_min_heures", 3))
+        libres = [c for d in range(int(cadence["jours_avance"]) + 1)
+                  for c in creneaux_du_jour(now.date() + timedelta(days=d), cadence)
+                  if c > debut and c.astimezone(timezone.utc).isoformat() not in pris
+                  and c.date() <= now.date() + timedelta(days=int(cadence["jours_avance"]))]
+        return (libres[0].date() if libres else None), libres
     jour = jour_cible(maintenant, cadence)
     if jour is None:
         return None, []

@@ -56,13 +56,13 @@ class PublieurBuffer(Publieur):
         return int(self.conf["publication"].get("limite_file_par_canal", 10))
 
     # ------------------------------------------------------------------ GraphQL
-    def gql(self, requete_gql: str, variables: dict | None = None) -> dict:
+    def gql(self, requete_gql: str, variables: dict | None = None, tentatives: int = 3) -> dict:
         if not self.secrets.buffer:
             raise ErreurPublication("BUFFER_API_KEY absente", temporaire=False)
         try:
             rep = requete(self.session, "POST", URL, json={"query": requete_gql, "variables": variables or {}},
                           headers={"Authorization": f"Bearer {self.secrets.buffer}"},
-                          tentatives=3, etiquette="Buffer")
+                          tentatives=tentatives, etiquette="Buffer")
         except ErreurHTTP as exc:
             raise ErreurPublication(f"Buffer : {exc}", temporaire=exc.statut not in (400, 401, 403)) from exc
         corps = rep.json()
@@ -166,7 +166,7 @@ class PublieurBuffer(Publieur):
         }
         if pub.brouillon:                       # test : rien ne sera publié
             entree.pop("dueAt"); entree["mode"] = "addToQueue"; entree["saveToDraft"] = True
-        res = self.gql(M_CREER, {"input": entree})["createPost"]
+        res = self.gql(M_CREER, {"input": entree}, tentatives=1)["createPost"]
         if res.get("__typename") == "PostActionSuccess" or res.get("post"):
             post = res["post"]
             quand = "BROUILLON (rien publié)" if pub.brouillon else f"programmé pour {entree['dueAt']}"

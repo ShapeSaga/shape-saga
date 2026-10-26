@@ -76,6 +76,7 @@ def episodes(tmp_path, *ids):
 def test_journee_complete(tmp_path):
     etat = Etat.__new__(Etat)
     etat.donnees = {"episodes": {}, "alertes": {}, "offset": 0, "pause": False}
+    etat.fichier = tmp_path / "etat.json"
     episodes(tmp_path, "EP005", "EP006", "EP007")
     # 15 h : rien ne part
     o, _ = orchestrateur(tmp_path, paris(26, 15), etat)
@@ -85,7 +86,8 @@ def test_journee_complete(tmp_path):
     o, _ = orchestrateur(tmp_path, paris(26, 19, 7), etat)
     o.envoyer_nouveaux()
     assert [c for c, _ in o.bot.videos] == ["EP005", "EP006"]
-    assert "mardi 27/10 à 12:00" in o.bot.videos[0][1] and "mardi 27/10 à 20:00" in o.bot.videos[1][1]
+    fiches = [m for m in o.bot.messages if "Publication prévue" in m]
+    assert "mardi 27/10 à 12:00" in fiches[0] and "mardi 27/10 à 20:00" in fiches[1]
     # 23 h : ✅ sur EP005, ❌ sur EP006
     etat.episodes["EP005"]["statut"] = "valide"
     etat.episodes["EP006"]["statut"] = "refuse"
@@ -95,7 +97,7 @@ def test_journee_complete(tmp_path):
     assert pub.dates[0].astimezone(PARIS) == paris(27, 12)
     # 23 h 07 : le remplaçant part pour 20 h
     o.envoyer_nouveaux()
-    assert [c for c, _ in o.bot.videos] == ["EP007"] and "mardi 27/10 à 20:00" in o.bot.videos[0][1]
+    assert [c for c, _ in o.bot.videos] == ["EP007"] and "mardi 27/10 à 20:00" in o.bot.messages[-1]
     # 20 h 01 le lendemain sans réponse : EP007 n'est pas publié
     o, _ = orchestrateur(tmp_path, paris(27, 20, 1), etat)
     o.gerer_delais()

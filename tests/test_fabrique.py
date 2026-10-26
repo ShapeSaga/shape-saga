@@ -5,19 +5,19 @@ import fabrique
 
 
 def test_nouveaux_episodes_si_file_vide():
-    assert fabrique.a_fabriquer({}) == [1, 2]
+    assert fabrique.a_fabriquer({}) == [1, 2, 3, 4]          # paquets de 4
 
 
-def test_file_pleine_ne_fabrique_pas_de_nouveau():
+def test_file_pleine_ne_fabrique_rien():
     eps = {f"EP00{i}": {"statut": "envoye"} for i in range(1, 5)}
-    assert fabrique.a_fabriquer(eps) == [1, 2, 3, 4]      # on refait seulement ceux en attente
+    assert fabrique.a_fabriquer(eps) == []                 # déjà sur Telegram : jamais refabriquées
 
 
-def test_episode_de_test_en_attente_est_refait():
-    eps = {"EP001": {"statut": "envoye", "test": True}}
-    assert 1 in fabrique.a_fabriquer(eps)
+def test_valide_deja_heberge_pas_refait():
+    eps = {"EP001": {"statut": "valide", "video_url": "https://x/EP001.mp4"}, "EP002": {"statut": "envoye"}}
+    assert fabrique.a_fabriquer(eps, nouveaux_max=0) == []
 
 
 def test_test_ep000_ignore_et_valide_refait():
     eps = {"EP000": {"statut": "brouillon", "test": True}, "EP001": {"statut": "valide"}}
-    assert fabrique.a_fabriquer(eps) == [1, 2, 3]
+    assert fabrique.a_fabriquer(eps) == [1, 2, 3, 4, 5]     # EP001 validé sans vidéo hébergée + 4 nouveaux

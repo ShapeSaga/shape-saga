@@ -23,6 +23,9 @@ from .telegram_bot import BotTelegram, echapper
 
 log = logging.getLogger(__name__)
 NOMS = {"tiktok": "TikTok", "youtube": "YouTube", "instagram": "Instagram"}
+META = ("id", "titre", "legende", "youtube_description", "hashtags", "miniature_s", "sondage", "test")
+FENETRE_BUFFER = timedelta(days=4)   # offre gratuite : 10 posts en attente par réseau -> on ne confie à Buffer que 4 jours
+ABANDON_APRES = 3                    # refus définitifs de Buffer avant d'abandonner un réseau pour un épisode
 
 
 class Orchestrateur:
@@ -66,11 +69,11 @@ class Orchestrateur:
             ecart = self.maintenant() - datetime.fromisoformat(derniere)
             if ecart < timedelta(hours=self.conf["alertes"]["repetition_heures"]):
                 return
-        self.etat.donnees["alertes"][cle] = self.maintenant().isoformat()
         try:
             self.bot.envoyer_message("⚠️ <b>Problème</b>\n" + echapper(self.secrets.masquer(message)))
+            self.etat.donnees["alertes"][cle] = self.maintenant().isoformat()
         except Exception:  # noqa: BLE001
-            log.exception("Impossible d'envoyer l'alerte Telegram")
+            log.error("Impossible d'envoyer l'alerte Telegram : %s", self.secrets.masquer(traceback.format_exc()))
 
     def episodes_prets(self) -> list[dict]:
         liste = []
@@ -100,35 +103,49 @@ class Orchestrateur:
         except Exception as exc:  # noqa: BLE001
             log.warning("getWebhookInfo impossible : %s", exc)
         evts, offset = self.bot.lire_tout(avant)
-        self.etat.donnees["offset"] = offset
-        diag = {"heure": self.maintenant().isoformat(timespec="seconds"), "webhook": info.get("url", ""),
+        self.etat.donnees["offset"] = offset            # envoyé à Telegram seulement au passage suivant (voir lire_tout)
+        diag = {"bot": self.bot.moi(), "webhook": info.get("url", ""),             # sans l'heure : pas de sauvegarde inutile
                 "en_attente_avant": info.get("pending_update_count"), "maj_lues": offset - avant if offset > avant else 0,
                 "evenements": len(evts)}
         self.etat.donnees["diag_telegram"] = diag
         log.warning("Diagnostic Telegram : %s", diag)
         if diag["webhook"]:
-            self.alerter("webhook", "Un autre service est branché sur ton bot Telegram (webhook) et reçoit tes ✅/❌ à la place "
+            self.alerter("webhook", f"Un autre service est branché sur ton bot {diag['bot']} (webhook) et reçoit tes ✅/❌ à la place "
                          "du robot : " + (diag["webhook"].split("/")[2] if "//" in diag["webhook"] else diag["webhook"]))
+        elif (diag["en_attente_avant"] or 0) > 0 and diag["maj_lues"] == 0:
+            self.alerter("voleur", f"Un AUTRE programme lit ton bot {diag['bot']} et prend tes ✅/❌ avant le robot. "
+                         "Solution sûre : crée un nouveau bot dans @BotFather (/newbot) et mets son jeton dans le secret "
+                         "GITHUB TELEGRAM_BOT_TOKEN. En attendant, tu peux répondre /ok EP005 ou /non EP005.")
         for e in evts:
-            if e.type == "commande":
-                self.commande(e.action)
-                continue
-            fiche = self.etat.episodes.get(e.cle)
-            if not fiche:
-                self.bot.repondre_bouton(e.callback_id, "Épisode inconnu")
-                continue
-            if fiche["statut"] != ENVOYE:
-                self.bot.repondre_bouton(e.callback_id, f"Déjà traité ({fiche['statut']})")
-                continue
-            if e.action == "valider":
-                fiche["statut"] = VALIDE
-                self.bot.repondre_bouton(e.callback_id, "✅ Validé")
-                self.marquer(fiche, e.cle, "✅ VALIDÉ")
-            else:
-                fiche["statut"] = REFUSE
-                texte = "❌ REFUSÉ" if e.action == "refuser" else "❌ ÉCARTÉ (« Refaire » n'est pas encore disponible)"
-                self.bot.repondre_bouton(e.callback_id, texte)
-                self.marquer(fiche, e.cle, texte)
+            try:                                        # un clic qui plante ne fait plus perdre les suivants
+                self.traiter(e)
+            except Exception:  # noqa: BLE001
+                log.error("Clic non traité (%s %s) : %s", e.action, e.cle, self.secrets.masquer(traceback.format_exc()))
+
+    def traiter(self, e) -> None:
+        if e.type == "commande":
+            self.commande(e.action)
+            return
+        fiche = self.etat.episodes.get(e.cle)
+        repondre = (lambda t: self.bot.repondre_bouton(e.callback_id, t)) if e.callback_id else \
+            (lambda t: self.bot.envoyer_message(f"{t} — {echapper(e.cle)}"))
+        if not fiche:
+            repondre("Épisode inconnu")
+            return
+        if fiche["statut"] != ENVOYE:
+            if fiche["statut"] != (VALIDE if e.action == "valider" else REFUSE):
+                repondre(f"Déjà traité ({fiche['statut']})")
+            return
+        if e.action == "valider":
+            fiche["statut"] = VALIDE
+            fiche["valide_le"] = self.maintenant().isoformat()
+            repondre("✅ Validé")
+            self.marquer(fiche, e.cle, "✅ VALIDÉ")
+        else:
+            fiche["statut"] = REFUSE
+            texte = "❌ REFUSÉ" if e.action == "refuser" else "❌ ÉCARTÉ (« Refaire » n'est pas encore disponible)"
+            repondre(texte)
+            self.marquer(fiche, e.cle, texte)
 
     def marquer(self, fiche: dict, cle: str, etiquette: str) -> None:
         try:
@@ -160,6 +177,14 @@ class Orchestrateur:
         Les épisodes de test (brouillons) ne prennent pas de créneau."""
         cad = self.conf["cadence"]
         jour, libres = planning.places_libres(self.etat.episodes, self.maintenant(), cad)
+        a_envoyer = [e for e in self.episodes_prets() if e["id"] not in self.etat.episodes and not e.get("test")]
+        if cad.get("jours_avance") and libres and a_envoyer:
+            n = min(len(libres), len(a_envoyer))
+            self.bot.envoyer_message(
+                f"🗓️ <b>{n} vidéo(s) à valider</b> : {planning.en_clair(libres[0], cad)}"
+                + (f" → {planning.en_clair(libres[n - 1], cad)}" if n > 1 else "")
+                + f".\nIl reste {len(libres)} créneau(x) libre(s) sur les {cad['jours_avance']} prochains jours ; "
+                "les suivantes arrivent dans la foulée. ✅ = publiée à son heure, ❌ = remplacée.")
         attente = sum(1 for f in self.etat.episodes.values() if f["statut"] == ENVOYE)
         place = self.conf["validation"]["max_en_attente"] - attente
         for ep in self.episodes_prets():
@@ -173,7 +198,7 @@ class Orchestrateur:
                 prevu = libres.pop(0)
             else:
                 continue
-            if prevu and self.etat.donnees.get("annonce") != jour.isoformat():
+            if prevu and not cad.get("jours_avance") and self.etat.donnees.get("annonce") != jour.isoformat():
                 self.etat.donnees["annonce"] = jour.isoformat()
                 self.bot.envoyer_message(
                     f"🌙 <b>Vidéos de {planning.JOURS[jour.weekday()]} {jour:%d/%m}</b>\n"
@@ -183,19 +208,26 @@ class Orchestrateur:
             avert = "⚠️ <b>TEST</b> : s'il est validé, il part en BROUILLON dans Buffer (rien n'est publié).\n\n" if ep.get("test") else ""
             legende = f"{avert}🎬 <b>{echapper(ep['id'])} — {echapper(ep.get('titre', ''))}</b>\n\n{echapper(self.legende(ep))}"
             vignette = ep["_fichier"].with_suffix(".jpg")
-            mid = self.bot.envoyer_video(ep["_fichier"], legende, ep["id"], miniature=vignette, details=self.fiche(ep))
-            couverture = ep["_fichier"].with_name(ep["id"] + "_couverture.jpg")
-            if couverture.exists():
-                try:
-                    self.bot.envoyer_photo(couverture, f"🖼️ Miniature de {echapper(ep['id'])}", reponse_a=mid)
-                except Exception:  # noqa: BLE001
-                    log.warning("Miniature de %s non envoyée", ep["id"])
+            mid = self.bot.envoyer_video(ep["_fichier"], legende, ep["id"], miniature=vignette)
             fiche = {"statut": ENVOYE, "message_id": mid, "titre": ep.get("titre", ""), "test": bool(ep.get("test")),
-                     "envoye_le": self.maintenant().isoformat(), "programme": {}}
+                     "envoye_le": self.maintenant().isoformat(), "programme": {},
+                     "meta": {k: ep[k] for k in META if k in ep}}
             if prevu:
                 fiche["creneau_prevu"] = prevu.astimezone(timezone.utc).isoformat()
-            self.etat.episodes[ep["id"]] = fiche
+            self.etat.episodes[ep["id"]] = fiche          # enregistré AVANT la suite : jamais renvoyé en double
             place -= 1
+            for envoi in (lambda: self.bot.envoyer_message(self.fiche(ep), reponse_a=mid),
+                          lambda: self.bot.envoyer_photo(ep["_fichier"].with_name(ep["id"] + "_couverture.jpg"),
+                                                         f"🖼️ Miniature de {echapper(ep['id'])}", reponse_a=mid)):
+                try:
+                    envoi()
+                except Exception:  # noqa: BLE001
+                    log.warning("Complément Telegram de %s non envoyé", ep["id"])
+            try:                                        # la vidéo est déposée maintenant : elle ne sera plus refabriquée
+                fiche["video_url"] = self.hebergeur.deposer(ep["_fichier"], nom=f"{ep['id']}.mp4", remplacer=True)["url"]
+            except Exception as exc:  # noqa: BLE001
+                log.warning("Hébergement anticipé de %s impossible (%s) : il sera refait à la validation", ep["id"], exc)
+            self.etat.sauvegarder()
 
     def fiche(self, ep: dict) -> str:
         """Tout ce qui partira sur les réseaux, pour valider en un coup d'œil."""
@@ -259,11 +291,17 @@ class Orchestrateur:
         for cle, f in sorted(self.etat.episodes.items()):
             if f["statut"] != VALIDE:
                 continue
-            ep = prets.get(cle)
+            prevu = f.get("creneau") or f.get("creneau_prevu")
+            if prevu and datetime.fromisoformat(prevu) > self.maintenant() + FENETRE_BUFFER:
+                continue                                # validé, mis en réserve : confié à Buffer plus tard
+            ep = prets.get(cle) or (dict(f["meta"], id=cle) if f.get("meta") and f.get("video_url") else None)
             if not ep:
-                self.alerter(f"absent-{cle}", f"{cle} validé mais ses fichiers ne sont plus dans episodes/.")
+                self.alerter(f"absent-{cle}", f"{cle} validé mais sa vidéo n'est pas encore prête (elle sera refaite).")
                 continue
-            self.publier_episode(cle, f, ep)
+            try:
+                self.publier_episode(cle, f, ep)
+            finally:
+                self.etat.sauvegarder()                 # chaque réseau programmé est noté tout de suite
 
     def publier_episode(self, cle: str, f: dict, ep: dict) -> None:
         test = bool(f.get("test"))
@@ -283,10 +321,16 @@ class Orchestrateur:
                 if prevu:
                     self.alerter(f"decale-{cle}", f"{cle} validé trop près de son heure : décalé au "
                                  + planning.en_clair(datetime.fromisoformat(f["creneau"]), self.conf["cadence"]))
+        if f.get("creneau") and not test and datetime.fromisoformat(f["creneau"]) < self.maintenant() + timedelta(minutes=10):
+            ancien = f["creneau"]                       # créneau raté (Buffer en panne...) : prochain créneau libre, pas « maintenant »
+            f["creneau"] = None
+            f["creneau"] = self.prochain_creneau().astimezone(timezone.utc).isoformat()
+            self.alerter(f"rate-{cle}", f"{cle} n'a pas pu partir à {planning.en_clair(datetime.fromisoformat(ancien), self.conf['cadence'])}"
+                         f" : reprogrammé au {planning.en_clair(datetime.fromisoformat(f['creneau']), self.conf['cadence'])}.")
         date = datetime.fromisoformat(f["creneau"]) if f.get("creneau") else self.maintenant()
         tags = ep.get("hashtags", [])
         for plateforme in self.conf["publication"]["plateformes"]:
-            if plateforme in f["programme"]:
+            if plateforme in f["programme"] or f.get("abandon", {}).get(plateforme):
                 continue
             pub = self.publieurs[plateforme]
             texte = self.legende(ep)
@@ -308,10 +352,17 @@ class Orchestrateur:
             try:
                 res = pub.programmer(p)
             except ErreurPublication as exc:
-                self.alerter(f"pub-{cle}-{plateforme}", f"{cle} sur {NOMS[plateforme]} : {exc}")
+                n = f.setdefault("refus", {}).get(plateforme, 0) + (0 if exc.temporaire else 1)
+                f["refus"][plateforme] = n
+                if n >= ABANDON_APRES:                  # erreur définitive répétée : on arrête de gaspiller le quota Buffer
+                    f.setdefault("abandon", {})[plateforme] = True
+                    self.alerter(f"abandon-{cle}-{plateforme}", f"{cle} : abandon sur {NOMS[plateforme]} après {n} refus de Buffer : {exc}")
+                else:
+                    self.alerter(f"pub-{cle}-{plateforme}", f"{cle} sur {NOMS[plateforme]} : {exc}")
                 continue
             f["programme"][plateforme] = {"id": res.id_distant, "message": res.message}
-        if all(p in f["programme"] for p in self.conf["publication"]["plateformes"]):
+            self.etat.sauvegarder()
+        if all(p in f["programme"] or f.get("abandon", {}).get(p) for p in self.conf["publication"]["plateformes"]):
             f["statut"] = BROUILLON if test else PROGRAMME
             lignes = [f"• {NOMS[p]} : {echapper(r['message'])}" for p, r in f["programme"].items()]
             tete = "📝 Brouillons créés dans Buffer (test, rien de publié)" if test else "📅 Programmé"
@@ -331,7 +382,7 @@ class Orchestrateur:
             if f["statut"] == PROGRAMME and f.get("creneau"):
                 if self.maintenant() > datetime.fromisoformat(f["creneau"]) + timedelta(hours=2):
                     f["statut"] = PUBLIE
-            if f["statut"] in (PUBLIE, BROUILLON) and f.get("video_url") and not f.get("nettoye"):
+            if f["statut"] in (PUBLIE, BROUILLON, REFUSE, EXPIRE) and f.get("video_url") and not f.get("nettoye"):
                 ref = datetime.fromisoformat(f["creneau"]) if f.get("creneau") else datetime.fromisoformat(f["envoye_le"])
                 if self.maintenant() > ref + timedelta(days=jours):
                     try:
