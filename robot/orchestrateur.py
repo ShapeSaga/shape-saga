@@ -201,7 +201,7 @@ class Orchestrateur:
         return self.creneaux_libres(1)[0]
 
     def creneaux_libres(self, n: int) -> list[datetime]:
-        """Les n prochains créneaux libres (12 h / 19 h), à partir de maintenant + marge."""
+        """Les n prochains créneaux libres (12 h / 20 h par défaut, voir config.yaml), à partir de maintenant + marge."""
         out: list[datetime] = []
         tz = ZoneInfo(self.conf["cadence"]["fuseau"])
         now = self.maintenant().astimezone(tz)

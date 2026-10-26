@@ -122,7 +122,7 @@ def test_deux_videos_deux_creneaux_differents(monde):
     c1 = o.prochain_creneau().astimezone(timezone.utc).isoformat()
     o.etat.episodes["X"] = {"statut": PROGRAMME, "creneau": c1}
     c2 = o.prochain_creneau().astimezone(timezone.utc).isoformat()
-    assert c1 != c2 and c1.startswith("2026-10-20T10:00") and c2.startswith("2026-10-20T17:00")
+    assert c1 != c2 and c1.startswith("2026-10-20T10:00") and c2.startswith("2026-10-20T18:00")   # 20 h à Paris (heure d été)
 
 
 def test_pause(monde):

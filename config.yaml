@@ -12,7 +12,7 @@ identite:
 
 cadence:
   fuseau: "Europe/Paris"
-  creneaux: ["12:00", "19:00"]     # 2 vidéos par jour
+  creneaux: ["12:00", "20:00"]     # 2 vidéos par jour (demande de Chahine : 12 h et 20 h)
   marge_minutes: 30                # jamais de créneau qui commence dans moins de 30 min
 
 validation:
