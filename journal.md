@@ -93,3 +93,11 @@ des obstacles animés, une musique plus puissante, des histoires variées (priso
 - Planification : 7 jours d'avance (config cadence.jours_avance), envoi dès qu'il manque des vidéos, par paquets de 4, puis veille ;
   Buffer ne reçoit que les 4 prochains jours (limite de 10 posts de l'offre gratuite), le reste attend validé dans l'état.
 - Tests : 16 OK. NON vérifié en réel : tout ce qui précède sur GitHub.
+
+## 2026-10-27 (suite) — Réceptionniste Telegram (Cloudflare Worker) + ❌/🔁 remplacés
+- `relais/worker.js` : webhook Telegram ; répond tout de suite « ✅ bien reçu », remplace les 3 boutons par un bouton inactif
+  (plus de double clic ✅/❌), garde les clics (KV) ; le robot les lit (GET /clics) et les confirme au passage suivant (POST /ack).
+  Un webhook actif bloque aussi tout autre lecteur du bot. Workflow « Installer le réceptionniste » (1 clic, wrangler) ;
+  clés dérivées du jeton Telegram (aucun nouveau secret à part Cloudflare).
+- ❌ et 🔁 libèrent le créneau : une nouvelle vidéo + miniature est fabriquée et envoyée au passage suivant.
+- Réel 27/10 00:36 : le robot corrigé a reçu le ✅ d'EP008 et envoyé EP009–EP012 (semaine). 17 tests OK. Réceptionniste NON encore installé.

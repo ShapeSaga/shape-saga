@@ -7,6 +7,7 @@ Un épisode avec "test": true part en BROUILLON dans Buffer : rien n'est publié
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import traceback
@@ -94,7 +95,38 @@ class Orchestrateur:
         return f"{ep.get('legende', '')}\n\n{tags}".strip()
 
     # ------------------------------------------------------------------ Telegram
+    def adresse_relais(self) -> str | None:
+        """Adresse du réceptionniste Cloudflare (écrite par le workflow « Installer le réceptionniste »)."""
+        f = RACINE / "etat" / "relais.json"
+        try:
+            return json.loads(f.read_text(encoding="utf-8")).get("url") if f.exists() else None
+        except (OSError, ValueError):
+            return None
+
+    def lire_relais(self, url: str) -> list:
+        """Clics gardés par le réceptionniste. Ceux du passage précédent (déjà sauvegardés) sont confirmés d'abord."""
+        import requests
+        from .reseau import requete
+        cle = hashlib.sha256(f"{self.secrets.telegram_token}:robot".encode()).hexdigest()[:48]
+        session = self.session or requests.Session()
+        entetes = {"X-Cle": cle}
+        a_confirmer = self.etat.donnees.get("relais_a_confirmer") or []
+        if a_confirmer:
+            requete(session, "POST", url + "/ack", json={"ids": a_confirmer}, headers=entetes, etiquette="Réceptionniste ack")
+        maj = requete(session, "GET", url + "/clics", headers=entetes, etiquette="Réceptionniste").json().get("result", [])
+        self.etat.donnees["relais_a_confirmer"] = [m["update_id"] for m in maj if "update_id" in m]
+        self.etat.donnees["diag_telegram"] = {"mode": "réceptionniste", "clics_recus": len(maj)}
+        return [e for e in (self.bot._interpreter(m) for m in maj) if e]
+
     def lire_telegram(self) -> None:
+        relais = self.adresse_relais()
+        if relais:
+            for e in self.lire_relais(relais):
+                try:
+                    self.traiter(e)
+                except Exception:  # noqa: BLE001
+                    log.error("Clic non traité (%s %s) : %s", e.action, e.cle, self.secrets.masquer(traceback.format_exc()))
+            return
         avant = self.etat.donnees["offset"]
         info = {}
         try:                                  # diagnostic : un autre service branché sur le même bot vole les clics
@@ -143,7 +175,7 @@ class Orchestrateur:
             self.marquer(fiche, e.cle, "✅ VALIDÉ")
         else:
             fiche["statut"] = REFUSE
-            texte = "❌ REFUSÉ" if e.action == "refuser" else "❌ ÉCARTÉ (« Refaire » n'est pas encore disponible)"
+            texte = ("❌ REFUSÉ" if e.action == "refuser" else "🔁 À REFAIRE") + " — une nouvelle vidéo arrive pour ce créneau"
             repondre(texte)
             self.marquer(fiche, e.cle, texte)
 

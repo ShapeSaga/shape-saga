@@ -1,0 +1,72 @@
+# Installe (ou met à jour) le réceptionniste Telegram sur Cloudflare, en un clic : Actions → « Installer le réceptionniste » → Run workflow.
+# Prérequis (une seule fois) : secrets GitHub CLOUDFLARE_API_TOKEN (modèle « Edit Cloudflare Workers ») et CLOUDFLARE_ACCOUNT_ID.
+name: Installer le réceptionniste
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  installer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier les secrets
+        run: |
+          for v in CF_TOKEN CF_ACC TG TG_CHAT; do
+            if [ -z "${!v}" ]; then echo "::error::Secret manquant : $v (voir le guide)"; exit 1; fi
+          done
+      - name: Préparer (clés dérivées, base de clics, adresse)
+        id: prep
+        run: |
+          API="https://api.cloudflare.com/client/v4/accounts/$CF_ACC"
+          H="Authorization: Bearer $CF_TOKEN"
+          echo "::add-mask::$(printf '%s' "$TG:robot" | sha256sum | cut -c1-48)"
+          echo "::add-mask::$(printf '%s' "$TG:webhook" | sha256sum | cut -c1-48)"
+          KV=$(curl -s -H "$H" "$API/storage/kv/namespaces?per_page=100" | jq -r '.result[] | select(.title=="shape-saga-clics") | .id' | head -1)
+          if [ -z "$KV" ]; then
+            KV=$(curl -s -X POST -H "$H" -H "Content-Type: application/json" -d '{"title":"shape-saga-clics"}' "$API/storage/kv/namespaces" | jq -r '.result.id')
+          fi
+          if [ -z "$KV" ] || [ "$KV" = "null" ]; then echo "::error::Impossible de créer la base de clics (droits du jeton Cloudflare ?)"; exit 1; fi
+          SUB=$(curl -s -H "$H" "$API/workers/subdomain" | jq -r '.result.subdomain // empty')
+          if [ -z "$SUB" ]; then echo "::error::Ouvre une fois la page Workers & Pages sur dash.cloudflare.com pour créer ton adresse workers.dev, puis relance."; exit 1; fi
+          printf 'name = "shape-saga-relais"\nmain = "worker.js"\ncompatibility_date = "2025-09-01"\nworkers_dev = true\n\n[[kv_namespaces]]\nbinding = "CLICS"\nid = "%s"\n' "$KV" > relais/wrangler.toml
+          echo "url=https://shape-saga-relais.$SUB.workers.dev" >> "$GITHUB_OUTPUT"
+      - name: Déployer le réceptionniste
+        working-directory: relais
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@3.114.0 deploy
+          printf '%s' "$TG" | npx --yes wrangler@3.114.0 secret put TELEGRAM_BOT_TOKEN
+          printf '%s' "$TG_CHAT" | npx --yes wrangler@3.114.0 secret put TELEGRAM_CHAT_ID
+          printf '%s' "$TG:webhook" | sha256sum | cut -c1-48 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put WEBHOOK_SECRET
+          printf '%s' "$TG:robot" | sha256sum | cut -c1-48 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put ROBOT_KEY
+      - name: Brancher Telegram sur le réceptionniste
+        run: |
+          SECRET=$(printf '%s' "$TG:webhook" | sha256sum | cut -c1-48)
+          R=$(curl -s "https://api.telegram.org/bot$TG/setWebhook" -H "Content-Type: application/json" \
+            -d "{\"url\":\"${{ steps.prep.outputs.url }}/telegram\",\"secret_token\":\"$SECRET\",\"allowed_updates\":[\"message\",\"callback_query\"]}")
+          echo "$R" | jq -r '.description // .ok'
+          echo "$R" | jq -e '.ok == true' > /dev/null || { echo "::error::Telegram a refusé le branchement"; exit 1; }
+      - name: Enregistrer l'adresse pour le robot et prévenir sur Telegram
+        run: |
+          printf '{"url": "%s"}\n' "${{ steps.prep.outputs.url }}" > etat/relais.json
+          git config user.name "robot-shape-saga"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add etat/relais.json
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Réceptionniste Telegram installé"
+            for essai in 1 2 3; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done
+          fi
+          curl -s "https://api.telegram.org/bot$TG/sendMessage" -d chat_id="$TG_CHAT" \
+            --data-urlencode text="✅ Réceptionniste installé : désormais chaque clic est confirmé tout de suite et les boutons disparaissent après ton choix." > /dev/null

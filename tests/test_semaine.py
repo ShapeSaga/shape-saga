@@ -109,3 +109,27 @@ def test_un_clic_en_erreur_ne_bloque_pas_les_suivants(tmp_path):
     o.bot.repondre_bouton = repondre
     o.lire_telegram()
     assert etat.episodes["EP006"]["statut"] == "valide" and appels == ["a", "b"]
+
+
+def test_reception_par_le_receptionniste(tmp_path, monkeypatch):
+    """Clics lus chez le réceptionniste ; ceux du passage précédent sont confirmés au passage suivant."""
+    import robot.orchestrateur as orc
+    etat = etat_vide(tmp_path)
+    etat.donnees["episodes"]["EP007"] = {"statut": "envoye", "message_id": 1}
+    o, _ = orch(tmp_path, paris(27, 9), etat)
+    o.secrets.telegram_token = "jeton"
+    monkeypatch.setattr(orc.Orchestrateur, "adresse_relais", lambda self: "https://relais.test")
+    appels = []
+
+    def faux(session, methode, url, **kw):
+        appels.append((methode, url.rsplit("/", 1)[-1], (kw.get("json") or {}).get("ids")))
+        res = [{"update_id": 9, "callback_query": {"id": "c", "data": "v:EP007", "message": {"chat": {"id": 42}}}}]
+        return type("R", (), {"json": lambda s: {"ok": True, "result": res if url.endswith("/clics") else []}})()
+    import robot.reseau
+    monkeypatch.setattr(robot.reseau, "requete", faux)
+    o.bot.chat_id = "42"
+    o.bot._interpreter = __import__("robot.telegram_bot", fromlist=["x"]).BotTelegram("j", "42")._interpreter
+    o.lire_telegram()
+    assert etat.episodes["EP007"]["statut"] == "valide" and etat.donnees["relais_a_confirmer"] == [9]
+    o.lire_telegram()                                       # passage suivant : confirmation des clics déjà sauvegardés
+    assert ("POST", "ack", [9]) in appels
