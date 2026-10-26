@@ -36,6 +36,7 @@ class Publication:
     obtenir_fichier: Callable[[], Path] | None = None   # pour les API qui veulent le fichier
     contenu_ia: bool = True
     miniature_ms: int = 1500        # image de couverture (TikTok / Instagram)
+    premier_commentaire: str = ""   # Instagram : commentaire publié avec la vidéo (sert de sondage)
     brouillon: bool = False         # True = enregistré en BROUILLON, rien n'est publié (épisodes de test)
 
 

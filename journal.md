@@ -64,3 +64,10 @@ des obstacles animés, une musique plus puissante, des histoires variées (priso
   planches manga (défi, piège, victoire, perdant), 22–24 s. 4 épisodes sur 18 dans `ORDRE`. Statistiques sur 400 parties : 100 % terminées, gagnants 209/191.
 - Vérifié : 7 tests du robot OK ; même numéro = même vidéo (empreinte identique) pour un duel et une histoire classique.
 - NON vérifié : exécution sur GitHub Actions, musique à l'écoute, rendu sur téléphone.
+
+## 2026-10-26 (nuit) — Passage en publication réelle
+- `mode_test: false` : un ✅ programme désormais VRAIMENT la publication (12 h / 19 h Paris).
+- Chaque vidéo envoyée sur Telegram est suivie d'une fiche : statut, date de publication prévue, réseaux, titre YouTube, sondage,
+  1er commentaire Instagram, puis la miniature en photo. La miniature = 1re planche forte (ne dévoile pas la fin), transmise à Buffer (thumbnailOffset).
+- Sondage : les vrais sondages à boutons n'existent pas dans l'API Buffer → vote en commentaires (ligne dans la légende + 1er commentaire Instagram).
+- Vérifié en local (faux Telegram) ; NON vérifié en réel : acceptation de firstComment et thumbnailOffset par Buffer.

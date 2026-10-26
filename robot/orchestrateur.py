@@ -149,11 +149,39 @@ class Orchestrateur:
                 continue
             avert = "⚠️ <b>TEST</b> : s'il est validé, il part en BROUILLON dans Buffer (rien n'est publié).\n\n" if ep.get("test") else ""
             legende = f"{avert}🎬 <b>{echapper(ep['id'])} — {echapper(ep.get('titre', ''))}</b>\n\n{echapper(self.legende(ep))}"
-            mid = self.bot.envoyer_video(ep["_fichier"], legende, ep["id"])
+            vignette = ep["_fichier"].with_suffix(".jpg")
+            mid = self.bot.envoyer_video(ep["_fichier"], legende, ep["id"], miniature=vignette, details=self.fiche(ep))
+            couverture = ep["_fichier"].with_name(ep["id"] + "_couverture.jpg")
+            if couverture.exists():
+                try:
+                    self.bot.envoyer_photo(couverture, f"🖼️ Miniature de {echapper(ep['id'])}", reponse_a=mid)
+                except Exception:  # noqa: BLE001
+                    log.warning("Miniature de %s non envoyée", ep["id"])
             self.etat.episodes[ep["id"]] = {"statut": ENVOYE, "message_id": mid, "titre": ep.get("titre", ""),
                                             "test": bool(ep.get("test")), "envoye_le": self.maintenant().isoformat(),
                                             "programme": {}}
             place -= 1
+
+    def fiche(self, ep: dict) -> str:
+        """Tout ce qui partira sur les réseaux, pour valider en un coup d'œil."""
+        tz = ZoneInfo(self.conf["cadence"]["fuseau"])
+        rang = sum(1 for f in self.etat.episodes.values() if f["statut"] == ENVOYE and not f.get("test"))
+        if ep.get("test"):
+            quand = "aucune (test : brouillon Buffer seulement)"
+        else:
+            d = self.creneaux_libres(rang + 1)[rang].astimezone(tz)
+            quand = d.strftime("%d/%m à %H:%M") + " (heure de Paris), si tu valides avant"
+        s = ep.get("sondage") or {}
+        lignes = [f"📋 <b>{echapper(ep['id'])}</b> — statut : en attente de ton ✅ ou ❌",
+                  f"📅 Publication prévue : {echapper(quand)}",
+                  "📱 Réseaux : " + ", ".join(NOMS[p] for p in self.conf["publication"]["plateformes"]),
+                  f"🎬 Titre YouTube : {echapper(ep.get('titre', ''))}"]
+        if s:
+            lignes.append(f"🗳️ Sondage (en commentaires) : {echapper(s.get('question', ''))} " + " / ".join(s.get("choix", [])))
+            lignes.append(f"💬 1er commentaire Instagram : {echapper(s.get('commentaire', ''))}")
+        if ep.get("miniature_s") is not None:
+            lignes.append(f"🖼️ Miniature : image à {ep['miniature_s']} s (envoyée juste en dessous)")
+        return "\n".join(lignes)
 
     def gerer_delais(self) -> None:
         v = self.conf["validation"]
@@ -170,6 +198,11 @@ class Orchestrateur:
 
     # ------------------------------------------------------------------ publication
     def prochain_creneau(self) -> datetime:
+        return self.creneaux_libres(1)[0]
+
+    def creneaux_libres(self, n: int) -> list[datetime]:
+        """Les n prochains créneaux libres (12 h / 19 h), à partir de maintenant + marge."""
+        out: list[datetime] = []
         tz = ZoneInfo(self.conf["cadence"]["fuseau"])
         now = self.maintenant().astimezone(tz)
         pris = {f["creneau"] for f in self.etat.episodes.values() if f.get("creneau")}
@@ -179,7 +212,9 @@ class Orchestrateur:
             for hh, mm in heures:
                 dt = datetime.combine(now.date() + timedelta(days=d), time(hh, mm), tz)
                 if dt >= now + marge and dt.astimezone(timezone.utc).isoformat() not in pris:
-                    return dt
+                    out.append(dt)
+                    if len(out) == n:
+                        return out
         raise RuntimeError("aucun créneau libre dans les 90 prochains jours")
 
     def publier_valides(self) -> None:
@@ -216,7 +251,9 @@ class Orchestrateur:
                 texte = f"{ep.get('youtube_description') or ep.get('legende', '')}\n\n{' '.join(tags)}".strip()
             p = Publication(cle=f"{cle}-{plateforme}", episode_id=cle, plateforme=plateforme, date=date, texte=texte,
                             titre=(ep.get("titre") or cle)[:100], hashtags=tags, video_url=f["video_url"],
-                            contenu_ia=bool(self.conf["publication"]["contenu_ia"]), brouillon=test)
+                            contenu_ia=bool(self.conf["publication"]["contenu_ia"]), brouillon=test,
+                            miniature_ms=int(float(ep.get("miniature_s", 1.5)) * 1000),
+                            premier_commentaire=(ep.get("sondage") or {}).get("commentaire", ""))
             try:
                 place = pub.places_disponibles(plateforme) if not test else None
             except ErreurPublication as exc:

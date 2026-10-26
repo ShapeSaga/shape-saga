@@ -4,7 +4,7 @@
 fabrique:
   # true = PHASE DE TEST : chaque vidéo arrive sur Telegram avec « TEST » ; un ✅ crée seulement des BROUILLONS dans Buffer
   # (rien n'est publié). Passer à false quand Chahine valide le rendu.
-  mode_test: true
+  mode_test: false
 
 identite:
   nom_compte: "Shape Saga"

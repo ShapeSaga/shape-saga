@@ -137,7 +137,10 @@ class PublieurBuffer(Publieur):
                 "embeddable": True,
             }}
         if pub.plateforme == "instagram":
-            return {"instagram": {"type": "reel", "shouldShareToFeed": True}}
+            ig = {"type": "reel", "shouldShareToFeed": True}
+            if pub.premier_commentaire:
+                ig["firstComment"] = pub.premier_commentaire[:2200]
+            return {"instagram": ig}
         if pub.plateforme == "tiktok":
             return {"tiktok": {"isAiGenerated": True}} if pub.contenu_ia else {}
         return {}

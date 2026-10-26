@@ -110,6 +110,14 @@ class BotTelegram:
             self.envoyer_message(details, reponse_a=message_id)
         return message_id
 
+    def envoyer_photo(self, chemin: str | Path, legende: str, *, reponse_a: int | None = None) -> int:
+        chemin = Path(chemin)
+        donnees = {"chat_id": self.chat_id, "caption": couper(legende, LIMITE_LEGENDE), "parse_mode": "HTML"}
+        if reponse_a:
+            donnees["reply_parameters"] = json.dumps({"message_id": reponse_a, "allow_sending_without_reply": True})
+        fichiers = {"photo": (chemin.name, chemin.read_bytes(), "image/jpeg")}
+        return self.appel("sendPhoto", donnees=donnees, fichiers=fichiers)["message_id"]
+
     def editer_legende(self, message_id: int, legende: str, garder_boutons_de: str | None = None) -> None:
         """Remplace la légende ; sans `garder_boutons_de`, les boutons disparaissent."""
         corps = {"chat_id": self.chat_id, "message_id": message_id,

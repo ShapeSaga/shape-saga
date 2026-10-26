@@ -2,7 +2,7 @@
 Usage : python generateur.py NUMERO DOSSIER_SORTIE
 Un numéro = un épisode, toujours identique. Deux modes de jeu : COURSE (le liquide monte, obstacles animés) et PRISON (points de vie).
 Sept histoires repérées dans de vraies parties : dernier, presque, duel, sacrifice, trahison, ensemble (union), prison (champion)."""
-import sys, os, json, random
+import sys, os, json, random, subprocess
 import sim, sim2, niveaux, detecteurs, monteur, musique, panneaux, effets, artisanal, murs
 import animaux
 
@@ -312,8 +312,37 @@ def generer(numero, sortie):
                 _info=dict(accroche=accroche, scenario=scen, mode=S.get("mode"), niveau=arch, niveau_graine=gniv, seed=seed, animal=nom_h, casting=cast, theme=th_nom,
                            liquide=(S.get("liq") or {}), obstacles=len(anim), fonds=fonds, musique=info_m, morale=morale, duree=round(total, 1),
                            marks={k: round(v, 1) for k, v in marks.items()}))
+    finaliser(meta, out, marks)
     json.dump(meta, open(out + ".json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     return meta
+
+
+# ------------------------------------------------------------------ miniature et sondage (communs à tous les modes)
+PASTILLES = {"Red": "🔴", "Green": "🟢", "Blue": "🔵", "Yellow": "🟡"}
+
+
+def finaliser(meta, out, marks):
+    """Ajoute l'image de couverture (miniature) et un sondage par commentaires.
+    Les vrais sondages à boutons (stickers) n'existent pas dans l'API de Buffer : on vote en commentaire."""
+    info = meta["_info"]
+    if info["scenario"] == "murs":
+        t_min = 1.0                                       # les deux rivaux face à face : l'image la plus forte
+        noms = sorted({x.split()[0] for x in (info.get("couleurs") or [])}) or ["Red", "Blue"]
+        question = "Who wins the duel?"
+    else:
+        cles = [k for k in ("duel", "lien", "chute", "espoir", "union") if k in marks]
+        t_min = min(marks[k] for k in cles) + 1.0 if cles else 1.0   # la 1re planche forte : elle ne dévoile pas la fin
+        noms = ["Red", "Green", "Blue", "Yellow"]
+        question = "Who's the last one standing?" if info["scenario"] == "prison" else "Who makes it out?"
+    vote = " · ".join(f"{PASTILLES[n]} {n}" for n in noms)
+    ligne = f"🗳️ {question} Vote in the comments: {vote}"
+    meta["miniature_s"] = round(t_min, 2)
+    meta["sondage"] = dict(question=question, choix=noms, ligne=ligne, commentaire=f"🗳️ {question} 👇 {vote}")
+    meta["legende"] = meta["legende"].replace("\n\n", f"\n\n{ligne}\n\n", 1)
+    meta["youtube_description"] = meta["youtube_description"].replace("\n\n", f"\n\n{ligne}\n\n", 1)
+    for nom, filtre in ((out + ".jpg", "scale=320:-2"), (out + "_couverture.jpg", "scale=720:-2")):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t_min:.2f}", "-i", out + ".mp4", "-frames:v", "1",
+                        "-vf", filtre, "-q:v", "4", nom], check=True)
 
 
 # ------------------------------------------------------------------ Duel de murs
@@ -421,8 +450,9 @@ def generer_murs(numero, sortie, rnd):
     meta = dict(id=ep, titre=titre, legende=f"{legende}\n\n{mention}",
                 youtube_description=f"{legende}\n\n{mention}\nEvery Shape Has a Story.", hashtags=list(rnd.choice(T["hashtags"])), test=False,
                 _info=dict(accroche=accroche, scenario="murs", histoire=ev["histoire"], mode="murs", niveau=look, seed=S["seed"], animal=cast[g],
-                           casting=[cast[i] for i in idx], theme=th_nom, murs=ev["murs"], coups=len(S["plis"]), fonds=fonds, musique=info_m,
+                           casting=[cast[i] for i in idx], couleurs=[sim.SHAPES[i][0].title() for i in idx], theme=th_nom, murs=ev["murs"], coups=len(S["plis"]), fonds=fonds, musique=info_m,
                            morale=morale, duree=round(total, 1), marks={k: round(v, 1) for k, v in marks.items()}))
+    finaliser(meta, out, marks)
     json.dump(meta, open(out + ".json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     return meta
 
