@@ -92,8 +92,23 @@ class Orchestrateur:
 
     # ------------------------------------------------------------------ Telegram
     def lire_telegram(self) -> None:
-        evts, offset = self.bot.lire_tout(self.etat.donnees["offset"])
+        avant = self.etat.donnees["offset"]
+        info = {}
+        try:                                  # diagnostic : un autre service branché sur le même bot vole les clics
+            info = self.bot.appel("getWebhookInfo")
+            info = info if isinstance(info, dict) else {}
+        except Exception as exc:  # noqa: BLE001
+            log.warning("getWebhookInfo impossible : %s", exc)
+        evts, offset = self.bot.lire_tout(avant)
         self.etat.donnees["offset"] = offset
+        diag = {"heure": self.maintenant().isoformat(timespec="seconds"), "webhook": info.get("url", ""),
+                "en_attente_avant": info.get("pending_update_count"), "maj_lues": offset - avant if offset > avant else 0,
+                "evenements": len(evts)}
+        self.etat.donnees["diag_telegram"] = diag
+        log.warning("Diagnostic Telegram : %s", diag)
+        if diag["webhook"]:
+            self.alerter("webhook", "Un autre service est branché sur ton bot Telegram (webhook) et reçoit tes ✅/❌ à la place "
+                         "du robot : " + (diag["webhook"].split("/")[2] if "//" in diag["webhook"] else diag["webhook"]))
         for e in evts:
             if e.type == "commande":
                 self.commande(e.action)
