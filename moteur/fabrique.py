@@ -26,7 +26,7 @@ def a_fabriquer(episodes, max_attente=4, nouveaux_max=None):
     """episodes : le dictionnaire etat["episodes"]. Renvoie la liste triée des numéros à fabriquer.
     nouveaux_max : nombre de créneaux libres à remplir (calendrier quotidien) ; None = ancien fonctionnement (file d'attente)."""
     besoin = {numero(k) for k, f in episodes.items()
-              if f.get("statut") == "valide" and not f.get("video_url")}
+              if f.get("statut") == "valide" and not (f.get("video_url") and f.get("meta"))}   # sans meta = ancien envoi
     attente = sum(1 for f in episodes.values() if f.get("statut") == "envoye")
     connus = [numero(k) for k in episodes if numero(k) is not None]
     prochain = max(connus + [0]) + 1
