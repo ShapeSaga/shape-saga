@@ -10,8 +10,9 @@
   "pub-EP014-instagram": "2026-10-27T06:46:12.568764+00:00"
  },
  "annonce": "2026-10-27",
+ "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 14,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -112,9 +113,7 @@
      "message": "programmé pour 2026-10-27T19:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
+   "refus": {},
    "statut": "valide",
    "test": false,
    "titre": "United at the Top",
@@ -153,6 +152,10 @@
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {
+    "instagram": {
+     "id": "6ae04a146546b985f8d47d1a",
+     "message": "programmé pour 2026-10-28T11:00:00.000Z"
+    },
     "tiktok": {
      "id": "6ae048a9da2ca338b14e4718",
      "message": "programmé pour 2026-10-28T11:00:00.000Z"
@@ -162,10 +165,8 @@
      "message": "programmé pour 2026-10-28T11:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
-   "statut": "valide",
+   "refus": {},
+   "statut": "programme",
    "test": false,
    "titre": "One Wall Too Many for Whale",
    "valide_le": "2026-10-27T06:45:59.920036+00:00",
@@ -204,6 +205,10 @@
     "youtube_description": "The shark won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {
+    "instagram": {
+     "id": "6ae04a16ab50f19da36299da",
+     "message": "programmé pour 2026-10-28T19:00:00.000Z"
+    },
     "tiktok": {
      "id": "6ae048abfece4f64136f93e2",
      "message": "programmé pour 2026-10-28T19:00:00.000Z"
@@ -213,10 +218,8 @@
      "message": "programmé pour 2026-10-28T19:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
-   "statut": "valide",
+   "refus": {},
+   "statut": "programme",
    "test": false,
    "titre": "Four Entered. Shark Left.",
    "valide_le": "2026-10-27T06:45:59.621556+00:00",
@@ -256,6 +259,10 @@
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {
+    "instagram": {
+     "id": "6ae04a176546b985f8d47d98",
+     "message": "programmé pour 2026-10-29T11:00:00.000Z"
+    },
     "tiktok": {
      "id": "6ae048adab50f19da3625be2",
      "message": "programmé pour 2026-10-29T11:00:00.000Z"
@@ -265,10 +272,8 @@
      "message": "programmé pour 2026-10-29T11:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
-   "statut": "valide",
+   "refus": {},
+   "statut": "programme",
    "test": false,
    "titre": "The Climb That Almost Worked",
    "valide_le": "2026-10-27T06:45:59.369348+00:00",
@@ -307,6 +312,10 @@
     "youtube_description": "Real friends lift you up. Who lifted you?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {
+    "instagram": {
+     "id": "6ae04a18da2ca338b14e98e0",
+     "message": "programmé pour 2026-10-29T19:00:00.000Z"
+    },
     "tiktok": {
      "id": "6ae048af6546b985f8d43ffc",
      "message": "programmé pour 2026-10-29T19:00:00.000Z"
@@ -316,10 +325,8 @@
      "message": "programmé pour 2026-10-29T19:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
-   "statut": "valide",
+   "refus": {},
+   "statut": "programme",
    "test": false,
    "titre": "A Friend Lifted Antelope Out",
    "valide_le": "2026-10-27T06:45:59.082282+00:00",
@@ -357,6 +364,10 @@
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {
+    "instagram": {
+     "id": "6ae04a196546b985f8d47de1",
+     "message": "programmé pour 2026-10-30T11:00:00.000Z"
+    },
     "tiktok": {
      "id": "6ae048b1ab50f19da3625ccd",
      "message": "programmé pour 2026-10-30T11:00:00.000Z"
@@ -366,10 +377,8 @@
      "message": "programmé pour 2026-10-30T11:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
-   "statut": "valide",
+   "refus": {},
+   "statut": "programme",
    "test": false,
    "titre": "Crocodile Walled Lioness In",
    "valide_le": "2026-10-27T06:45:58.821254+00:00",
@@ -408,6 +417,10 @@
     "youtube_description": "The fawn's friends fell one by one. How would you feel in its place?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {
+    "instagram": {
+     "id": "6ae04a1bda2ca338b14e9976",
+     "message": "programmé pour 2026-10-30T19:00:00.000Z"
+    },
     "tiktok": {
      "id": "6ae048b34c0869d0f8d5db30",
      "message": "programmé pour 2026-10-30T19:00:00.000Z"
@@ -417,10 +430,8 @@
      "message": "programmé pour 2026-10-30T19:00:00.000Z"
     }
    },
-   "refus": {
-    "instagram": 1
-   },
-   "statut": "valide",
+   "refus": {},
+   "statut": "programme",
    "test": false,
    "titre": "The Fawn Wouldn't Leave Its Friend",
    "valide_le": "2026-10-27T06:45:58.460530+00:00",
@@ -736,20 +747,5 @@
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525806,
-  611525807,
-  611525808,
-  611525809,
-  611525810,
-  611525811,
-  611525812,
-  611525813,
-  611525814,
-  611525815,
-  611525816,
-  611525817,
-  611525818,
-  611525819
- ]
+ "relais_a_confirmer": []
 }
