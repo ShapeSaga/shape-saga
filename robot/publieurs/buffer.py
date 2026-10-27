@@ -9,6 +9,7 @@ Documentation : https://developers.buffer.com
 from __future__ import annotations
 
 import logging
+import re
 from datetime import datetime, timedelta, timezone
 
 from ..reseau import ErreurHTTP, requete
@@ -137,10 +138,8 @@ class PublieurBuffer(Publieur):
                 "embeddable": True,
             }}
         if pub.plateforme == "instagram":
-            ig = {"type": "reel", "shouldShareToFeed": True}
-            if pub.premier_commentaire:
-                ig["firstComment"] = pub.premier_commentaire[:2200]
-            return {"instagram": ig}
+            # firstComment est réservé aux plans payants de Buffer : le sondage est déjà dans la légende
+            return {"instagram": {"type": "reel", "shouldShareToFeed": True}}
         if pub.plateforme == "tiktok":
             return {"tiktok": {"isAiGenerated": True}} if pub.contenu_ia else {}
         return {}
@@ -167,6 +166,10 @@ class PublieurBuffer(Publieur):
         if pub.brouillon:                       # test : rien ne sera publié
             entree.pop("dueAt"); entree["mode"] = "addToQueue"; entree["saveToDraft"] = True
         res = self.gql(M_CREER, {"input": entree}, tentatives=1)["createPost"]
+        if not res.get("post") and re.search(r"plan|upgrade|paid|payant", str(res.get("message", "")), re.I):
+            log.warning("Buffer %s : option payante refusée (%s), nouvel essai sans option", pub.plateforme, res.get("message"))
+            entree["assets"] = [{"video": {"url": pub.video_url}}]          # sans choix de miniature
+            res = self.gql(M_CREER, {"input": entree}, tentatives=1)["createPost"]
         if res.get("__typename") == "PostActionSuccess" or res.get("post"):
             post = res["post"]
             quand = "BROUILLON (rien publié)" if pub.brouillon else f"programmé pour {entree['dueAt']}"

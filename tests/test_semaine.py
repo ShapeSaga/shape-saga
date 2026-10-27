@@ -133,3 +133,36 @@ def test_reception_par_le_receptionniste(tmp_path, monkeypatch):
     assert etat.episodes["EP007"]["statut"] == "valide" and etat.donnees["relais_a_confirmer"] == [9]
     o.lire_telegram()                                       # passage suivant : confirmation des clics déjà sauvegardés
     assert ("POST", "ack", [9]) in appels
+
+
+def test_instagram_option_payante_reessaye_sans_option():
+    """Buffer gratuit refuse les options payantes : pas de premier commentaire, et nouvel essai sans miniature."""
+    from robot.publieurs.base import Publication
+    from robot.publieurs.buffer import PublieurBuffer
+    b = PublieurBuffer.__new__(PublieurBuffer)
+    b.canal = lambda p: {"id": "c1"}
+    envois = []
+
+    def gql(req, variables=None, tentatives=3):
+        envois.append(variables["input"])
+        if len(envois) == 1:
+            return {"createPost": {"__typename": "MutationError", "message": "This feature requires a paid plan"}}
+        return {"createPost": {"__typename": "PostActionSuccess", "post": {"id": "p1"}}}
+    b.gql = gql
+    p = Publication(cle="EP9-instagram", episode_id="EP9", plateforme="instagram", date=paris(30, 12), texte="t",
+                    video_url="https://x/v.mp4", premier_commentaire="vote")
+    assert b._programmer(p).id_distant == "p1" and len(envois) == 2
+    assert "firstComment" not in envois[0]["metadata"]["instagram"]
+    assert "metadata" not in envois[1]["assets"][0]["video"]
+
+
+def test_correctif_instagram_relance_les_abandons(tmp_path):
+    etat = etat_vide(tmp_path)
+    etat.donnees["episodes"]["EP008"] = {"statut": "programme", "creneau_prevu": paris(27, 20).astimezone(ZoneInfo("UTC")).isoformat(),
+                                         "programme": {"tiktok": {"message": "ok"}, "youtube": {"message": "ok"}}, "refus": {"instagram": 3},
+                                         "abandon": {"instagram": True}, "message_id": 1, "video_url": "https://x/v.mp4",
+                                         "meta": {"titre": "t", "legende": "l", "hashtags": []}}
+    o, pub = orch(tmp_path, paris(27, 9), etat)
+    o.publier_valides()
+    f = etat.episodes["EP008"]
+    assert "instagram" in f["programme"] and f["statut"] == "programme" and not f.get("refus", {}).get("instagram")

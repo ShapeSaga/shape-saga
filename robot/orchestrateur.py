@@ -319,6 +319,13 @@ class Orchestrateur:
     def publier_valides(self) -> None:
         if self.etat.donnees["pause"]:
             return
+        if self.etat.donnees.get("correctif_instagram") != 1:     # une seule fois : refus dus à l'option payante (27/10)
+            for f in self.etat.episodes.values():
+                f.get("refus", {}).pop("instagram", None)
+                if f.get("abandon", {}).pop("instagram", None) and f["statut"] == PROGRAMME \
+                        and "instagram" not in f.get("programme", {}):
+                    f["statut"] = VALIDE
+            self.etat.donnees["correctif_instagram"] = 1
         prets = {e["id"]: e for e in self.episodes_prets()}
         for cle, f in sorted(self.etat.episodes.items()):
             if f["statut"] != VALIDE:
@@ -384,6 +391,7 @@ class Orchestrateur:
             try:
                 res = pub.programmer(p)
             except ErreurPublication as exc:
+                log.warning("Refus Buffer %s %s : %s", cle, plateforme, self.secrets.masquer(str(exc)))
                 n = f.setdefault("refus", {}).get(plateforme, 0) + (0 if exc.temporaire else 1)
                 f["refus"][plateforme] = n
                 if n >= ABANDON_APRES:                  # erreur définitive répétée : on arrête de gaspiller le quota Buffer
