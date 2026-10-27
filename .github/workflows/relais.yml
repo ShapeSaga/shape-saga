@@ -41,7 +41,10 @@ jobs:
           fi
           if [ -z "$KV" ] || [ "$KV" = "null" ]; then echo "::error::Impossible de créer la base de clics (droits du jeton Cloudflare ?)"; exit 1; fi
           SUB=$(curl -s -H "$H" "$API/workers/subdomain" | jq -r '.result.subdomain // empty')
-          if [ -z "$SUB" ]; then echo "::error::Ouvre une fois la page Workers & Pages sur dash.cloudflare.com pour créer ton adresse workers.dev, puis relance."; exit 1; fi
+          if [ -z "$SUB" ]; then                                # compte neuf : on crée l'adresse workers.dev
+            SUB=$(curl -s -X PUT -H "$H" -H "Content-Type: application/json" -d "{\"subdomain\":\"shapesaga-${CF_ACC:0:6}\"}" "$API/workers/subdomain" | jq -r '.result.subdomain // empty')
+          fi
+          if [ -z "$SUB" ]; then echo "::error::Impossible de créer l'adresse workers.dev (ouvre une fois Workers & Pages sur dash.cloudflare.com, puis relance)."; exit 1; fi
           printf 'name = "shape-saga-relais"\nmain = "worker.js"\ncompatibility_date = "2025-09-01"\nworkers_dev = true\n\n[[kv_namespaces]]\nbinding = "CLICS"\nid = "%s"\n' "$KV" > relais/wrangler.toml
           echo "url=https://shape-saga-relais.$SUB.workers.dev" >> "$GITHUB_OUTPUT"
       - name: Déployer le réceptionniste
@@ -56,9 +59,13 @@ jobs:
       - name: Brancher Telegram sur le réceptionniste
         run: |
           SECRET=$(printf '%s' "$TG:webhook" | sha256sum | cut -c1-48)
-          R=$(curl -s "https://api.telegram.org/bot$TG/setWebhook" -H "Content-Type: application/json" \
-            -d "{\"url\":\"${{ steps.prep.outputs.url }}/telegram\",\"secret_token\":\"$SECRET\",\"allowed_updates\":[\"message\",\"callback_query\"]}")
-          echo "$R" | jq -r '.description // .ok'
+          for essai in 1 2 3 4 5 6 7 8; do                     # une adresse neuve peut mettre 1 à 2 min à répondre
+            R=$(curl -s "https://api.telegram.org/bot$TG/setWebhook" -H "Content-Type: application/json" \
+              -d "{\"url\":\"${{ steps.prep.outputs.url }}/telegram\",\"secret_token\":\"$SECRET\",\"allowed_updates\":[\"message\",\"callback_query\"]}")
+            echo "$R" | jq -r '.description // .ok'
+            echo "$R" | jq -e '.ok == true' > /dev/null && break
+            sleep 20
+          done
           echo "$R" | jq -e '.ok == true' > /dev/null || { echo "::error::Telegram a refusé le branchement"; exit 1; }
       - name: Enregistrer l'adresse pour le robot et prévenir sur Telegram
         run: |
