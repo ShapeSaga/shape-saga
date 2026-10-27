@@ -1,13 +1,14 @@
 {
  "alertes": {
-  "absent-EP008": "2026-10-26T23:36:58.541452+00:00"
+  "absent-EP008": "2026-10-26T23:36:58.541452+00:00",
+  "pub-EP008-instagram": "2026-10-27T00:32:03.624328+00:00"
  },
  "annonce": "2026-10-27",
  "diag_telegram": {
   "bot": "@Shape_Saga_Bot",
-  "en_attente_avant": 2,
-  "evenements": 1,
-  "maj_lues": 26,
+  "en_attente_avant": 0,
+  "evenements": 0,
+  "maj_lues": 0,
   "webhook": ""
  },
  "episodes": {
@@ -93,14 +94,28 @@
    "titre": "The Race Between Mouse and Gorilla"
   },
   "EP008": {
+   "creneau": "2026-10-27T19:00:00+00:00",
    "creneau_prevu": "2026-10-27T19:00:00+00:00",
    "envoye_le": "2026-10-26T18:50:50.131279+00:00",
    "message_id": 23,
-   "programme": {},
+   "programme": {
+    "tiktok": {
+     "id": "6adff1015837b0fb9bfb4f61",
+     "message": "programmé pour 2026-10-27T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6adff1023bff354cec6a0aa5",
+     "message": "programmé pour 2026-10-27T19:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
    "statut": "valide",
    "test": false,
    "titre": "United at the Top",
-   "valide_le": "2026-10-26T23:36:36.185233+00:00"
+   "valide_le": "2026-10-26T23:36:36.185233+00:00",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP008.mp4"
   },
   "EP009": {
    "creneau_prevu": "2026-10-28T11:00:00+00:00",
@@ -249,6 +264,154 @@
    "test": false,
    "titre": "A Friend Lifted Antelope Out",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP012.mp4"
+  },
+  "EP013": {
+   "creneau_prevu": "2026-10-30T11:00:00+00:00",
+   "envoye_le": "2026-10-27T00:31:41.641376+00:00",
+   "message_id": 41,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP013",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Crocodile Walled Lioness In",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Crocodile Walled Lioness In",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP013.mp4"
+  },
+  "EP014": {
+   "creneau_prevu": "2026-10-30T19:00:00+00:00",
+   "envoye_le": "2026-10-27T00:31:48.004749+00:00",
+   "message_id": 44,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP014",
+    "legende": "The fawn's friends fell one by one. How would you feel in its place?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 8.53,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Fawn Wouldn't Leave Its Friend",
+    "youtube_description": "The fawn's friends fell one by one. How would you feel in its place?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Fawn Wouldn't Leave Its Friend",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP014.mp4"
+  },
+  "EP015": {
+   "creneau_prevu": "2026-10-31T11:00:00+00:00",
+   "envoye_le": "2026-10-27T00:31:53.456684+00:00",
+   "message_id": 47,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP015",
+    "legende": "Half a second decided it. Who do you think wins the rematch?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 11.44,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Bear vs Kangaroo: Photo Finish",
+    "youtube_description": "Half a second decided it. Who do you think wins the rematch?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Bear vs Kangaroo: Photo Finish",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP015.mp4"
+  },
+  "EP016": {
+   "creneau_prevu": "2026-10-31T19:00:00+00:00",
+   "envoye_le": "2026-10-27T00:31:57.746998+00:00",
+   "message_id": 50,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP016",
+    "legende": "Team fox or team chimpanzee?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 13.79,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Fox's Dark Choice",
+    "youtube_description": "Team fox or team chimpanzee?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Fox's Dark Choice",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP016.mp4"
   }
  },
  "offset": 611525792,
