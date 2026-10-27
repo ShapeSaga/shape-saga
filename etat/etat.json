@@ -775,6 +775,80 @@
    "titre": "Almost Free: Crocodile",
    "valide_le": "2026-10-27T06:45:56.118854+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP022.mp4"
+  },
+  "EP023": {
+   "creneau_prevu": "2026-11-04T11:00:00+00:00",
+   "envoye_le": "2026-10-27T23:26:33.304435+00:00",
+   "message_id": 92,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP023",
+    "legende": "Team fawn or team cat?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Green"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🟢 Green",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "The Fawn Who Built a Maze",
+    "youtube_description": "Team fawn or team cat?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Fawn Who Built a Maze",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP023.mp4"
+  },
+  "EP024": {
+   "creneau_prevu": "2026-11-04T19:00:00+00:00",
+   "envoye_le": "2026-10-27T23:26:38.298811+00:00",
+   "message_id": 95,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP024",
+    "legende": "Only one could leave. Do you forgive the kangaroo?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 8.83,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Betrayal at the Top",
+    "youtube_description": "Only one could leave. Do you forgive the kangaroo?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Betrayal at the Top",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP024.mp4"
   }
  },
  "offset": 611525792,
