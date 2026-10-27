@@ -495,6 +495,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP015.mp4"
   },
   "EP016": {
+   "creneau": "2026-10-31T19:00:00+00:00",
    "creneau_prevu": "2026-10-31T19:00:00+00:00",
    "envoye_le": "2026-10-27T00:31:57.746998+00:00",
    "message_id": 50,
@@ -525,8 +526,21 @@
     "titre": "Fox's Dark Choice",
     "youtube_description": "Team fox or team chimpanzee?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae0f4cc9886bd6ed21e41a9",
+     "message": "programmé pour 2026-10-31T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae0f4c80df7e3b215970902",
+     "message": "programmé pour 2026-10-31T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae0f4ca9886bd6ed21e3fa4",
+     "message": "programmé pour 2026-10-31T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Fox's Dark Choice",
    "valide_le": "2026-10-27T06:45:57.949638+00:00",
