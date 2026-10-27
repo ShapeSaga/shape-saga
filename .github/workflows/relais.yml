@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
-      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API }}
       CF_ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -21,6 +21,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Vérifier les secrets
         run: |
+          if [ -z "$CF_ACC" ] && [ -n "$CF_TOKEN" ]; then      # numéro de compte retrouvé grâce au jeton
+            CF_ACC=$(curl -s -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/accounts" | jq -r '.result[0].id // empty')
+            echo "CF_ACC=$CF_ACC" >> "$GITHUB_ENV"
+          fi
           for v in CF_TOKEN CF_ACC TG TG_CHAT; do
             if [ -z "${!v}" ]; then echo "::error::Secret manquant : $v (voir le guide)"; exit 1; fi
           done
@@ -43,9 +47,8 @@ jobs:
       - name: Déployer le réceptionniste
         working-directory: relais
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
+          export CLOUDFLARE_API_TOKEN="$CF_TOKEN" CLOUDFLARE_ACCOUNT_ID="$CF_ACC"
           npx --yes wrangler@3.114.0 deploy
           printf '%s' "$TG" | npx --yes wrangler@3.114.0 secret put TELEGRAM_BOT_TOKEN
           printf '%s' "$TG_CHAT" | npx --yes wrangler@3.114.0 secret put TELEGRAM_CHAT_ID
