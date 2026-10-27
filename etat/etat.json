@@ -5,11 +5,8 @@
  },
  "annonce": "2026-10-27",
  "diag_telegram": {
-  "bot": "@Shape_Saga_Bot",
-  "en_attente_avant": 0,
-  "evenements": 0,
-  "maj_lues": 0,
-  "webhook": ""
+  "clics_recus": 0,
+  "mode": "réceptionniste"
  },
  "episodes": {
   "EP000": {
@@ -640,5 +637,6 @@
   }
  },
  "offset": 611525792,
- "pause": false
+ "pause": false,
+ "relais_a_confirmer": []
 }
