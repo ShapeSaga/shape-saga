@@ -38,6 +38,7 @@
    "envoye_le": "2026-10-26T00:36:01.977905+00:00",
    "message_id": 7,
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": true,
    "titre": "[TEST] Shark Walled Hippo In"
@@ -412,6 +413,155 @@
    "test": false,
    "titre": "Fox's Dark Choice",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP016.mp4"
+  },
+  "EP017": {
+   "creneau_prevu": "2026-11-01T11:00:00+00:00",
+   "envoye_le": "2026-10-27T00:48:52.318804+00:00",
+   "message_id": 56,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP017",
+    "legende": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 13.85,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Nobody Left Behind",
+    "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Nobody Left Behind",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP017.mp4"
+  },
+  "EP018": {
+   "creneau_prevu": "2026-11-01T19:00:00+00:00",
+   "envoye_le": "2026-10-27T00:48:56.452639+00:00",
+   "message_id": 59,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP018",
+    "legende": "The rabbit waited for its friends. Was that brave or risky?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 8.38,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Underdog Rabbit",
+    "youtube_description": "The rabbit waited for its friends. Was that brave or risky?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Underdog Rabbit",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP018.mp4"
+  },
+  "EP019": {
+   "creneau_prevu": "2026-11-02T11:00:00+00:00",
+   "envoye_le": "2026-10-27T00:48:59.876321+00:00",
+   "message_id": 62,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP019",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔴 Red · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Cheetah vs Rhino: The Wall Duel",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Cheetah vs Rhino: The Wall Duel",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP019.mp4"
+  },
+  "EP020": {
+   "creneau_prevu": "2026-11-02T19:00:00+00:00",
+   "envoye_le": "2026-10-27T00:49:03.551832+00:00",
+   "message_id": 65,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP020",
+    "legende": "The panda won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 10.28,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "Battle in the Cell: Panda",
+    "youtube_description": "The panda won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Battle in the Cell: Panda",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP020.mp4"
   }
  },
  "offset": 611525792,
