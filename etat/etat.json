@@ -1,15 +1,18 @@
 {
  "alertes": {
   "absent-EP008": "2026-10-26T23:36:58.541452+00:00",
-  "pub-EP008-instagram": "2026-10-27T00:32:03.624328+00:00"
+  "pub-EP008-instagram": "2026-10-27T00:32:03.624328+00:00",
+  "pub-EP009-instagram": "2026-10-27T06:46:02.638137+00:00",
+  "pub-EP010-instagram": "2026-10-27T06:46:04.617635+00:00",
+  "pub-EP011-instagram": "2026-10-27T06:46:06.617013+00:00",
+  "pub-EP012-instagram": "2026-10-27T06:46:08.411667+00:00",
+  "pub-EP013-instagram": "2026-10-27T06:46:10.307134+00:00",
+  "pub-EP014-instagram": "2026-10-27T06:46:12.568764+00:00"
  },
  "annonce": "2026-10-27",
  "diag_telegram": {
-  "bot": "@Shape_Saga_Bot",
-  "en_attente_avant": 0,
-  "evenements": 0,
-  "maj_lues": 0,
-  "webhook": ""
+  "clics_recus": 14,
+  "mode": "réceptionniste"
  },
  "episodes": {
   "EP000": {
@@ -119,6 +122,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP008.mp4"
   },
   "EP009": {
+   "creneau": "2026-10-28T11:00:00+00:00",
    "creneau_prevu": "2026-10-28T11:00:00+00:00",
    "envoye_le": "2026-10-26T23:36:38.669219+00:00",
    "message_id": 27,
@@ -148,13 +152,27 @@
     "titre": "One Wall Too Many for Whale",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6ae048a9da2ca338b14e4718",
+     "message": "programmé pour 2026-10-28T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae048aa6546b985f8d43ef3",
+     "message": "programmé pour 2026-10-28T11:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
+   "statut": "valide",
    "test": false,
    "titre": "One Wall Too Many for Whale",
+   "valide_le": "2026-10-27T06:45:59.920036+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP009.mp4"
   },
   "EP010": {
+   "creneau": "2026-10-28T19:00:00+00:00",
    "creneau_prevu": "2026-10-28T19:00:00+00:00",
    "envoye_le": "2026-10-26T23:36:44.742458+00:00",
    "message_id": 30,
@@ -185,13 +203,27 @@
     "titre": "Four Entered. Shark Left.",
     "youtube_description": "The shark won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6ae048abfece4f64136f93e2",
+     "message": "programmé pour 2026-10-28T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae048ac6546b985f8d43f6e",
+     "message": "programmé pour 2026-10-28T19:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
+   "statut": "valide",
    "test": false,
    "titre": "Four Entered. Shark Left.",
+   "valide_le": "2026-10-27T06:45:59.621556+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP010.mp4"
   },
   "EP011": {
+   "creneau": "2026-10-29T11:00:00+00:00",
    "creneau_prevu": "2026-10-29T11:00:00+00:00",
    "envoye_le": "2026-10-26T23:36:48.782090+00:00",
    "message_id": 33,
@@ -223,13 +255,27 @@
     "titre": "The Climb That Almost Worked",
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6ae048adab50f19da3625be2",
+     "message": "programmé pour 2026-10-29T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae048aeab50f19da3625c20",
+     "message": "programmé pour 2026-10-29T11:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
+   "statut": "valide",
    "test": false,
    "titre": "The Climb That Almost Worked",
+   "valide_le": "2026-10-27T06:45:59.369348+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP011.mp4"
   },
   "EP012": {
+   "creneau": "2026-10-29T19:00:00+00:00",
    "creneau_prevu": "2026-10-29T19:00:00+00:00",
    "envoye_le": "2026-10-26T23:36:56.188773+00:00",
    "message_id": 36,
@@ -260,13 +306,27 @@
     "titre": "A Friend Lifted Antelope Out",
     "youtube_description": "Real friends lift you up. Who lifted you?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6ae048af6546b985f8d43ffc",
+     "message": "programmé pour 2026-10-29T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae048b0fece4f64136f948c",
+     "message": "programmé pour 2026-10-29T19:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
+   "statut": "valide",
    "test": false,
    "titre": "A Friend Lifted Antelope Out",
+   "valide_le": "2026-10-27T06:45:59.082282+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP012.mp4"
   },
   "EP013": {
+   "creneau": "2026-10-30T11:00:00+00:00",
    "creneau_prevu": "2026-10-30T11:00:00+00:00",
    "envoye_le": "2026-10-27T00:31:41.641376+00:00",
    "message_id": 41,
@@ -296,13 +356,27 @@
     "titre": "Crocodile Walled Lioness In",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6ae048b1ab50f19da3625ccd",
+     "message": "programmé pour 2026-10-30T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae048b16546b985f8d44093",
+     "message": "programmé pour 2026-10-30T11:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
+   "statut": "valide",
    "test": false,
    "titre": "Crocodile Walled Lioness In",
+   "valide_le": "2026-10-27T06:45:58.821254+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP013.mp4"
   },
   "EP014": {
+   "creneau": "2026-10-30T19:00:00+00:00",
    "creneau_prevu": "2026-10-30T19:00:00+00:00",
    "envoye_le": "2026-10-27T00:31:48.004749+00:00",
    "message_id": 44,
@@ -333,10 +407,23 @@
     "titre": "The Fawn Wouldn't Leave Its Friend",
     "youtube_description": "The fawn's friends fell one by one. How would you feel in its place?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "envoye",
+   "programme": {
+    "tiktok": {
+     "id": "6ae048b34c0869d0f8d5db30",
+     "message": "programmé pour 2026-10-30T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae048b4ab50f19da3625d55",
+     "message": "programmé pour 2026-10-30T19:00:00.000Z"
+    }
+   },
+   "refus": {
+    "instagram": 1
+   },
+   "statut": "valide",
    "test": false,
    "titre": "The Fawn Wouldn't Leave Its Friend",
+   "valide_le": "2026-10-27T06:45:58.460530+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP014.mp4"
   },
   "EP015": {
@@ -372,9 +459,10 @@
     "youtube_description": "Half a second decided it. Who do you think wins the rematch?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Bear vs Kangaroo: Photo Finish",
+   "valide_le": "2026-10-27T06:45:58.208273+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP015.mp4"
   },
   "EP016": {
@@ -409,9 +497,10 @@
     "youtube_description": "Team fox or team chimpanzee?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Fox's Dark Choice",
+   "valide_le": "2026-10-27T06:45:57.949638+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP016.mp4"
   },
   "EP017": {
@@ -447,9 +536,10 @@
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Nobody Left Behind",
+   "valide_le": "2026-10-27T06:45:57.697553+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP017.mp4"
   },
   "EP018": {
@@ -485,9 +575,10 @@
     "youtube_description": "The rabbit waited for its friends. Was that brave or risky?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Underdog Rabbit",
+   "valide_le": "2026-10-27T06:45:57.445061+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP018.mp4"
   },
   "EP019": {
@@ -521,9 +612,10 @@
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Cheetah vs Rhino: The Wall Duel",
+   "valide_le": "2026-10-27T06:45:57.177457+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP019.mp4"
   },
   "EP020": {
@@ -558,9 +650,10 @@
     "youtube_description": "The panda won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Battle in the Cell: Panda",
+   "valide_le": "2026-10-27T06:45:56.921102+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP020.mp4"
   },
   "EP021": {
@@ -595,9 +688,10 @@
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "A Friend Lifted Giraffe Out",
+   "valide_le": "2026-10-27T06:45:56.634895+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP021.mp4"
   },
   "EP022": {
@@ -633,12 +727,29 @@
     "youtube_description": "The crocodile gave everything. Would you have made it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Almost Free: Crocodile",
+   "valide_le": "2026-10-27T06:45:56.118854+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP022.mp4"
   }
  },
  "offset": 611525792,
- "pause": false
+ "pause": false,
+ "relais_a_confirmer": [
+  611525806,
+  611525807,
+  611525808,
+  611525809,
+  611525810,
+  611525811,
+  611525812,
+  611525813,
+  611525814,
+  611525815,
+  611525816,
+  611525817,
+  611525818,
+  611525819
+ ]
 }
