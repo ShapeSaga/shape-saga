@@ -94,7 +94,7 @@
    "envoye_le": "2026-10-26T18:50:46.798345+00:00",
    "message_id": 20,
    "programme": {},
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "The Race Between Mouse and Gorilla"
   },
@@ -442,6 +442,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP014.mp4"
   },
   "EP015": {
+   "creneau": "2026-10-31T11:00:00+00:00",
    "creneau_prevu": "2026-10-31T11:00:00+00:00",
    "envoye_le": "2026-10-27T00:31:53.456684+00:00",
    "message_id": 47,
@@ -473,8 +474,21 @@
     "titre": "Bear vs Kangaroo: Photo Finish",
     "youtube_description": "Half a second decided it. Who do you think wins the rematch?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae087b3a21f4739ba99f58a",
+     "message": "programmé pour 2026-10-31T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae087b2a21f4739ba99f549",
+     "message": "programmé pour 2026-10-31T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae087b383416db301e9b29b",
+     "message": "programmé pour 2026-10-31T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Bear vs Kangaroo: Photo Finish",
    "valide_le": "2026-10-27T06:45:58.208273+00:00",
