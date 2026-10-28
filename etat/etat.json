@@ -600,6 +600,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP017.mp4"
   },
   "EP018": {
+   "creneau": "2026-11-01T19:00:00+00:00",
    "creneau_prevu": "2026-11-01T19:00:00+00:00",
    "envoye_le": "2026-10-27T00:48:56.452639+00:00",
    "message_id": 59,
@@ -631,8 +632,21 @@
     "titre": "Underdog Rabbit",
     "youtube_description": "The rabbit waited for its friends. Was that brave or risky?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae24b75317f77fea41478d5",
+     "message": "programmé pour 2026-11-01T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae24b720b930888fcb3cd93",
+     "message": "programmé pour 2026-11-01T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae24b7462159c0544074802",
+     "message": "programmé pour 2026-11-01T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Underdog Rabbit",
    "valide_le": "2026-10-27T06:45:57.445061+00:00",
