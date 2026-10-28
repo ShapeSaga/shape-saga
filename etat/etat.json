@@ -547,6 +547,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP016.mp4"
   },
   "EP017": {
+   "creneau": "2026-11-01T11:00:00+00:00",
    "creneau_prevu": "2026-11-01T11:00:00+00:00",
    "envoye_le": "2026-10-27T00:48:52.318804+00:00",
    "message_id": 56,
@@ -578,8 +579,21 @@
     "titre": "Nobody Left Behind",
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae1d682f4b05383f652e2e3",
+     "message": "programmé pour 2026-11-01T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae1d680b552088adcb5ec25",
+     "message": "programmé pour 2026-11-01T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae1d681f2d8122c07cc0b21",
+     "message": "programmé pour 2026-11-01T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Nobody Left Behind",
    "valide_le": "2026-10-27T06:45:57.697553+00:00",
