@@ -19,6 +19,7 @@
   "EP000": {
    "envoye_le": "2026-10-18T22:51:05.667489+00:00",
    "message_id": 5,
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ad54dec0b0d72757a40673e",
@@ -879,6 +880,81 @@
    "titre": "The Betrayal at the Top",
    "valide_le": "2026-10-28T06:56:59.250723+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP024.mp4"
+  },
+  "EP025": {
+   "creneau_prevu": "2026-11-05T11:00:00+00:00",
+   "envoye_le": "2026-10-28T23:25:14.688092+00:00",
+   "message_id": 101,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP025",
+    "legende": "The cow or the mouse? Who did you root for?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 11.22,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Cow Beats Mouse by a Heartbeat",
+    "youtube_description": "The cow or the mouse? Who did you root for?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Cow Beats Mouse by a Heartbeat",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP025.mp4"
+  },
+  "EP026": {
+   "creneau_prevu": "2026-11-05T19:00:00+00:00",
+   "envoye_le": "2026-10-28T23:25:20.010770+00:00",
+   "message_id": 104,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP026",
+    "legende": "Who carried who here? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 15.51,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "United at the Top",
+    "youtube_description": "Who carried who here? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "United at the Top",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP026.mp4"
   }
  },
  "offset": 611525792,
