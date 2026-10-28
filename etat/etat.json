@@ -12,7 +12,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -807,9 +807,10 @@
     "youtube_description": "Team fawn or team cat?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Fawn Who Built a Maze",
+   "valide_le": "2026-10-28T06:56:58.433267+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP023.mp4"
   },
   "EP024": {
@@ -845,13 +846,17 @@
     "youtube_description": "Only one could leave. Do you forgive the kangaroo?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Betrayal at the Top",
+   "valide_le": "2026-10-28T06:56:59.250723+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP024.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525820,
+  611525821
+ ]
 }
