@@ -705,6 +705,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP019.mp4"
   },
   "EP020": {
+   "creneau": "2026-11-02T19:00:00+00:00",
    "creneau_prevu": "2026-11-02T19:00:00+00:00",
    "envoye_le": "2026-10-27T00:49:03.551832+00:00",
    "message_id": 65,
@@ -735,8 +736,21 @@
     "titre": "Battle in the Cell: Panda",
     "youtube_description": "The panda won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae39e84a929d1f77545cac6",
+     "message": "programmé pour 2026-11-02T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae39e81d6226a1df7746a94",
+     "message": "programmé pour 2026-11-02T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae39e83c7644353424208e2",
+     "message": "programmé pour 2026-11-02T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Battle in the Cell: Panda",
    "valide_le": "2026-10-27T06:45:56.921102+00:00",
