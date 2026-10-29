@@ -654,6 +654,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP018.mp4"
   },
   "EP019": {
+   "creneau": "2026-11-02T11:00:00+00:00",
    "creneau_prevu": "2026-11-02T11:00:00+00:00",
    "envoye_le": "2026-10-27T00:48:59.876321+00:00",
    "message_id": 62,
@@ -683,8 +684,21 @@
     "titre": "Cheetah vs Rhino: The Wall Duel",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae32e8cbab0e956b96bfeb1",
+     "message": "programmé pour 2026-11-02T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae32e8bac0ecea82fe638a9",
+     "message": "programmé pour 2026-11-02T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae32e8cac0ecea82fe638e3",
+     "message": "programmé pour 2026-11-02T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Cheetah vs Rhino: The Wall Duel",
    "valide_le": "2026-10-27T06:45:57.177457+00:00",
