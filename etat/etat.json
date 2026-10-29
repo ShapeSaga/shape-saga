@@ -12,7 +12,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -278,7 +278,7 @@
     }
    },
    "refus": {},
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Climb That Almost Worked",
    "valide_le": "2026-10-27T06:45:59.369348+00:00",
@@ -928,9 +928,10 @@
     "youtube_description": "The cow or the mouse? Who did you root for?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Cow Beats Mouse by a Heartbeat",
+   "valide_le": "2026-10-29T13:22:28.685098+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP025.mp4"
   },
   "EP026": {
@@ -965,13 +966,17 @@
     "youtube_description": "Who carried who here? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "United at the Top",
+   "valide_le": "2026-10-29T13:22:29.137784+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP026.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525822,
+  611525823
+ ]
 }
