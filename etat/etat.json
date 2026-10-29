@@ -985,6 +985,80 @@
    "titre": "United at the Top",
    "valide_le": "2026-10-29T13:22:29.137784+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP026.mp4"
+  },
+  "EP027": {
+   "creneau_prevu": "2026-11-06T11:00:00+00:00",
+   "envoye_le": "2026-10-29T23:33:07.602557+00:00",
+   "message_id": 110,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP027",
+    "legende": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Red"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🔴 Red",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "The Rabbit Who Built a Maze",
+    "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Rabbit Who Built a Maze",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP027.mp4"
+  },
+  "EP028": {
+   "creneau_prevu": "2026-11-06T19:00:00+00:00",
+   "envoye_le": "2026-10-29T23:33:11.882677+00:00",
+   "message_id": 113,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP028",
+    "legende": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 8.6,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "Four Entered. Pig Left.",
+    "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Four Entered. Pig Left.",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP028.mp4"
   }
  },
  "offset": 611525792,
