@@ -12,7 +12,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1017,9 +1017,10 @@
     "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Rabbit Who Built a Maze",
+   "valide_le": "2026-10-30T06:24:33.209051+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP027.mp4"
   },
   "EP028": {
@@ -1055,13 +1056,17 @@
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Four Entered. Pig Left.",
+   "valide_le": "2026-10-30T06:24:33.729349+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP028.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525824,
+  611525825
+ ]
 }
