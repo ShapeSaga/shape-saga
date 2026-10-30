@@ -757,6 +757,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP020.mp4"
   },
   "EP021": {
+   "creneau": "2026-11-03T11:00:00+00:00",
    "creneau_prevu": "2026-11-03T11:00:00+00:00",
    "envoye_le": "2026-10-27T01:30:35.488739+00:00",
    "message_id": 69,
@@ -787,8 +788,21 @@
     "titre": "A Friend Lifted Giraffe Out",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae47f3fe97270550557c376",
+     "message": "programmé pour 2026-11-03T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae47f3ee97270550557c309",
+     "message": "programmé pour 2026-11-03T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae47f3f80f61ee51913d38a",
+     "message": "programmé pour 2026-11-03T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "A Friend Lifted Giraffe Out",
    "valide_le": "2026-10-27T06:45:56.634895+00:00",
