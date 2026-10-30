@@ -12,7 +12,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1065,8 +1065,5 @@
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525824,
-  611525825
- ]
+ "relais_a_confirmer": []
 }
