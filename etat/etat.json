@@ -809,6 +809,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP021.mp4"
   },
   "EP022": {
+   "creneau": "2026-11-03T19:00:00+00:00",
    "creneau_prevu": "2026-11-03T19:00:00+00:00",
    "envoye_le": "2026-10-27T01:30:39.646212+00:00",
    "message_id": 72,
@@ -840,8 +841,21 @@
     "titre": "Almost Free: Crocodile",
     "youtube_description": "The crocodile gave everything. Would you have made it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae4f09beaa24d6f9a35a9c3",
+     "message": "programmé pour 2026-11-03T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae4f099f34210fa76596a37",
+     "message": "programmé pour 2026-11-03T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae4f09aa114574349661f66",
+     "message": "programmé pour 2026-11-03T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Almost Free: Crocodile",
    "valide_le": "2026-10-27T06:45:56.118854+00:00",
