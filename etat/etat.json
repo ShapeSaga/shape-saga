@@ -862,6 +862,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP022.mp4"
   },
   "EP023": {
+   "creneau": "2026-11-04T11:00:00+00:00",
    "creneau_prevu": "2026-11-04T11:00:00+00:00",
    "envoye_le": "2026-10-27T23:26:33.304435+00:00",
    "message_id": 92,
@@ -891,8 +892,21 @@
     "titre": "The Fawn Who Built a Maze",
     "youtube_description": "Team fawn or team cat?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae5ca53ceb491e585f0bb4b",
+     "message": "programmé pour 2026-11-04T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae5ca521891472093ca9726",
+     "message": "programmé pour 2026-11-04T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae5ca531891472093ca97bf",
+     "message": "programmé pour 2026-11-04T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Fawn Who Built a Maze",
    "valide_le": "2026-10-28T06:56:58.433267+00:00",
