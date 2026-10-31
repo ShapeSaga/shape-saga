@@ -913,6 +913,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP023.mp4"
   },
   "EP024": {
+   "creneau": "2026-11-04T19:00:00+00:00",
    "creneau_prevu": "2026-11-04T19:00:00+00:00",
    "envoye_le": "2026-10-27T23:26:38.298811+00:00",
    "message_id": 95,
@@ -944,8 +945,21 @@
     "titre": "The Betrayal at the Top",
     "youtube_description": "Only one could leave. Do you forgive the kangaroo?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae63edef0984eef33282280",
+     "message": "programmé pour 2026-11-04T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae63edc37c1acd2a0c74dbd",
+     "message": "programmé pour 2026-11-04T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae63edd21c807e9d57efc6c",
+     "message": "programmé pour 2026-11-04T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Betrayal at the Top",
    "valide_le": "2026-10-28T06:56:59.250723+00:00",
