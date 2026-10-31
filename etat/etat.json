@@ -1150,6 +1150,7 @@
     "youtube_description": "So close! What would you have done differently?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "The Snail Who Almost Made It",
@@ -1187,10 +1188,84 @@
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Horse's Sacrifice",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP030.mp4"
+  },
+  "EP031": {
+   "creneau_prevu": "2026-11-08T11:00:00+00:00",
+   "envoye_le": "2026-10-31T23:27:00.817000+00:00",
+   "message_id": 130,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP031",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Green",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🟢 Green · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Trapped by the Lion",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Trapped by the Lion",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP031.mp4"
+  },
+  "EP032": {
+   "creneau_prevu": "2026-11-08T19:00:00+00:00",
+   "envoye_le": "2026-10-31T23:27:04.962770+00:00",
+   "message_id": 133,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP032",
+    "legende": "The koala chose courage over fear. What would you have done?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 9.48,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Never Count Out the Koala",
+    "youtube_description": "The koala chose courage over fear. What would you have done?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Never Count Out the Koala",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP032.mp4"
   }
  },
  "offset": 611525792,
