@@ -966,6 +966,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP024.mp4"
   },
   "EP025": {
+   "creneau": "2026-11-05T11:00:00+00:00",
    "creneau_prevu": "2026-11-05T11:00:00+00:00",
    "envoye_le": "2026-10-28T23:25:14.688092+00:00",
    "message_id": 101,
@@ -997,8 +998,21 @@
     "titre": "Cow Beats Mouse by a Heartbeat",
     "youtube_description": "The cow or the mouse? Who did you root for?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae71f9dab019b9087561833",
+     "message": "programmé pour 2026-11-05T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae71f9ccf3a3112f3f32101",
+     "message": "programmé pour 2026-11-05T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae71f9d37c1acd2a0fe7031",
+     "message": "programmé pour 2026-11-05T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Cow Beats Mouse by a Heartbeat",
    "valide_le": "2026-10-29T13:22:28.685098+00:00",
