@@ -1298,6 +1298,80 @@
    "titre": "Never Count Out the Koala",
    "valide_le": "2026-11-01T14:52:45.185256+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP032.mp4"
+  },
+  "EP033": {
+   "creneau_prevu": "2026-11-09T11:00:00+00:00",
+   "envoye_le": "2026-11-01T23:16:31.528122+00:00",
+   "message_id": 139,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP033",
+    "legende": "A true rivalry. Are you team whale or team elephant?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 7.74,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Race Between Whale and Elephant",
+    "youtube_description": "A true rivalry. Are you team whale or team elephant?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Race Between Whale and Elephant",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP033.mp4"
+  },
+  "EP034": {
+   "creneau_prevu": "2026-11-09T19:00:00+00:00",
+   "envoye_le": "2026-11-01T23:16:38.627787+00:00",
+   "message_id": 142,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP034",
+    "legende": "Was the tiger a villain or just scared?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 15.88,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Was It Fair, Tiger?",
+    "youtube_description": "Was the tiger a villain or just scared?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Was It Fair, Tiger?",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP034.mp4"
   }
  },
  "offset": 611525792,
