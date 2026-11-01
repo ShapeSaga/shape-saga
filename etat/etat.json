@@ -1019,6 +1019,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP025.mp4"
   },
   "EP026": {
+   "creneau": "2026-11-05T19:00:00+00:00",
    "creneau_prevu": "2026-11-05T19:00:00+00:00",
    "envoye_le": "2026-10-28T23:25:20.010770+00:00",
    "message_id": 104,
@@ -1049,8 +1050,21 @@
     "titre": "United at the Top",
     "youtube_description": "Who carried who here? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae78dae1e69de2cfc0fdfb0",
+     "message": "programmé pour 2026-11-05T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae78dac1e69de2cfc0fded7",
+     "message": "programmé pour 2026-11-05T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae78dadb7d22b897a09d4f2",
+     "message": "programmé pour 2026-11-05T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "United at the Top",
    "valide_le": "2026-10-29T13:22:29.137784+00:00",
