@@ -12,7 +12,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 4,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1165,9 +1165,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Snail Who Almost Made It",
+   "valide_le": "2026-11-01T14:52:43.728712+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP029.mp4"
   },
   "EP030": {
@@ -1203,9 +1204,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Horse's Sacrifice",
+   "valide_le": "2026-11-01T14:52:44.483753+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP030.mp4"
   },
   "EP031": {
@@ -1238,9 +1240,10 @@
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Trapped by the Lion",
+   "valide_le": "2026-11-01T14:52:44.825967+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP031.mp4"
   },
   "EP032": {
@@ -1276,13 +1279,19 @@
     "youtube_description": "The koala chose courage over fear. What would you have done?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Never Count Out the Koala",
+   "valide_le": "2026-11-01T14:52:45.185256+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP032.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525826,
+  611525827,
+  611525828,
+  611525829
+ ]
 }
