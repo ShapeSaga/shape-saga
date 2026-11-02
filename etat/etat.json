@@ -1071,6 +1071,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP026.mp4"
   },
   "EP027": {
+   "creneau": "2026-11-06T11:00:00+00:00",
    "creneau_prevu": "2026-11-06T11:00:00+00:00",
    "envoye_le": "2026-10-29T23:33:07.602557+00:00",
    "message_id": 110,
@@ -1100,8 +1101,21 @@
     "titre": "The Rabbit Who Built a Maze",
     "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae87618339e85e6016a5036",
+     "message": "programmé pour 2026-11-06T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae87617339e85e6016a4f55",
+     "message": "programmé pour 2026-11-06T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae87618e364127fe0d8b6f6",
+     "message": "programmé pour 2026-11-06T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Rabbit Who Built a Maze",
    "valide_le": "2026-10-30T06:24:33.209051+00:00",
