@@ -1122,6 +1122,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP027.mp4"
   },
   "EP028": {
+   "creneau": "2026-11-06T19:00:00+00:00",
    "creneau_prevu": "2026-11-06T19:00:00+00:00",
    "envoye_le": "2026-10-29T23:33:11.882677+00:00",
    "message_id": 113,
@@ -1153,8 +1154,21 @@
     "titre": "Four Entered. Pig Left.",
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6ae8e4e34efbf4f5475dd8f8",
+     "message": "programmé pour 2026-11-06T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae8e4e14efbf4f5475dd85a",
+     "message": "programmé pour 2026-11-06T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae8e4e2e0045ccb8d7c3abe",
+     "message": "programmé pour 2026-11-06T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Four Entered. Pig Left.",
    "valide_le": "2026-10-30T06:24:33.729349+00:00",
