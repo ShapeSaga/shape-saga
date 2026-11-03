@@ -1228,6 +1228,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP029.mp4"
   },
   "EP030": {
+   "creneau": "2026-11-07T19:00:00+00:00",
    "creneau_prevu": "2026-11-07T19:00:00+00:00",
    "envoye_le": "2026-10-30T23:20:00.470772+00:00",
    "message_id": 122,
@@ -1258,9 +1259,22 @@
     "titre": "Horse's Sacrifice",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6aea34a55a7950e0fff292da",
+     "message": "programmé pour 2026-11-07T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aea34a370d4f6bf8d83b605",
+     "message": "programmé pour 2026-11-07T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aea34a45a7950e0fff29277",
+     "message": "programmé pour 2026-11-07T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "Horse's Sacrifice",
    "valide_le": "2026-11-01T14:52:44.483753+00:00",
