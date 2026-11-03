@@ -1388,7 +1388,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "The Race Between Whale and Elephant",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP033.mp4"
@@ -1426,7 +1426,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "Was It Fair, Tiger?",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP034.mp4"
