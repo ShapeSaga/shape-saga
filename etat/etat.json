@@ -1175,6 +1175,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP028.mp4"
   },
   "EP029": {
+   "creneau": "2026-11-07T11:00:00+00:00",
    "creneau_prevu": "2026-11-07T11:00:00+00:00",
    "envoye_le": "2026-10-30T23:19:55.119194+00:00",
    "message_id": 119,
@@ -1205,9 +1206,22 @@
     "titre": "The Snail Who Almost Made It",
     "youtube_description": "So close! What would you have done differently?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6ae9c16d3efac89b59f49d7e",
+     "message": "programmé pour 2026-11-07T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6ae9c16bf81926b932902cc7",
+     "message": "programmé pour 2026-11-07T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6ae9c16c3b7ecdee6559f7bb",
+     "message": "programmé pour 2026-11-07T11:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "The Snail Who Almost Made It",
    "valide_le": "2026-11-01T14:52:43.728712+00:00",
