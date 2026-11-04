@@ -1331,6 +1331,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP031.mp4"
   },
   "EP032": {
+   "creneau": "2026-11-08T19:00:00+00:00",
    "creneau_prevu": "2026-11-08T19:00:00+00:00",
    "envoye_le": "2026-10-31T23:27:04.962770+00:00",
    "message_id": 133,
@@ -1362,8 +1363,21 @@
     "titre": "Never Count Out the Koala",
     "youtube_description": "The koala chose courage over fear. What would you have done?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6aeb87128ee551b5aa77ac40",
+     "message": "programmé pour 2026-11-08T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aeb870f6cbba97f5cbf1a56",
+     "message": "programmé pour 2026-11-08T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aeb871123e3db949c14c563",
+     "message": "programmé pour 2026-11-08T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Never Count Out the Koala",
    "valide_le": "2026-11-01T14:52:45.185256+00:00",
