@@ -1492,7 +1492,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "United at the Top",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP035.mp4"
@@ -1531,7 +1531,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "The Cow's Second Chance",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP036.mp4"
@@ -1567,6 +1567,7 @@
     "youtube_description": "Who should play the rematch?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Bear and Chicken: Who Gets Through?",
@@ -1605,6 +1606,7 @@
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "The Door Opens for Wolf",
@@ -1685,6 +1687,79 @@
    "test": false,
    "titre": "The Climb That Almost Worked",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP040.mp4"
+  },
+  "EP041": {
+   "creneau_prevu": "2026-11-10T11:00:00+00:00",
+   "envoye_le": "2026-11-04T23:31:25.326438+00:00",
+   "message_id": 179,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP041",
+    "legende": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Trapped by the Fawn",
+    "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Trapped by the Fawn",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP041.mp4"
+  },
+  "EP042": {
+   "creneau_prevu": "2026-11-10T19:00:00+00:00",
+   "envoye_le": "2026-11-04T23:31:29.347702+00:00",
+   "message_id": 182,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP042",
+    "legende": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 6.03,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Was It Fair, Antelope?",
+    "youtube_description": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Was It Fair, Antelope?",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP042.mp4"
   }
  },
  "offset": 611525792,
