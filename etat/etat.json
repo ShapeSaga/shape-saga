@@ -1760,6 +1760,80 @@
    "test": false,
    "titre": "Was It Fair, Antelope?",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP042.mp4"
+  },
+  "EP043": {
+   "creneau_prevu": "2026-11-12T11:00:00+00:00",
+   "envoye_le": "2026-11-05T00:13:53.236823+00:00",
+   "message_id": 186,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP043",
+    "legende": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 11.12,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Only One Exit: Lioness or Dolphin?",
+    "youtube_description": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Only One Exit: Lioness or Dolphin?",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP043.mp4"
+  },
+  "EP044": {
+   "creneau_prevu": "2026-11-12T19:00:00+00:00",
+   "envoye_le": "2026-11-05T00:13:57.028252+00:00",
+   "message_id": 189,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP044",
+    "legende": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 15.55,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Four Friends, One Exit",
+    "youtube_description": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Four Friends, One Exit",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP044.mp4"
   }
  },
  "offset": 611525792,
