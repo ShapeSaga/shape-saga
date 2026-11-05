@@ -1871,6 +1871,79 @@
    "titre": "Four Friends, One Exit",
    "valide_le": "2026-11-05T07:41:31.934458+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP044.mp4"
+  },
+  "EP045": {
+   "creneau_prevu": "2026-11-13T11:00:00+00:00",
+   "envoye_le": "2026-11-05T23:38:04.308847+00:00",
+   "message_id": 197,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP045",
+    "legende": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔴 Red · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "The Jaguar Who Built a Maze",
+    "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Jaguar Who Built a Maze",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP045.mp4"
+  },
+  "EP046": {
+   "creneau_prevu": "2026-11-13T19:00:00+00:00",
+   "envoye_le": "2026-11-05T23:38:08.682248+00:00",
+   "message_id": 200,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP046",
+    "legende": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 9.24,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "Shark Walks Out Alone",
+    "youtube_description": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Shark Walks Out Alone",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP046.mp4"
   }
  },
  "offset": 611525792,
