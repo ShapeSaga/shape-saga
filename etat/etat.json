@@ -1669,6 +1669,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP039.mp4"
   },
   "EP040": {
+   "creneau": "2026-11-09T19:00:00+00:00",
    "creneau_prevu": "2026-11-09T19:00:00+00:00",
    "envoye_le": "2026-11-04T00:38:17.664123+00:00",
    "message_id": 171,
@@ -1700,9 +1701,22 @@
     "titre": "The Climb That Almost Worked",
     "youtube_description": "The gorilla gave everything. Would you have made it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6aecd9a0d8b894d9433f8cb4",
+     "message": "programmé pour 2026-11-09T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aecd99e010d6430ec6bcd46",
+     "message": "programmé pour 2026-11-09T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aecd99f08962bd035930f8b",
+     "message": "programmé pour 2026-11-09T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "The Climb That Almost Worked",
    "valide_le": "2026-11-05T07:41:31.026766+00:00",
