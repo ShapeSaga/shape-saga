@@ -1615,6 +1615,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP038.mp4"
   },
   "EP039": {
+   "creneau": "2026-11-09T11:00:00+00:00",
    "creneau_prevu": "2026-11-09T11:00:00+00:00",
    "envoye_le": "2026-11-04T00:38:12.718517+00:00",
    "message_id": 168,
@@ -1646,9 +1647,22 @@
     "titre": "The Cheetah Who Gave Everything",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6aec6ac4f5b4b5564cb4dc48",
+     "message": "programmé pour 2026-11-09T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aec6ac28e858b1f0ef98b95",
+     "message": "programmé pour 2026-11-09T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aec6ac3f26542fc33d394a9",
+     "message": "programmé pour 2026-11-09T11:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "The Cheetah Who Gave Everything",
    "valide_le": "2026-11-05T07:41:30.470310+00:00",
