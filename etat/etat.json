@@ -1723,6 +1723,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP040.mp4"
   },
   "EP041": {
+   "creneau": "2026-11-10T11:00:00+00:00",
    "creneau_prevu": "2026-11-10T11:00:00+00:00",
    "envoye_le": "2026-11-04T23:31:25.326438+00:00",
    "message_id": 179,
@@ -1752,8 +1753,21 @@
     "titre": "Trapped by the Fawn",
     "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6aedbbd3c57409593f9db4a0",
+     "message": "programmé pour 2026-11-10T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aedbbd20e3fecafb29333a5",
+     "message": "programmé pour 2026-11-10T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aedbbd370ee7e2aa70180c7",
+     "message": "programmé pour 2026-11-10T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Trapped by the Fawn",
    "valide_le": "2026-11-05T07:41:31.330904+00:00",
