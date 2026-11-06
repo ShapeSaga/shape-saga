@@ -12,7 +12,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 3,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1844,9 +1844,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Only One Exit: Lioness or Dolphin?",
+   "valide_le": "2026-11-06T17:09:03.833068+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP043.mp4"
   },
   "EP044": {
@@ -1917,9 +1918,10 @@
     "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Jaguar Who Built a Maze",
+   "valide_le": "2026-11-06T17:09:03.160318+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP045.mp4"
   },
   "EP046": {
@@ -1955,13 +1957,18 @@
     "youtube_description": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Shark Walks Out Alone",
+   "valide_le": "2026-11-06T17:09:03.594439+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP046.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525837,
+  611525838,
+  611525839
+ ]
 }
