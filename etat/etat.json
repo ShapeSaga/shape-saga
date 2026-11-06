@@ -1977,6 +1977,82 @@
    "titre": "Shark Walks Out Alone",
    "valide_le": "2026-11-06T17:09:03.594439+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP046.mp4"
+  },
+  "EP047": {
+   "creneau_prevu": "2026-11-14T11:00:00+00:00",
+   "envoye_le": "2026-11-06T23:14:57.364440+00:00",
+   "message_id": 207,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP047",
+    "legende": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 13.63,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "One Step Short: The Story of a Zebra",
+    "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "One Step Short: The Story of a Zebra",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP047.mp4"
+  },
+  "EP048": {
+   "creneau_prevu": "2026-11-14T19:00:00+00:00",
+   "envoye_le": "2026-11-06T23:15:01.785415+00:00",
+   "message_id": 210,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP048",
+    "legende": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 6.38,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Why the Bear Let Go",
+    "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Why the Bear Let Go",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP048.mp4"
   }
  },
  "offset": 611525792,
