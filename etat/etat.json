@@ -104,6 +104,7 @@
    "creneau_prevu": "2026-10-27T19:00:00+00:00",
    "envoye_le": "2026-10-26T18:50:50.131279+00:00",
    "message_id": 23,
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04c25fece4f64137084c9",
@@ -1774,6 +1775,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP041.mp4"
   },
   "EP042": {
+   "creneau": "2026-11-10T19:00:00+00:00",
    "creneau_prevu": "2026-11-10T19:00:00+00:00",
    "envoye_le": "2026-11-04T23:31:29.347702+00:00",
    "message_id": 182,
@@ -1804,8 +1806,21 @@
     "titre": "Was It Fair, Antelope?",
     "youtube_description": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6aee2cb7af7e526d43d9d746",
+     "message": "programmé pour 2026-11-10T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aee2cb6af7e526d43d9d6e8",
+     "message": "programmé pour 2026-11-10T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aee2cb7004e4879a70f52d7",
+     "message": "programmé pour 2026-11-10T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Was It Fair, Antelope?",
    "valide_le": "2026-11-05T07:41:31.664674+00:00",
