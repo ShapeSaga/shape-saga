@@ -157,6 +157,7 @@
     "titre": "One Wall Too Many for Whale",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04a146546b985f8d47d1a",
@@ -1538,6 +1539,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP036.mp4"
   },
   "EP037": {
+   "creneau": "2026-11-11T11:00:00+00:00",
    "creneau_prevu": "2026-11-11T11:00:00+00:00",
    "envoye_le": "2026-11-03T23:14:33.320442+00:00",
    "message_id": 161,
@@ -1567,9 +1569,22 @@
     "titre": "Bear and Chicken: Who Gets Through?",
     "youtube_description": "Who should play the rematch?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6aef0b87af7e526d431a5bb4",
+     "message": "programmé pour 2026-11-11T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aef0b86af7e526d431a5b59",
+     "message": "programmé pour 2026-11-11T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aef0b87229bf05daf472351",
+     "message": "programmé pour 2026-11-11T11:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "Bear and Chicken: Who Gets Through?",
    "valide_le": "2026-11-05T07:41:32.621835+00:00",
