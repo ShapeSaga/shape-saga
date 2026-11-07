@@ -2041,6 +2041,7 @@
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "One Step Short: The Story of a Zebra",
@@ -2079,10 +2080,84 @@
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Why the Bear Let Go",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP048.mp4"
+  },
+  "EP049": {
+   "creneau_prevu": "2026-11-15T11:00:00+00:00",
+   "envoye_le": "2026-11-07T23:18:57.154740+00:00",
+   "message_id": 218,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP049",
+    "legende": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Green"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🟢 Green",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "One Wall Too Many for Crocodile",
+    "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "One Wall Too Many for Crocodile",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP049.mp4"
+  },
+  "EP050": {
+   "creneau_prevu": "2026-11-15T19:00:00+00:00",
+   "envoye_le": "2026-11-07T23:19:02.263947+00:00",
+   "message_id": 221,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP050",
+    "legende": "The fawn kept climbing for its friends. Which shape do you think is the bravest?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 7.05,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Rise of the Fawn",
+    "youtube_description": "The fawn kept climbing for its friends. Which shape do you think is the bravest?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Rise of the Fawn",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP050.mp4"
   }
  },
  "offset": 611525792,
