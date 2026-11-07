@@ -211,6 +211,7 @@
     "titre": "Four Entered. Shark Left.",
     "youtube_description": "The shark won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04a16ab50f19da36299da",
@@ -1591,6 +1592,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP037.mp4"
   },
   "EP038": {
+   "creneau": "2026-11-11T19:00:00+00:00",
    "creneau_prevu": "2026-11-11T19:00:00+00:00",
    "envoye_le": "2026-11-03T23:14:37.854421+00:00",
    "message_id": 164,
@@ -1622,9 +1624,22 @@
     "titre": "The Door Opens for Wolf",
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6aef7721562f2e6de976b620",
+     "message": "programmé pour 2026-11-11T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aef771f562f2e6de976b5be",
+     "message": "programmé pour 2026-11-11T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aef77209214322f680ed770",
+     "message": "programmé pour 2026-11-11T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "The Door Opens for Wolf",
    "valide_le": "2026-11-05T07:41:32.236621+00:00",
