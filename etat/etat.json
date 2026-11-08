@@ -1,5 +1,7 @@
 {
  "alertes": {
+  "abandon-EP043-tiktok": "2026-11-08T12:15:07.185374+00:00",
+  "abandon-EP043-youtube": "2026-11-08T12:15:37.945731+00:00",
   "absent-EP008": "2026-10-26T23:36:58.541452+00:00",
   "pub-EP008-instagram": "2026-10-27T00:32:03.624328+00:00",
   "pub-EP009-instagram": "2026-10-27T06:46:02.638137+00:00",
@@ -1860,6 +1862,10 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP042.mp4"
   },
   "EP043": {
+   "abandon": {
+    "tiktok": true,
+    "youtube": true
+   },
    "creneau": "2026-11-12T11:00:00+00:00",
    "creneau_prevu": "2026-11-12T11:00:00+00:00",
    "envoye_le": "2026-11-05T00:13:53.236823+00:00",
@@ -1899,10 +1905,10 @@
    },
    "rappel": true,
    "refus": {
-    "tiktok": 2,
-    "youtube": 2
+    "tiktok": 3,
+    "youtube": 3
    },
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "Only One Exit: Lioness or Dolphin?",
    "valide_le": "2026-11-06T17:09:03.833068+00:00",
