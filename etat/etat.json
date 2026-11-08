@@ -7,7 +7,9 @@
   "pub-EP011-instagram": "2026-10-27T06:46:06.617013+00:00",
   "pub-EP012-instagram": "2026-10-27T06:46:08.411667+00:00",
   "pub-EP013-instagram": "2026-10-27T06:46:10.307134+00:00",
-  "pub-EP014-instagram": "2026-10-27T06:46:12.568764+00:00"
+  "pub-EP014-instagram": "2026-10-27T06:46:12.568764+00:00",
+  "pub-EP043-tiktok": "2026-11-08T11:00:48.004945+00:00",
+  "pub-EP043-youtube": "2026-11-08T11:00:58.518945+00:00"
  },
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
@@ -266,6 +268,7 @@
     "titre": "The Climb That Almost Worked",
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04a176546b985f8d47d98",
@@ -1857,6 +1860,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP042.mp4"
   },
   "EP043": {
+   "creneau": "2026-11-12T11:00:00+00:00",
    "creneau_prevu": "2026-11-12T11:00:00+00:00",
    "envoye_le": "2026-11-05T00:13:53.236823+00:00",
    "message_id": 186,
@@ -1887,8 +1891,17 @@
     "titre": "Only One Exit: Lioness or Dolphin?",
     "youtube_description": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6af05680d6bbae6fa1e2e4ea",
+     "message": "programmé pour 2026-11-12T11:00:00.000Z"
+    }
+   },
    "rappel": true,
+   "refus": {
+    "tiktok": 1,
+    "youtube": 1
+   },
    "statut": "valide",
    "test": false,
    "titre": "Only One Exit: Lioness or Dolphin?",
