@@ -2196,6 +2196,81 @@
    "titre": "Rise of the Fawn",
    "valide_le": "2026-11-08T21:09:50.514617+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP050.mp4"
+  },
+  "EP051": {
+   "creneau_prevu": "2026-11-16T11:00:00+00:00",
+   "envoye_le": "2026-11-08T23:29:42.119287+00:00",
+   "message_id": 231,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP051",
+    "legende": "One escapes, one doesn't. Was it fair?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 13.81,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Closest Race Yet: Lion vs Frog",
+    "youtube_description": "One escapes, one doesn't. Was it fair?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Closest Race Yet: Lion vs Frog",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP051.mp4"
+  },
+  "EP052": {
+   "creneau_prevu": "2026-11-16T19:00:00+00:00",
+   "envoye_le": "2026-11-08T23:29:46.923181+00:00",
+   "message_id": 234,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP052",
+    "legende": "Only one could leave. Do you forgive the mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 10.88,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Was It Fair, Mouse?",
+    "youtube_description": "Only one could leave. Do you forgive the mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Was It Fair, Mouse?",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP052.mp4"
   }
  },
  "offset": 611525792,
