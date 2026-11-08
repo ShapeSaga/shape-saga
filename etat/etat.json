@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 4,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1386,7 +1386,7 @@
      "message": "programmé pour 2026-11-08T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Never Count Out the Koala",
    "valide_le": "2026-11-01T14:52:45.185256+00:00",
@@ -2076,9 +2076,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "One Step Short: The Story of a Zebra",
+   "valide_le": "2026-11-08T21:09:49.586803+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP047.mp4"
   },
   "EP048": {
@@ -2115,9 +2116,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Why the Bear Let Go",
+   "valide_le": "2026-11-08T21:09:50.021989+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP048.mp4"
   },
   "EP049": {
@@ -2151,9 +2153,10 @@
     "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "One Wall Too Many for Crocodile",
+   "valide_le": "2026-11-08T21:09:50.258021+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP049.mp4"
   },
   "EP050": {
@@ -2188,13 +2191,19 @@
     "youtube_description": "The fawn kept climbing for its friends. Which shape do you think is the bravest?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Rise of the Fawn",
+   "valide_le": "2026-11-08T21:09:50.514617+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP050.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525840,
+  611525841,
+  611525842,
+  611525843
+ ]
 }
