@@ -324,6 +324,7 @@
     "titre": "A Friend Lifted Antelope Out",
     "youtube_description": "Real friends lift you up. Who lifted you?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04a18da2ca338b14e98e0",
@@ -1915,6 +1916,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP043.mp4"
   },
   "EP044": {
+   "creneau": "2026-11-12T19:00:00+00:00",
    "creneau_prevu": "2026-11-12T19:00:00+00:00",
    "envoye_le": "2026-11-05T00:13:57.028252+00:00",
    "message_id": 189,
@@ -1945,8 +1947,21 @@
     "titre": "Four Friends, One Exit",
     "youtube_description": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af0ca21229bf05dafcd8f80",
+     "message": "programmé pour 2026-11-12T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af0ca1fd6bbae6fa1081b8a",
+     "message": "programmé pour 2026-11-12T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af0ca209214322f6870b391",
+     "message": "programmé pour 2026-11-12T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Four Friends, One Exit",
    "valide_le": "2026-11-05T07:41:31.934458+00:00",
