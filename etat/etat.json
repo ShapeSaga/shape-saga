@@ -431,6 +431,7 @@
     "titre": "The Fawn Wouldn't Leave Its Friend",
     "youtube_description": "The fawn's friends fell one by one. How would you feel in its place?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04a1bda2ca338b14e9976",
@@ -2019,6 +2020,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP045.mp4"
   },
   "EP046": {
+   "creneau": "2026-11-13T19:00:00+00:00",
    "creneau_prevu": "2026-11-13T19:00:00+00:00",
    "envoye_le": "2026-11-05T23:38:08.682248+00:00",
    "message_id": 200,
@@ -2050,8 +2052,21 @@
     "titre": "Shark Walks Out Alone",
     "youtube_description": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af220874edc9538caff9603",
+     "message": "programmé pour 2026-11-13T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af2208629d3f56e691ebc55",
+     "message": "programmé pour 2026-11-13T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af2208629d3f56e691ebc83",
+     "message": "programmé pour 2026-11-13T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Shark Walks Out Alone",
    "valide_le": "2026-11-06T17:09:03.594439+00:00",
