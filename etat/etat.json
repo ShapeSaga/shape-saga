@@ -2260,6 +2260,7 @@
     "youtube_description": "One escapes, one doesn't. Was it fair?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "The Closest Race Yet: Lion vs Frog",
@@ -2297,10 +2298,87 @@
     "youtube_description": "Only one could leave. Do you forgive the mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Was It Fair, Mouse?",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP052.mp4"
+  },
+  "EP053": {
+   "creneau_prevu": "2026-11-17T11:00:00+00:00",
+   "envoye_le": "2026-11-09T23:40:08.493369+00:00",
+   "message_id": 242,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP053",
+    "legende": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 11.98,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Together: Snail and Friends Escape",
+    "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Together: Snail and Friends Escape",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP053.mp4"
+  },
+  "EP054": {
+   "creneau_prevu": "2026-11-17T19:00:00+00:00",
+   "envoye_le": "2026-11-09T23:40:12.912282+00:00",
+   "message_id": 245,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP054",
+    "legende": "From last place to the exit: the rabbit! Have you ever had a comeback like this?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 8.83,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Rabbit's Greatest Escape",
+    "youtube_description": "From last place to the exit: the rabbit! Have you ever had a comeback like this?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Rabbit's Greatest Escape",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP054.mp4"
   }
  },
  "offset": 611525792,
