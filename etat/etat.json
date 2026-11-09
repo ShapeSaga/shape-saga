@@ -377,6 +377,7 @@
     "titre": "Crocodile Walled Lioness In",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae04a196546b985f8d47de1",
@@ -1968,6 +1969,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP044.mp4"
   },
   "EP045": {
+   "creneau": "2026-11-13T11:00:00+00:00",
    "creneau_prevu": "2026-11-13T11:00:00+00:00",
    "envoye_le": "2026-11-05T23:38:04.308847+00:00",
    "message_id": 197,
@@ -1996,8 +1998,21 @@
     "titre": "The Jaguar Who Built a Maze",
     "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af1af349541fd37f940734c",
+     "message": "programmé pour 2026-11-13T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af1af32a1c0ea97f8c08329",
+     "message": "programmé pour 2026-11-13T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af1af3356a4abd5c29359e2",
+     "message": "programmé pour 2026-11-13T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Jaguar Who Built a Maze",
    "valide_le": "2026-11-06T17:09:03.160318+00:00",
