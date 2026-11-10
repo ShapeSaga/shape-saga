@@ -2291,7 +2291,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "The Closest Race Yet: Lion vs Frog",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP051.mp4"
@@ -2329,7 +2329,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "Was It Fair, Mouse?",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP052.mp4"
@@ -2367,6 +2367,7 @@
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Together: Snail and Friends Escape",
@@ -2405,6 +2406,7 @@
     "youtube_description": "From last place to the exit: the rabbit! Have you ever had a comeback like this?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "The Rabbit's Greatest Escape",
