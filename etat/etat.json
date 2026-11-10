@@ -2409,6 +2409,79 @@
    "test": false,
    "titre": "The Rabbit's Greatest Escape",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP054.mp4"
+  },
+  "EP055": {
+   "creneau_prevu": "2026-11-18T11:00:00+00:00",
+   "envoye_le": "2026-11-10T23:16:32.127636+00:00",
+   "message_id": 251,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP055",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Red"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🔴 Red",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Shark Walled Elephant In",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Shark Walled Elephant In",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP055.mp4"
+  },
+  "EP056": {
+   "creneau_prevu": "2026-11-18T19:00:00+00:00",
+   "envoye_le": "2026-11-10T23:16:36.462472+00:00",
+   "message_id": 254,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP056",
+    "legende": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 17.39,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "Battle in the Cell: Hippo",
+    "youtube_description": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Battle in the Cell: Hippo",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP056.mp4"
   }
  },
  "offset": 611525792,
