@@ -593,6 +593,7 @@
     "titre": "Nobody Left Behind",
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae1d682f4b05383f652e2e3",
@@ -2183,6 +2184,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP048.mp4"
   },
   "EP049": {
+   "creneau": "2026-11-15T11:00:00+00:00",
    "creneau_prevu": "2026-11-15T11:00:00+00:00",
    "envoye_le": "2026-11-07T23:18:57.154740+00:00",
    "message_id": 218,
@@ -2212,8 +2214,21 @@
     "titre": "One Wall Too Many for Crocodile",
     "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af452c642a5c8fca242ef15",
+     "message": "programmé pour 2026-11-15T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af452c49494b43fade6c61e",
+     "message": "programmé pour 2026-11-15T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af452c5aedd7b59462477d9",
+     "message": "programmé pour 2026-11-15T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "One Wall Too Many for Crocodile",
    "valide_le": "2026-11-08T21:09:50.258021+00:00",
