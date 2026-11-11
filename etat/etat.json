@@ -1429,6 +1429,7 @@
     "titre": "The Race Between Whale and Elephant",
     "youtube_description": "A true rivalry. Are you team whale or team elephant?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {},
    "rappel": true,
    "statut": "expire",
@@ -1467,6 +1468,7 @@
     "titre": "Was It Fair, Tiger?",
     "youtube_description": "Was the tiger a villain or just scared?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {},
    "rappel": true,
    "statut": "expire",
@@ -2595,6 +2597,80 @@
    "titre": "The Crocodile Who Almost Made It",
    "valide_le": "2026-11-11T06:25:59.667128+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP058.mp4"
+  },
+  "EP059": {
+   "creneau_prevu": "2026-11-19T11:00:00+00:00",
+   "envoye_le": "2026-11-11T23:39:58.603060+00:00",
+   "message_id": 269,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP059",
+    "legende": "Team cat or team cheetah?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Green",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🟢 Green · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "One Wall Too Many for Cheetah",
+    "youtube_description": "Team cat or team cheetah?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "One Wall Too Many for Cheetah",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP059.mp4"
+  },
+  "EP060": {
+   "creneau_prevu": "2026-11-19T19:00:00+00:00",
+   "envoye_le": "2026-11-11T23:40:03.475716+00:00",
+   "message_id": 272,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP060",
+    "legende": "Only one could leave. Do you forgive the horse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 7.83,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Was It Fair, Horse?",
+    "youtube_description": "Only one could leave. Do you forgive the horse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Was It Fair, Horse?",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP060.mp4"
   }
  },
  "offset": 611525792,
