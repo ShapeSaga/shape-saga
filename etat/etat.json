@@ -647,6 +647,7 @@
     "titre": "Underdog Rabbit",
     "youtube_description": "The rabbit waited for its friends. Was that brave or risky?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae24b75317f77fea41478d5",
@@ -2235,6 +2236,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP049.mp4"
   },
   "EP050": {
+   "creneau": "2026-11-15T19:00:00+00:00",
    "creneau_prevu": "2026-11-15T19:00:00+00:00",
    "envoye_le": "2026-11-07T23:19:02.263947+00:00",
    "message_id": 221,
@@ -2265,8 +2267,21 @@
     "titre": "Rise of the Fawn",
     "youtube_description": "The fawn kept climbing for its friends. Which shape do you think is the bravest?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af4c22c53159c0c7514eac8",
+     "message": "programmé pour 2026-11-15T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af4c22ae805a6da23103379",
+     "message": "programmé pour 2026-11-15T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af4c22b53159c0c7514ea8f",
+     "message": "programmé pour 2026-11-15T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Rise of the Fawn",
    "valide_le": "2026-11-08T21:09:50.514617+00:00",
