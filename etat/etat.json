@@ -699,6 +699,7 @@
     "titre": "Cheetah vs Rhino: The Wall Duel",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae32e8cbab0e956b96bfeb1",
@@ -2522,6 +2523,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP056.mp4"
   },
   "EP057": {
+   "creneau": "2026-11-16T11:00:00+00:00",
    "creneau_prevu": "2026-11-16T11:00:00+00:00",
    "envoye_le": "2026-11-11T00:41:31.082269+00:00",
    "message_id": 260,
@@ -2552,8 +2554,21 @@
     "titre": "Whale's Sacrifice",
     "youtube_description": "The whale gave everything. Who deserves a rematch?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af5a5ec37d13e4d8a4cf613",
+     "message": "programmé pour 2026-11-16T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af5a5ea8dea3df8ddbabb62",
+     "message": "programmé pour 2026-11-16T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af5a5eb4926d8280f0b8a5b",
+     "message": "programmé pour 2026-11-16T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Whale's Sacrifice",
    "valide_le": "2026-11-11T06:25:59.413886+00:00",
