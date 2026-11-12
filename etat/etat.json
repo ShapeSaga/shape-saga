@@ -1509,6 +1509,7 @@
     "titre": "United at the Top",
     "youtube_description": "Who carried who here? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {},
    "rappel": true,
    "statut": "expire",
@@ -1548,6 +1549,7 @@
     "titre": "The Cow's Second Chance",
     "youtube_description": "This cow story hit different. Which part got you?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {},
    "rappel": true,
    "statut": "expire",
@@ -2701,6 +2703,81 @@
    "test": false,
    "titre": "Was It Fair, Horse?",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP060.mp4"
+  },
+  "EP061": {
+   "creneau_prevu": "2026-11-20T11:00:00+00:00",
+   "envoye_le": "2026-11-12T23:28:15.616387+00:00",
+   "message_id": 278,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP061",
+    "legende": "A true rivalry. Are you team lion or team mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 8.92,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Race Between Lion and Mouse",
+    "youtube_description": "A true rivalry. Are you team lion or team mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Race Between Lion and Mouse",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP061.mp4"
+  },
+  "EP062": {
+   "creneau_prevu": "2026-11-20T19:00:00+00:00",
+   "envoye_le": "2026-11-12T23:28:24.344358+00:00",
+   "message_id": 281,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP062",
+    "legende": "Teamwork wins. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 18.36,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Together: Donkey and Friends Escape",
+    "youtube_description": "Teamwork wins. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Together: Donkey and Friends Escape",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP062.mp4"
   }
  },
  "offset": 611525792,
