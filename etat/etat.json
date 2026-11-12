@@ -752,6 +752,7 @@
     "titre": "Battle in the Cell: Panda",
     "youtube_description": "The panda won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae39e84a929d1f77545cac6",
@@ -2575,6 +2576,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP057.mp4"
   },
   "EP058": {
+   "creneau": "2026-11-16T19:00:00+00:00",
    "creneau_prevu": "2026-11-16T19:00:00+00:00",
    "envoye_le": "2026-11-11T00:41:35.260510+00:00",
    "message_id": 263,
@@ -2606,8 +2608,21 @@
     "titre": "The Crocodile Who Almost Made It",
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af6138bd647bbafc5ae5beb",
+     "message": "programmé pour 2026-11-16T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af613892ef1f0c84e5dc601",
+     "message": "programmé pour 2026-11-16T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af6138a262116da05530b17",
+     "message": "programmé pour 2026-11-16T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Crocodile Who Almost Made It",
    "valide_le": "2026-11-11T06:25:59.667128+00:00",
