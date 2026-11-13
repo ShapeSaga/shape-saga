@@ -859,6 +859,7 @@
     "titre": "Almost Free: Crocodile",
     "youtube_description": "The crocodile gave everything. Would you have made it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae4f09beaa24d6f9a35a9c3",
@@ -2426,6 +2427,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP053.mp4"
   },
   "EP054": {
+   "creneau": "2026-11-17T19:00:00+00:00",
    "creneau_prevu": "2026-11-17T19:00:00+00:00",
    "envoye_le": "2026-11-09T23:40:12.912282+00:00",
    "message_id": 245,
@@ -2457,9 +2459,22 @@
     "titre": "The Rabbit's Greatest Escape",
     "youtube_description": "From last place to the exit: the rabbit! Have you ever had a comeback like this?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6af761a981e1228421bab5a6",
+     "message": "programmé pour 2026-11-17T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af761a84b28296eb10cbc05",
+     "message": "programmé pour 2026-11-17T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af761a9d16af15d4dc95971",
+     "message": "programmé pour 2026-11-17T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "The Rabbit's Greatest Escape",
    "valide_le": "2026-11-11T06:25:58.535789+00:00",
