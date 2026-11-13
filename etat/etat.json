@@ -805,6 +805,7 @@
     "titre": "A Friend Lifted Giraffe Out",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae47f3fe97270550557c376",
@@ -2371,6 +2372,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP052.mp4"
   },
   "EP053": {
+   "creneau": "2026-11-17T11:00:00+00:00",
    "creneau_prevu": "2026-11-17T11:00:00+00:00",
    "envoye_le": "2026-11-09T23:40:08.493369+00:00",
    "message_id": 242,
@@ -2402,9 +2404,22 @@
     "titre": "Together: Snail and Friends Escape",
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6af6f6ecbd1182b0d3edd37f",
+     "message": "programmé pour 2026-11-17T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af6f6eb10ced6793b30b365",
+     "message": "programmé pour 2026-11-17T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af6f6ecd414da1f7da0758f",
+     "message": "programmé pour 2026-11-17T11:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "Together: Snail and Friends Escape",
    "valide_le": "2026-11-11T06:25:57.922968+00:00",
