@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 4,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2677,9 +2677,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "One Wall Too Many for Cheetah",
+   "valide_le": "2026-11-13T17:25:36.443744+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP059.mp4"
   },
   "EP060": {
@@ -2716,9 +2717,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Was It Fair, Horse?",
+   "valide_le": "2026-11-13T17:25:37.155649+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP060.mp4"
   },
   "EP061": {
@@ -2753,9 +2755,10 @@
     "youtube_description": "A true rivalry. Are you team lion or team mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Race Between Lion and Mouse",
+   "valide_le": "2026-11-13T17:25:37.498043+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP061.mp4"
   },
   "EP062": {
@@ -2791,13 +2794,19 @@
     "youtube_description": "Teamwork wins. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Together: Donkey and Friends Escape",
+   "valide_le": "2026-11-13T17:25:37.864745+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP062.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525850,
+  611525851,
+  611525852,
+  611525853
+ ]
 }
