@@ -911,6 +911,7 @@
     "titre": "The Fawn Who Built a Maze",
     "youtube_description": "Team fawn or team cat?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae5ca53ceb491e585f0bb4b",
@@ -2481,6 +2482,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP054.mp4"
   },
   "EP055": {
+   "creneau": "2026-11-18T11:00:00+00:00",
    "creneau_prevu": "2026-11-18T11:00:00+00:00",
    "envoye_le": "2026-11-10T23:16:32.127636+00:00",
    "message_id": 251,
@@ -2509,8 +2511,21 @@
     "titre": "Shark Walled Elephant In",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af8415cbb36d00909063c6b",
+     "message": "programmé pour 2026-11-18T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af8415bd8bd2962e42521dc",
+     "message": "programmé pour 2026-11-18T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af8415c4b28296eb151b60a",
+     "message": "programmé pour 2026-11-18T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Shark Walled Elephant In",
    "valide_le": "2026-11-11T06:25:58.787063+00:00",
