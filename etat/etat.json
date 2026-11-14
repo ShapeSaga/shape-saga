@@ -965,6 +965,7 @@
     "titre": "The Betrayal at the Top",
     "youtube_description": "Only one could leave. Do you forgive the kangaroo?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae63edef0984eef33282280",
@@ -2532,6 +2533,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP055.mp4"
   },
   "EP056": {
+   "creneau": "2026-11-18T19:00:00+00:00",
    "creneau_prevu": "2026-11-18T19:00:00+00:00",
    "envoye_le": "2026-11-10T23:16:36.462472+00:00",
    "message_id": 254,
@@ -2563,8 +2565,21 @@
     "titre": "Battle in the Cell: Hippo",
     "youtube_description": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6af8b65376c23bf1c7373cf1",
+     "message": "programmé pour 2026-11-18T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af8b651c5b364e06210d81d",
+     "message": "programmé pour 2026-11-18T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af8b652e86a5789a6c96d2b",
+     "message": "programmé pour 2026-11-18T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Battle in the Cell: Hippo",
    "valide_le": "2026-11-11T06:25:59.165821+00:00",
