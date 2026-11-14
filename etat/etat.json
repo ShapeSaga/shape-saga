@@ -2919,6 +2919,81 @@
    "titre": "Battle in the Cell: Panda",
    "valide_le": "2026-11-14T02:31:26.681058+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP064.mp4"
+  },
+  "EP065": {
+   "creneau_prevu": "2026-11-22T11:00:00+00:00",
+   "envoye_le": "2026-11-14T23:21:21.807676+00:00",
+   "message_id": 298,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP065",
+    "legende": "Who deserved to win this one?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 15.03,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "A Snail Against the Flood",
+    "youtube_description": "Who deserved to win this one?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "A Snail Against the Flood",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP065.mp4"
+  },
+  "EP066": {
+   "creneau_prevu": "2026-11-22T19:00:00+00:00",
+   "envoye_le": "2026-11-14T23:21:27.865689+00:00",
+   "message_id": 301,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP066",
+    "legende": "Heroes don't always get to escape. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 6.42,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Last Gift of a Giraffe",
+    "youtube_description": "Heroes don't always get to escape. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Last Gift of a Giraffe",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP066.mp4"
   }
  },
  "offset": 611525792,
