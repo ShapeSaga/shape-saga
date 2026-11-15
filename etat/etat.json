@@ -3026,6 +3026,79 @@
    "titre": "The Last Gift of a Giraffe",
    "valide_le": "2026-11-15T13:44:14.040747+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP066.mp4"
+  },
+  "EP067": {
+   "creneau_prevu": "2026-11-23T11:00:00+00:00",
+   "envoye_le": "2026-11-15T23:30:50.719737+00:00",
+   "message_id": 307,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP067",
+    "legende": "Who should play the rematch?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "One Wall Too Many for Crocodile",
+    "youtube_description": "Who should play the rematch?\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "One Wall Too Many for Crocodile",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP067.mp4"
+  },
+  "EP068": {
+   "creneau_prevu": "2026-11-23T19:00:00+00:00",
+   "envoye_le": "2026-11-15T23:30:55.345583+00:00",
+   "message_id": 310,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP068",
+    "legende": "The dog is the hero we needed today. What name would you give it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 9.85,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Last Dog Standing",
+    "youtube_description": "The dog is the hero we needed today. What name would you give it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Last Dog Standing",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP068.mp4"
   }
  },
  "offset": 611525792,
