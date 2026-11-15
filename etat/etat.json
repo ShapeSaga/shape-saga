@@ -1019,6 +1019,7 @@
     "titre": "Cow Beats Mouse by a Heartbeat",
     "youtube_description": "The cow or the mouse? Who did you root for?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae71f9dab019b9087561833",
@@ -2691,6 +2692,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP058.mp4"
   },
   "EP059": {
+   "creneau": "2026-11-19T11:00:00+00:00",
    "creneau_prevu": "2026-11-19T11:00:00+00:00",
    "envoye_le": "2026-11-11T23:39:58.603060+00:00",
    "message_id": 269,
@@ -2720,9 +2722,22 @@
     "titre": "One Wall Too Many for Cheetah",
     "youtube_description": "Team cat or team cheetah?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6af9964676c23bf1c7763dc7",
+     "message": "programmé pour 2026-11-19T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6af99645e86a5789a6077aae",
+     "message": "programmé pour 2026-11-19T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6af99646e86a5789a6077af7",
+     "message": "programmé pour 2026-11-19T11:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "One Wall Too Many for Cheetah",
    "valide_le": "2026-11-13T17:25:36.443744+00:00",
