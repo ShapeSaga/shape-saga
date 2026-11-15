@@ -1072,6 +1072,7 @@
     "titre": "United at the Top",
     "youtube_description": "Who carried who here? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae78dae1e69de2cfc0fdfb0",
@@ -2744,6 +2745,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP059.mp4"
   },
   "EP060": {
+   "creneau": "2026-11-19T19:00:00+00:00",
    "creneau_prevu": "2026-11-19T19:00:00+00:00",
    "envoye_le": "2026-11-11T23:40:03.475716+00:00",
    "message_id": 272,
@@ -2775,9 +2777,22 @@
     "titre": "Was It Fair, Horse?",
     "youtube_description": "Only one could leave. Do you forgive the horse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6afa06d9e5a113497a0b13a4",
+     "message": "programmé pour 2026-11-19T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afa06d7c5b364e06278eb67",
+     "message": "programmé pour 2026-11-19T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afa06d8c5b364e06278eba3",
+     "message": "programmé pour 2026-11-19T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "Was It Fair, Horse?",
    "valide_le": "2026-11-13T17:25:37.155649+00:00",
