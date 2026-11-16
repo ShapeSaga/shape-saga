@@ -1178,6 +1178,7 @@
     "titre": "Four Entered. Pig Left.",
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae8e4e34efbf4f5475dd8f8",
@@ -2852,6 +2853,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP061.mp4"
   },
   "EP062": {
+   "creneau": "2026-11-20T19:00:00+00:00",
    "creneau_prevu": "2026-11-20T19:00:00+00:00",
    "envoye_le": "2026-11-12T23:28:24.344358+00:00",
    "message_id": 281,
@@ -2883,8 +2885,21 @@
     "titre": "Together: Donkey and Friends Escape",
     "youtube_description": "Teamwork wins. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afb5b4c7bad54dfdb9547b9",
+     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afb5b4b405379d57096f59a",
+     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afb5b4b405379d57096f5f8",
+     "message": "programmé pour 2026-11-20T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Together: Donkey and Friends Escape",
    "valide_le": "2026-11-13T17:25:37.864745+00:00",
