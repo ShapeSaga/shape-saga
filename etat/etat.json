@@ -3118,7 +3118,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "One Wall Too Many for Crocodile",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP067.mp4"
@@ -3240,6 +3240,81 @@
    "titre": "Octopus Pushed Bear",
    "valide_le": "2026-11-17T19:43:42.185658+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP070.mp4"
+  },
+  "EP071": {
+   "creneau_prevu": "2026-11-23T11:00:00+00:00",
+   "envoye_le": "2026-11-17T23:33:14.015290+00:00",
+   "message_id": 327,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP071",
+    "legende": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 12.48,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Four Friends, One Exit",
+    "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Four Friends, One Exit",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP071.mp4"
+  },
+  "EP072": {
+   "creneau_prevu": "2026-11-25T11:00:00+00:00",
+   "envoye_le": "2026-11-17T23:33:19.285138+00:00",
+   "message_id": 330,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP072",
+    "legende": "The pig said thank you at the top. Who would you thank?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 8.34,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Loyal Pig",
+    "youtube_description": "The pig said thank you at the top. Who would you thank?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Loyal Pig",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP072.mp4"
   }
  },
  "offset": 611525792,
