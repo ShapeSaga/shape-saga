@@ -1231,6 +1231,7 @@
     "titre": "The Snail Who Almost Made It",
     "youtube_description": "So close! What would you have done differently?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6ae9c16d3efac89b59f49d7e",
@@ -2906,6 +2907,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP062.mp4"
   },
   "EP063": {
+   "creneau": "2026-11-21T11:00:00+00:00",
    "creneau_prevu": "2026-11-21T11:00:00+00:00",
    "envoye_le": "2026-11-13T23:14:10.316075+00:00",
    "message_id": 289,
@@ -2935,8 +2937,21 @@
     "titre": "Rhino and Frog: Who Gets Through?",
     "youtube_description": "Team rhino or team frog?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afc3d8a9b7a21e1017994cb",
+     "message": "programmé pour 2026-11-21T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afc3d88d4d832ae4bc5f123",
+     "message": "programmé pour 2026-11-21T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afc3d89b9fb95e12d01fcb9",
+     "message": "programmé pour 2026-11-21T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Rhino and Frog: Who Gets Through?",
    "valide_le": "2026-11-14T02:31:27.207656+00:00",
