@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 3,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1285,6 +1285,7 @@
     "titre": "Horse's Sacrifice",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aea34a55a7950e0fff292da",
@@ -2958,6 +2959,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP063.mp4"
   },
   "EP064": {
+   "creneau": "2026-11-21T19:00:00+00:00",
    "creneau_prevu": "2026-11-21T19:00:00+00:00",
    "envoye_le": "2026-11-13T23:14:14.779527+00:00",
    "message_id": 292,
@@ -2988,8 +2990,21 @@
     "titre": "Battle in the Cell: Panda",
     "youtube_description": "The panda won the cell. Who should fight next?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afcae7241283412cdcce8b0",
+     "message": "programmé pour 2026-11-21T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afcae7041283412cdcce563",
+     "message": "programmé pour 2026-11-21T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afcae71c595016b82b160d8",
+     "message": "programmé pour 2026-11-21T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Battle in the Cell: Panda",
    "valide_le": "2026-11-14T02:31:26.681058+00:00",
@@ -3142,9 +3157,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Last Dog Standing",
+   "valide_le": "2026-11-17T19:43:41.140968+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP068.mp4"
   },
   "EP069": {
@@ -3180,9 +3196,10 @@
     "youtube_description": "Rematch? Tell me who should race next.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Whale and Cow: Who Escapes?",
+   "valide_le": "2026-11-17T19:43:41.859130+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP069.mp4"
   },
   "EP070": {
@@ -3218,13 +3235,18 @@
     "youtube_description": "Only one could leave. Do you forgive the octopus?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Octopus Pushed Bear",
+   "valide_le": "2026-11-17T19:43:42.185658+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP070.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525858,
+  611525859,
+  611525860
+ ]
 }
