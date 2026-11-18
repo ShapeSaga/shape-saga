@@ -3315,6 +3315,41 @@
    "test": false,
    "titre": "The Loyal Pig",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP072.mp4"
+  },
+  "EP073": {
+   "creneau_prevu": "2026-11-25T19:00:00+00:00",
+   "envoye_le": "2026-11-18T04:35:12.673936+00:00",
+   "message_id": 334,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP073",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔴 Red · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "The Gorilla Who Built a Maze",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Gorilla Who Built a Maze",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP073.mp4"
   }
  },
  "offset": 611525792,
