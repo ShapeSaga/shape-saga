@@ -1337,6 +1337,7 @@
     "titre": "Trapped by the Lion",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aeb1b57dabf2501c0918335",
@@ -2532,7 +2533,7 @@
      "message": "programmé pour 2026-11-18T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Shark Walled Elephant In",
    "valide_le": "2026-11-11T06:25:58.787063+00:00",
@@ -3011,6 +3012,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP064.mp4"
   },
   "EP065": {
+   "creneau": "2026-11-22T11:00:00+00:00",
    "creneau_prevu": "2026-11-22T11:00:00+00:00",
    "envoye_le": "2026-11-14T23:21:21.807676+00:00",
    "message_id": 298,
@@ -3041,8 +3043,21 @@
     "titre": "A Snail Against the Flood",
     "youtube_description": "Who deserved to win this one?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afda6f361bd3b7f60c3497e",
+     "message": "programmé pour 2026-11-22T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afda6f288f8ac97b1ab765b",
+     "message": "programmé pour 2026-11-22T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afda6f361bd3b7f60c34920",
+     "message": "programmé pour 2026-11-22T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "A Snail Against the Flood",
    "valide_le": "2026-11-15T13:44:13.440496+00:00",
