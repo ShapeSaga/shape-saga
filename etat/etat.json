@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 3,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1391,6 +1391,7 @@
     "titre": "Never Count Out the Koala",
     "youtube_description": "The koala chose courage over fear. What would you have done?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aeb87128ee551b5aa77ac40",
@@ -2586,7 +2587,7 @@
      "message": "programmé pour 2026-11-18T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Battle in the Cell: Hippo",
    "valide_le": "2026-11-11T06:25:59.165821+00:00",
@@ -3064,6 +3065,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP065.mp4"
   },
   "EP066": {
+   "creneau": "2026-11-22T19:00:00+00:00",
    "creneau_prevu": "2026-11-22T19:00:00+00:00",
    "envoye_le": "2026-11-14T23:21:27.865689+00:00",
    "message_id": 301,
@@ -3095,8 +3097,21 @@
     "titre": "The Last Gift of a Giraffe",
     "youtube_description": "Heroes don't always get to escape. Do you agree?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6afe18ea0801c9208979ce76",
+     "message": "programmé pour 2026-11-22T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6afe18e64cec3cf024f0411a",
+     "message": "programmé pour 2026-11-22T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6afe18e84cec3cf024f04280",
+     "message": "programmé pour 2026-11-22T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Last Gift of a Giraffe",
    "valide_le": "2026-11-15T13:44:14.040747+00:00",
@@ -3289,9 +3304,10 @@
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Four Friends, One Exit",
+   "valide_le": "2026-11-18T21:30:10.322611+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP071.mp4"
   },
   "EP072": {
@@ -3326,9 +3342,10 @@
     "youtube_description": "The pig said thank you at the top. Who would you thank?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Loyal Pig",
+   "valide_le": "2026-11-18T21:30:11.024576+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP072.mp4"
   },
   "EP073": {
@@ -3361,13 +3378,18 @@
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Gorilla Who Built a Maze",
+   "valide_le": "2026-11-18T21:30:11.406156+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP073.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525861,
+  611525862,
+  611525863
+ ]
 }
