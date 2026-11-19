@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 3,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2337,6 +2337,7 @@
     "titre": "The Closest Race Yet: Lion vs Frog",
     "youtube_description": "One escapes, one doesn't. Was it fair?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {},
    "rappel": true,
    "statut": "expire",
@@ -2375,6 +2376,7 @@
     "titre": "Was It Fair, Mouse?",
     "youtube_description": "Only one could leave. Do you forgive the mouse?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {},
    "rappel": true,
    "statut": "expire",
@@ -3383,13 +3385,84 @@
    "titre": "The Gorilla Who Built a Maze",
    "valide_le": "2026-11-18T21:30:11.406156+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP073.mp4"
+  },
+  "EP074": {
+   "creneau_prevu": "2026-11-26T11:00:00+00:00",
+   "envoye_le": "2026-11-19T02:48:20.199380+00:00",
+   "message_id": 340,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP074",
+    "legende": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 12.0,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "No Mercy in the Prison",
+    "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "No Mercy in the Prison",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP074.mp4"
+  },
+  "EP075": {
+   "creneau_prevu": "2026-11-26T19:00:00+00:00",
+   "envoye_le": "2026-11-19T02:48:24.605051+00:00",
+   "message_id": 343,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP075",
+    "legende": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 13.92,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Frog Who Gave Everything",
+    "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Frog Who Gave Everything",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP075.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525861,
-  611525862,
-  611525863
- ]
+ "relais_a_confirmer": []
 }
