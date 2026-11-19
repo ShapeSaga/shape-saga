@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1708,6 +1708,7 @@
     "titre": "The Cheetah Who Gave Everything",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aec6ac4f5b4b5564cb4dc48",
@@ -1762,6 +1763,7 @@
     "titre": "The Climb That Almost Worked",
     "youtube_description": "The gorilla gave everything. Would you have made it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aecd9a0d8b894d9433f8cb4",
@@ -2746,7 +2748,7 @@
     }
    },
    "rappel": true,
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "One Wall Too Many for Cheetah",
    "valide_le": "2026-11-13T17:25:36.443744+00:00",
@@ -3156,6 +3158,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP067.mp4"
   },
   "EP068": {
+   "creneau": "2026-11-23T19:00:00+00:00",
    "creneau_prevu": "2026-11-23T19:00:00+00:00",
    "envoye_le": "2026-11-15T23:30:55.345583+00:00",
    "message_id": 310,
@@ -3187,9 +3190,22 @@
     "titre": "The Last Dog Standing",
     "youtube_description": "The dog is the hero we needed today. What name would you give it?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6aff4a082b3609ff8172811c",
+     "message": "programmé pour 2026-11-23T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aff4a0683849986f3053551",
+     "message": "programmé pour 2026-11-23T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aff4a0683849986f30535c0",
+     "message": "programmé pour 2026-11-23T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "The Last Dog Standing",
    "valide_le": "2026-11-17T19:43:41.140968+00:00",
@@ -3274,6 +3290,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP070.mp4"
   },
   "EP071": {
+   "creneau": "2026-11-23T11:00:00+00:00",
    "creneau_prevu": "2026-11-23T11:00:00+00:00",
    "envoye_le": "2026-11-17T23:33:14.015290+00:00",
    "message_id": 327,
@@ -3305,8 +3322,21 @@
     "titre": "Four Friends, One Exit",
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6aff4a0bf29f0bca3b13a7af",
+     "message": "programmé pour 2026-11-23T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6aff4a090552cca31f26364f",
+     "message": "programmé pour 2026-11-23T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6aff4a0af29f0bca3b13a76c",
+     "message": "programmé pour 2026-11-23T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Four Friends, One Exit",
    "valide_le": "2026-11-18T21:30:10.322611+00:00",
@@ -3419,9 +3449,10 @@
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "No Mercy in the Prison",
+   "valide_le": "2026-11-19T19:12:04.317254+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP074.mp4"
   },
   "EP075": {
@@ -3456,13 +3487,17 @@
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Frog Who Gave Everything",
+   "valide_le": "2026-11-19T19:12:03.569510+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP075.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525864,
+  611525865
+ ]
 }
