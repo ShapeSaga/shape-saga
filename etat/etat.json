@@ -1869,6 +1869,7 @@
     "titre": "Was It Fair, Antelope?",
     "youtube_description": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aee2cb7af7e526d43d9d746",
@@ -2908,7 +2909,7 @@
      "message": "programmé pour 2026-11-20T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Together: Donkey and Friends Escape",
    "valide_le": "2026-11-13T17:25:37.864745+00:00",
@@ -3266,6 +3267,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP069.mp4"
   },
   "EP070": {
+   "creneau": "2026-11-24T19:00:00+00:00",
    "creneau_prevu": "2026-11-24T19:00:00+00:00",
    "envoye_le": "2026-11-16T23:37:23.912676+00:00",
    "message_id": 321,
@@ -3297,8 +3299,21 @@
     "titre": "Octopus Pushed Bear",
     "youtube_description": "Only one could leave. Do you forgive the octopus?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b00d57cdd205ed779a3a7d1",
+     "message": "programmé pour 2026-11-24T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b00d57add205ed779a3a77d",
+     "message": "programmé pour 2026-11-24T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b00d57b20a2d09a0aba3d0d",
+     "message": "programmé pour 2026-11-24T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Octopus Pushed Bear",
    "valide_le": "2026-11-17T19:43:42.185658+00:00",
@@ -3582,6 +3597,81 @@
    "titre": "Fawn Walled Snail In",
    "valide_le": "2026-11-20T08:40:51.317613+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP077.mp4"
+  },
+  "EP078": {
+   "creneau_prevu": "2026-11-28T11:00:00+00:00",
+   "envoye_le": "2026-11-20T23:19:16.041318+00:00",
+   "message_id": 357,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP078",
+    "legende": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 6.09,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Hippo's Dark Choice",
+    "youtube_description": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Hippo's Dark Choice",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP078.mp4"
+  },
+  "EP079": {
+   "creneau_prevu": "2026-11-28T19:00:00+00:00",
+   "envoye_le": "2026-11-20T23:19:20.247699+00:00",
+   "message_id": 360,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP079",
+    "legende": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 11.47,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Cheetah vs Dog: Photo Finish",
+    "youtube_description": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Cheetah vs Dog: Photo Finish",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP079.mp4"
   }
  },
  "offset": 611525792,
