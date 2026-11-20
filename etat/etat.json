@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2802,7 +2802,7 @@
     }
    },
    "rappel": true,
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Was It Fair, Horse?",
    "valide_le": "2026-11-13T17:25:37.155649+00:00",
@@ -3492,12 +3492,82 @@
    "titre": "The Frog Who Gave Everything",
    "valide_le": "2026-11-19T19:12:03.569510+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP075.mp4"
+  },
+  "EP076": {
+   "creneau_prevu": "2026-11-27T11:00:00+00:00",
+   "envoye_le": "2026-11-20T01:21:19.567322+00:00",
+   "message_id": 349,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP076",
+    "legende": "Have you ever come this close to something? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 11.93,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Koala Who Almost Made It",
+    "youtube_description": "Have you ever come this close to something? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Koala Who Almost Made It",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP076.mp4"
+  },
+  "EP077": {
+   "creneau_prevu": "2026-11-27T19:00:00+00:00",
+   "envoye_le": "2026-11-20T01:21:50.647110+00:00",
+   "message_id": 352,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP077",
+    "legende": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Green"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🟢 Green",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Fawn Walled Snail In",
+    "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Fawn Walled Snail In",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP077.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525864,
-  611525865
- ]
+ "relais_a_confirmer": []
 }
