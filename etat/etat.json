@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1816,6 +1816,7 @@
     "titre": "Trapped by the Fawn",
     "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aedbbd3c57409593f9db4a0",
@@ -2854,7 +2855,7 @@
      "message": "programmé pour 2026-11-20T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Race Between Lion and Mouse",
    "valide_le": "2026-11-13T17:25:37.498043+00:00",
@@ -3212,6 +3213,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP068.mp4"
   },
   "EP069": {
+   "creneau": "2026-11-24T11:00:00+00:00",
    "creneau_prevu": "2026-11-24T11:00:00+00:00",
    "envoye_le": "2026-11-16T23:37:18.649412+00:00",
    "message_id": 318,
@@ -3243,8 +3245,21 @@
     "titre": "Whale and Cow: Who Escapes?",
     "youtube_description": "Rematch? Tell me who should race next.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b00818d861298c9b13b12dd",
+     "message": "programmé pour 2026-11-24T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b00818b63ab5fef673fa89f",
+     "message": "programmé pour 2026-11-24T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b00818cd425f1473afd1890",
+     "message": "programmé pour 2026-11-24T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Whale and Cow: Who Escapes?",
    "valide_le": "2026-11-17T19:43:41.859130+00:00",
@@ -3571,8 +3586,5 @@
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525866,
-  611525867
- ]
+ "relais_a_confirmer": []
 }
