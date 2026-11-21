@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1600,6 +1600,7 @@
     "titre": "Bear and Chicken: Who Gets Through?",
     "youtube_description": "Who should play the rematch?\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🔴 Red\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aef0b87af7e526d431a5bb4",
@@ -3373,6 +3374,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP071.mp4"
   },
   "EP072": {
+   "creneau": "2026-11-25T11:00:00+00:00",
    "creneau_prevu": "2026-11-25T11:00:00+00:00",
    "envoye_le": "2026-11-17T23:33:19.285138+00:00",
    "message_id": 330,
@@ -3403,8 +3405,21 @@
     "titre": "The Loyal Pig",
     "youtube_description": "The pig said thank you at the top. Who would you thank?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b018de68bd84d5966e87cf0",
+     "message": "programmé pour 2026-11-25T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b018de4846b0ee90707e0ac",
+     "message": "programmé pour 2026-11-25T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b018de5d864a0110542a75d",
+     "message": "programmé pour 2026-11-25T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Loyal Pig",
    "valide_le": "2026-11-18T21:30:11.024576+00:00",
@@ -3630,9 +3645,10 @@
     "youtube_description": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Hippo's Dark Choice",
+   "valide_le": "2026-11-21T12:26:10.941481+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP078.mp4"
   },
   "EP079": {
@@ -3668,13 +3684,17 @@
     "youtube_description": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Cheetah vs Dog: Photo Finish",
+   "valide_le": "2026-11-21T12:26:11.577217+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP079.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525868,
+  611525869
+ ]
 }
