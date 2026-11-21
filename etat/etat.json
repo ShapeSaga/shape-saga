@@ -3014,7 +3014,7 @@
      "message": "programmé pour 2026-11-21T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Battle in the Cell: Panda",
    "valide_le": "2026-11-14T02:31:26.681058+00:00",
@@ -3704,6 +3704,79 @@
    "titre": "Cheetah vs Dog: Photo Finish",
    "valide_le": "2026-11-21T12:26:11.577217+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP079.mp4"
+  },
+  "EP080": {
+   "creneau_prevu": "2026-11-29T11:00:00+00:00",
+   "envoye_le": "2026-11-21T23:58:20.807362+00:00",
+   "message_id": 367,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP080",
+    "legende": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 17.75,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "How Cow Made It Out With Friends",
+    "youtube_description": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "How Cow Made It Out With Friends",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP080.mp4"
+  },
+  "EP081": {
+   "creneau_prevu": "2026-11-29T19:00:00+00:00",
+   "envoye_le": "2026-11-21T23:58:24.291952+00:00",
+   "message_id": 370,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP081",
+    "legende": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Blue",
+      "Red"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🔵 Blue · 🔴 Red",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "Trapped by the Bear",
+    "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Trapped by the Bear",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP081.mp4"
   }
  },
  "offset": 611525792,
