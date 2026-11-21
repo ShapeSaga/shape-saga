@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -1655,6 +1655,7 @@
     "titre": "The Door Opens for Wolf",
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6aef7721562f2e6de976b620",
@@ -2961,7 +2962,7 @@
      "message": "programmé pour 2026-11-21T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Rhino and Frog: Who Gets Through?",
    "valide_le": "2026-11-14T02:31:27.207656+00:00",
@@ -3426,6 +3427,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP072.mp4"
   },
   "EP073": {
+   "creneau": "2026-11-25T19:00:00+00:00",
    "creneau_prevu": "2026-11-25T19:00:00+00:00",
    "envoye_le": "2026-11-18T04:35:12.673936+00:00",
    "message_id": 334,
@@ -3454,8 +3456,21 @@
     "titre": "The Gorilla Who Built a Maze",
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b01f342d5eabfb8cc573566",
+     "message": "programmé pour 2026-11-25T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b01f340d864a011056df2f3",
+     "message": "programmé pour 2026-11-25T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b01f341846b0ee907329d63",
+     "message": "programmé pour 2026-11-25T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Gorilla Who Built a Maze",
    "valide_le": "2026-11-18T21:30:11.406156+00:00",
@@ -3693,8 +3708,5 @@
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525868,
-  611525869
- ]
+ "relais_a_confirmer": []
 }
