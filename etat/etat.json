@@ -1978,6 +1978,7 @@
     "titre": "Four Friends, One Exit",
     "youtube_description": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af0ca21229bf05dafcd8f80",
@@ -3531,6 +3532,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP074.mp4"
   },
   "EP075": {
+   "creneau": "2026-11-26T19:00:00+00:00",
    "creneau_prevu": "2026-11-26T19:00:00+00:00",
    "envoye_le": "2026-11-19T02:48:24.605051+00:00",
    "message_id": 343,
@@ -3561,8 +3563,21 @@
     "titre": "The Frog Who Gave Everything",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b034e71d864a01105f1c508",
+     "message": "programmé pour 2026-11-26T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b034e70846b0ee907b5b355",
+     "message": "programmé pour 2026-11-26T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b034e70bf5d5a73b6bc6585",
+     "message": "programmé pour 2026-11-26T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Frog Who Gave Everything",
    "valide_le": "2026-11-19T19:12:03.569510+00:00",
