@@ -1928,6 +1928,7 @@
     "titre": "Only One Exit: Lioness or Dolphin?",
     "youtube_description": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af05680d6bbae6fa1e2e4ea",
@@ -3066,7 +3067,7 @@
      "message": "programmé pour 2026-11-22T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "A Snail Against the Flood",
    "valide_le": "2026-11-15T13:44:13.440496+00:00",
@@ -3477,6 +3478,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP073.mp4"
   },
   "EP074": {
+   "creneau": "2026-11-26T11:00:00+00:00",
    "creneau_prevu": "2026-11-26T11:00:00+00:00",
    "envoye_le": "2026-11-19T02:48:20.199380+00:00",
    "message_id": 340,
@@ -3508,8 +3510,21 @@
     "titre": "No Mercy in the Prison",
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b02e99dd5eabfb8ccac3ebf",
+     "message": "programmé pour 2026-11-26T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b02e99c846b0ee90789180a",
+     "message": "programmé pour 2026-11-26T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b02e99cd5eabfb8ccac3e57",
+     "message": "programmé pour 2026-11-26T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "No Mercy in the Prison",
    "valide_le": "2026-11-19T19:12:04.317254+00:00",
