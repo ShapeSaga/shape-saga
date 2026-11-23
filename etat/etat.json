@@ -2029,6 +2029,7 @@
     "titre": "The Jaguar Who Built a Maze",
     "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔴 Red · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af1af349541fd37f940734c",
@@ -2082,6 +2083,7 @@
     "titre": "Shark Walks Out Alone",
     "youtube_description": "Only one door. Who would you bet on next time?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af220874edc9538caff9603",
@@ -3370,7 +3372,7 @@
      "message": "programmé pour 2026-11-23T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Four Friends, One Exit",
    "valide_le": "2026-11-18T21:30:10.322611+00:00",
@@ -3584,6 +3586,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP075.mp4"
   },
   "EP076": {
+   "creneau": "2026-11-27T11:00:00+00:00",
    "creneau_prevu": "2026-11-27T11:00:00+00:00",
    "envoye_le": "2026-11-20T01:21:19.567322+00:00",
    "message_id": 349,
@@ -3614,14 +3617,28 @@
     "titre": "The Koala Who Almost Made It",
     "youtube_description": "Have you ever come this close to something? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b04a4101281c0e8868f1375",
+     "message": "programmé pour 2026-11-27T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b04a40e2be523164702411f",
+     "message": "programmé pour 2026-11-27T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b04a40f1281c0e8868f1301",
+     "message": "programmé pour 2026-11-27T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Koala Who Almost Made It",
    "valide_le": "2026-11-20T08:40:52.003329+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP076.mp4"
   },
   "EP077": {
+   "creneau": "2026-11-27T19:00:00+00:00",
    "creneau_prevu": "2026-11-27T19:00:00+00:00",
    "envoye_le": "2026-11-20T01:21:50.647110+00:00",
    "message_id": 352,
@@ -3651,8 +3668,21 @@
     "titre": "Fawn Walled Snail In",
     "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b04a4135678330d31d8d17a",
+     "message": "programmé pour 2026-11-27T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b04a411e9bcfe11e845d880",
+     "message": "programmé pour 2026-11-27T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b04a4125678330d31d8d142",
+     "message": "programmé pour 2026-11-27T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Fawn Walled Snail In",
    "valide_le": "2026-11-20T08:40:51.317613+00:00",
