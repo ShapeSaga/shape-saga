@@ -3121,7 +3121,7 @@
      "message": "programmé pour 2026-11-22T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Last Gift of a Giraffe",
    "valide_le": "2026-11-15T13:44:14.040747+00:00",
@@ -3767,6 +3767,7 @@
     "youtube_description": "Four friends, one exit, zero left behind. Your favorite moment?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "How Cow Made It Out With Friends",
@@ -3803,10 +3804,85 @@
     "youtube_description": "Would you have placed that wall? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🔴 Red\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Trapped by the Bear",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP081.mp4"
+  },
+  "EP082": {
+   "creneau_prevu": "2026-11-30T11:00:00+00:00",
+   "envoye_le": "2026-11-23T01:00:14.104023+00:00",
+   "message_id": 378,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP082",
+    "legende": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 13.65,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who's the last one standing? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who's the last one standing?"
+    },
+    "test": false,
+    "titre": "Shark: The Last One Standing",
+    "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Shark: The Last One Standing",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP082.mp4"
+  },
+  "EP083": {
+   "creneau_prevu": "2026-11-30T19:00:00+00:00",
+   "envoye_le": "2026-11-23T01:00:18.887607+00:00",
+   "message_id": 381,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP083",
+    "legende": "Have you ever come this close to something? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 10.47,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "One Step Short: The Story of a Lioness",
+    "youtube_description": "Have you ever come this close to something? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "One Step Short: The Story of a Lioness",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP083.mp4"
   }
  },
  "offset": 611525792,
