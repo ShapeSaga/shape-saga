@@ -98,8 +98,13 @@ def test_journee_complete(tmp_path):
     # 23 h 07 : le remplaçant part pour 20 h
     o.envoyer_nouveaux()
     assert [c for c, _ in o.bot.videos] == ["EP007"] and "mardi 27/10 à 20:00" in o.bot.messages[-1]
-    # 20 h 01 le lendemain sans réponse : EP007 n'est pas publié
+    # 20 h 01 le lendemain sans réponse : EP007 attend encore (règle des 48 h), son créneau est libéré
     o, _ = orchestrateur(tmp_path, paris(27, 20, 1), etat)
+    o.gerer_delais()
+    assert etat.episodes["EP007"]["statut"] == "envoye" and etat.episodes["EP007"]["creneau_prevu"] is None
+    assert "attend encore ta réponse" in o.bot.messages[-1]
+    # 48 h après l'envoi, toujours sans réponse : expiré, non publié
+    o, _ = orchestrateur(tmp_path, paris(28, 23, 30), etat)
     o.gerer_delais()
     assert etat.episodes["EP007"]["statut"] == "expire"
 

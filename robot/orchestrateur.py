@@ -266,7 +266,7 @@ class Orchestrateur:
         if ep.get("test") or not ep.get("_prevu"):
             quand = "aucune (test : brouillon Buffer seulement)"
         else:
-            quand = planning.en_clair(ep["_prevu"], self.conf["cadence"]) + " (heure de Paris) — valide avant cette heure"
+            quand = planning.en_clair(ep["_prevu"], self.conf["cadence"]) + " (heure de Paris) — tu as 48 h pour valider (après l’heure, elle part au créneau libre suivant)"
         s = ep.get("sondage") or {}
         lignes = [f"📋 <b>{echapper(ep['id'])}</b> — statut : en attente de ton ✅ ou ❌",
                   f"📅 Publication prévue : {echapper(quand)}",
@@ -285,12 +285,18 @@ class Orchestrateur:
             if f["statut"] != ENVOYE:
                 continue
             age = self.maintenant() - datetime.fromisoformat(f["envoye_le"])
-            if f.get("creneau_prevu") and self.maintenant() > datetime.fromisoformat(f["creneau_prevu"]):
+            if age > timedelta(hours=v["delai_heures"]):
                 f["statut"] = EXPIRE
-                self.marquer(f, cle, "⌛ NON VALIDÉ À TEMPS (non publié)")
-            elif age > timedelta(hours=v["delai_heures"]):
-                f["statut"] = EXPIRE
-                self.marquer(f, cle, "⌛ EXPIRÉ (aucune réponse, non publié)")
+                self.marquer(f, cle, "⌛ EXPIRÉ (aucune réponse en 48 h, non publié)")
+            elif f.get("creneau_prevu") and self.maintenant() > datetime.fromisoformat(f["creneau_prevu"]):
+                # règle de Chahine (24/11) : une vidéo attend sa validation 48 h, même si son créneau est passé.
+                # Elle libère ce créneau ; validée plus tard, elle part au prochain créneau libre (publier_episode).
+                f["creneau_prevu"] = None
+                limite = datetime.fromisoformat(f["envoye_le"]) + timedelta(hours=v["delai_heures"])
+                self.bot.envoyer_message(
+                    f"⏳ {echapper(cle)} n'a pas été validé à temps pour son heure. Il attend encore ta réponse jusqu'au "
+                    f"{planning.en_clair(limite, self.conf['cadence'])} : ✅ = publié au prochain créneau libre.",
+                    reponse_a=f["message_id"])
             elif age > timedelta(hours=v["rappel_heures"]) and not f.get("rappel"):
                 f["rappel"] = True
                 self.bot.envoyer_message(f"⏰ {echapper(cle)} attend ta réponse (✅ ou ❌).", reponse_a=f["message_id"])

@@ -318,6 +318,17 @@ def generer(numero, sortie):
 
 
 # ------------------------------------------------------------------ miniature et sondage (communs à tous les modes)
+QUESTIONS_COMMENTAIRES = [
+    "What should the shapes face next? Best idea in the comments gets made 👇",
+    "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇",
+    "What should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇",
+    "Give us the most evil level idea you can think of. We'll try to build it 😈",
+    "Which shape would you trust with your life? Defend your pick 👇",
+    "If you could design a new shape, what would it look like and what would it do? 👇",
+    "Be honest: what part made you watch till the end? 👇",
+    "Name this shape gang. Funniest name gets pinned 😂",
+]
+
 PASTILLES = {"Red": "🔴", "Green": "🟢", "Blue": "🔵", "Yellow": "🟡"}
 
 
@@ -327,17 +338,14 @@ def finaliser(meta, out, marks):
     info = meta["_info"]
     if info["scenario"] == "murs":
         t_min = 1.0                                       # les deux rivaux face à face : l'image la plus forte
-        noms = sorted({x.split()[0] for x in (info.get("couleurs") or [])}) or ["Red", "Blue"]
-        question = "Who wins the duel?"
     else:
         cles = [k for k in ("duel", "lien", "chute", "espoir", "union") if k in marks]
         t_min = min(marks[k] for k in cles) + 1.0 if cles else 1.0   # la 1re planche forte : elle ne dévoile pas la fin
-        noms = ["Red", "Green", "Blue", "Yellow"]
-        question = "Who's the last one standing?" if info["scenario"] == "prison" else "Who makes it out?"
-    vote = " · ".join(f"{PASTILLES[n]} {n}" for n in noms)
-    ligne = f"🗳️ {question} Vote in the comments: {vote}"
+    # règle de Chahine (24/11) : plus de « qui gagne ? » (personne n'y répond) ; des questions qui font vraiment commenter
+    question = random.Random(f"{meta.get('id', '')}|{info.get('seed', '')}").choice(QUESTIONS_COMMENTAIRES)
+    ligne = question
     meta["miniature_s"] = round(t_min, 2)
-    meta["sondage"] = dict(question=question, choix=noms, ligne=ligne, commentaire=f"🗳️ {question} 👇 {vote}")
+    meta["sondage"] = dict(question=question, choix=[], ligne=ligne, commentaire=question)
     meta["legende"] = meta["legende"].replace("\n\n", f"\n\n{ligne}\n\n", 1)
     meta["youtube_description"] = meta["youtube_description"].replace("\n\n", f"\n\n{ligne}\n\n", 1)
     for nom, filtre in ((out + ".jpg", "scale=320:-2"), (out + "_couverture.jpg", "scale=720:-2")):
