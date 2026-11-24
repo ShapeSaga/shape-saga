@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 4,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2137,6 +2137,7 @@
     "titre": "One Step Short: The Story of a Zebra",
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af301c58b228afcc95eb2e6",
@@ -3266,7 +3267,7 @@
      "message": "programmé pour 2026-11-24T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Whale and Cow: Who Escapes?",
    "valide_le": "2026-11-17T19:43:41.859130+00:00",
@@ -3689,6 +3690,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP077.mp4"
   },
   "EP078": {
+   "creneau": "2026-11-28T11:00:00+00:00",
    "creneau_prevu": "2026-11-28T11:00:00+00:00",
    "envoye_le": "2026-11-20T23:19:16.041318+00:00",
    "message_id": 357,
@@ -3719,8 +3721,21 @@
     "titre": "Hippo's Dark Choice",
     "youtube_description": "Betrayal or survival? What would you do?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b05b039931bd5779e8a3e60",
+     "message": "programmé pour 2026-11-28T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b05b03779e299e6177da95a",
+     "message": "programmé pour 2026-11-28T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b05b038e86dabb983db4b3f",
+     "message": "programmé pour 2026-11-28T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Hippo's Dark Choice",
    "valide_le": "2026-11-21T12:26:10.941481+00:00",
@@ -3873,9 +3888,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Shark: The Last One Standing",
+   "valide_le": "2026-11-24T15:41:26.699652+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP082.mp4"
   },
   "EP083": {
@@ -3911,9 +3927,10 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "One Step Short: The Story of a Lioness",
+   "valide_le": "2026-11-24T15:41:27.397932+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP083.mp4"
   },
   "EP084": {
@@ -3948,9 +3965,10 @@
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Last Gift of a Sheep",
+   "valide_le": "2026-11-24T15:41:27.760794+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP084.mp4"
   },
   "EP085": {
@@ -3984,13 +4002,93 @@
     "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Jaguar Who Built a Maze",
+   "valide_le": "2026-11-24T15:41:28.125249+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP085.mp4"
+  },
+  "EP086": {
+   "creneau_prevu": "2026-12-01T11:00:00+00:00",
+   "envoye_le": "2026-11-24T15:41:31.452743+00:00",
+   "message_id": 396,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP086",
+    "legende": "The fawn almost didn't make it. How would you rate this escape?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 7.96,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "No One Believed in the Fawn",
+    "youtube_description": "The fawn almost didn't make it. How would you rate this escape?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "No One Believed in the Fawn",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP086.mp4"
+  },
+  "EP087": {
+   "creneau_prevu": "2026-12-01T19:00:00+00:00",
+   "envoye_le": "2026-11-24T15:41:37.076934+00:00",
+   "message_id": 399,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP087",
+    "legende": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.",
+    "miniature_s": 13.26,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "Rivals at the Top: Zebra and Kangaroo",
+    "youtube_description": "Photo finish! Did you see it coming?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Rivals at the Top: Zebra and Kangaroo",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP087.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525870,
+  611525871,
+  611525872,
+  611525873
+ ]
 }
