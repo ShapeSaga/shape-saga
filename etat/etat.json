@@ -3213,7 +3213,7 @@
     }
    },
    "rappel": true,
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Last Dog Standing",
    "valide_le": "2026-11-17T19:43:41.140968+00:00",
@@ -3798,7 +3798,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "How Cow Made It Out With Friends",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP080.mp4"
@@ -3835,7 +3835,7 @@
    },
    "programme": {},
    "rappel": true,
-   "statut": "envoye",
+   "statut": "expire",
    "test": false,
    "titre": "Trapped by the Bear",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP081.mp4"
@@ -3872,6 +3872,7 @@
     "youtube_description": "Last one standing! Would you survive the prison?\n\n🗳️ Who's the last one standing? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "Shark: The Last One Standing",
@@ -3909,10 +3910,84 @@
     "youtube_description": "Have you ever come this close to something? Tell me below.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
+   "rappel": true,
    "statut": "envoye",
    "test": false,
    "titre": "One Step Short: The Story of a Lioness",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP083.mp4"
+  },
+  "EP084": {
+   "creneau_prevu": "2026-11-29T11:00:00+00:00",
+   "envoye_le": "2026-11-24T05:17:11.125310+00:00",
+   "message_id": 389,
+   "meta": {
+    "hashtags": [
+     "#shorts",
+     "#satisfying",
+     "#physics",
+     "#simulation",
+     "#marblerace",
+     "#oddlysatisfying"
+    ],
+    "id": "EP084",
+    "legende": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 5.94,
+    "sondage": {
+     "choix": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who makes it out? 👇 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "ligne": "🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow",
+     "question": "Who makes it out?"
+    },
+    "test": false,
+    "titre": "The Last Gift of a Sheep",
+    "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Last Gift of a Sheep",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP084.mp4"
+  },
+  "EP085": {
+   "creneau_prevu": "2026-11-29T19:00:00+00:00",
+   "envoye_le": "2026-11-24T05:17:15.764628+00:00",
+   "message_id": 392,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP085",
+    "legende": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [
+      "Green",
+      "Yellow"
+     ],
+     "commentaire": "🗳️ Who wins the duel? 👇 🟢 Green · 🟡 Yellow",
+     "ligne": "🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow",
+     "question": "Who wins the duel?"
+    },
+    "test": false,
+    "titre": "The Jaguar Who Built a Maze",
+    "youtube_description": "Best move of the game? Comment the moment.\n\n🗳️ Who wins the duel? Vote in the comments: 🟢 Green · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Jaguar Who Built a Maze",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP085.mp4"
   }
  },
  "offset": 611525792,
