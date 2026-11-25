@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2245,6 +2245,7 @@
     "titre": "One Wall Too Many for Crocodile",
     "youtube_description": "Which color would you play? Tell me below.\n\n🗳️ Who wins the duel? Vote in the comments: 🔵 Blue · 🟢 Green\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af452c642a5c8fca242ef15",
@@ -3426,7 +3427,7 @@
      "message": "programmé pour 2026-11-25T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Loyal Pig",
    "valide_le": "2026-11-18T21:30:11.024576+00:00",
@@ -3934,6 +3935,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP083.mp4"
   },
   "EP084": {
+   "creneau": "2026-11-29T11:00:00+00:00",
    "creneau_prevu": "2026-11-29T11:00:00+00:00",
    "envoye_le": "2026-11-24T05:17:11.125310+00:00",
    "message_id": 389,
@@ -3959,8 +3961,21 @@
     "titre": "The Last Gift of a Sheep",
     "youtube_description": "Would you have done the same for a friend?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b072cd2827512a7c4cbe098",
+     "message": "programmé pour 2026-11-29T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b072cd0f5be12bac95ee6d5",
+     "message": "programmé pour 2026-11-29T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b072cd1dcdb5341fd314fd5",
+     "message": "programmé pour 2026-11-29T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "The Last Gift of a Sheep",
    "valide_le": "2026-11-24T15:41:27.760794+00:00",
@@ -4136,8 +4151,5 @@
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525876,
-  611525877
- ]
+ "relais_a_confirmer": []
 }
