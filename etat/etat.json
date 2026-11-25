@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 4,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2192,6 +2192,7 @@
     "titre": "Why the Bear Let Go",
     "youtube_description": "Would you have done the same for a friend?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af3724e9b128026cfb87a54",
@@ -3320,7 +3321,7 @@
      "message": "programmé pour 2026-11-24T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Octopus Pushed Bear",
    "valide_le": "2026-11-17T19:43:42.185658+00:00",
@@ -3742,6 +3743,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP078.mp4"
   },
   "EP079": {
+   "creneau": "2026-11-28T19:00:00+00:00",
    "creneau_prevu": "2026-11-28T19:00:00+00:00",
    "envoye_le": "2026-11-20T23:19:20.247699+00:00",
    "message_id": 360,
@@ -3759,17 +3761,30 @@
     "legende": "Photo finish! Did you see it coming?\n\nWhat should the shapes face next? Best idea in the comments gets made 👇\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
     "miniature_s": 11.47,
     "sondage": {
-     "question": "What should the shapes face next? Best idea in the comments gets made 👇",
      "choix": [],
+     "commentaire": "What should the shapes face next? Best idea in the comments gets made 👇",
      "ligne": "What should the shapes face next? Best idea in the comments gets made 👇",
-     "commentaire": "What should the shapes face next? Best idea in the comments gets made 👇"
+     "question": "What should the shapes face next? Best idea in the comments gets made 👇"
     },
     "test": false,
     "titre": "Cheetah vs Dog: Photo Finish",
     "youtube_description": "Photo finish! Did you see it coming?\n\nWhat should the shapes face next? Best idea in the comments gets made 👇\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b062746a8becebb7746e010",
+     "message": "programmé pour 2026-11-28T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b062745a2fd17422e6fe72e",
+     "message": "programmé pour 2026-11-28T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b062746919291941326bb75",
+     "message": "programmé pour 2026-11-28T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Cheetah vs Dog: Photo Finish",
    "valide_le": "2026-11-21T12:26:11.577217+00:00",
@@ -3867,10 +3882,10 @@
     "legende": "Last one standing! Would you survive the prison?\n\nWhich color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇\n\nThis video was made using AI and programming tools. No race is faked.",
     "miniature_s": 13.65,
     "sondage": {
-     "question": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇",
      "choix": [],
+     "commentaire": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇",
      "ligne": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇",
-     "commentaire": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇"
+     "question": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇"
     },
     "test": false,
     "titre": "Shark: The Last One Standing",
@@ -3901,10 +3916,10 @@
     "legende": "Have you ever come this close to something? Tell me below.\n\nWhat should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇\n\nThis video was made using AI and programming tools. No race is faked.",
     "miniature_s": 10.47,
     "sondage": {
-     "question": "What should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇",
      "choix": [],
+     "commentaire": "What should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇",
      "ligne": "What should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇",
-     "commentaire": "What should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇"
+     "question": "What should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇"
     },
     "test": false,
     "titre": "One Step Short: The Story of a Lioness",
@@ -3935,10 +3950,10 @@
     "legende": "Would you have done the same for a friend?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
     "miniature_s": 5.94,
     "sondage": {
-     "question": "Give us the most evil level idea you can think of. We'll try to build it 😈",
      "choix": [],
+     "commentaire": "Give us the most evil level idea you can think of. We'll try to build it 😈",
      "ligne": "Give us the most evil level idea you can think of. We'll try to build it 😈",
-     "commentaire": "Give us the most evil level idea you can think of. We'll try to build it 😈"
+     "question": "Give us the most evil level idea you can think of. We'll try to build it 😈"
     },
     "test": false,
     "titre": "The Last Gift of a Sheep",
@@ -3969,10 +3984,10 @@
     "legende": "Best move of the game? Comment the moment.\n\nWhich shape would you trust with your life? Defend your pick 👇\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
     "miniature_s": 1.0,
     "sondage": {
-     "question": "Which shape would you trust with your life? Defend your pick 👇",
      "choix": [],
+     "commentaire": "Which shape would you trust with your life? Defend your pick 👇",
      "ligne": "Which shape would you trust with your life? Defend your pick 👇",
-     "commentaire": "Which shape would you trust with your life? Defend your pick 👇"
+     "question": "Which shape would you trust with your life? Defend your pick 👇"
     },
     "test": false,
     "titre": "The Jaguar Who Built a Maze",
@@ -4002,19 +4017,20 @@
     "legende": "The fawn almost didn't make it. How would you rate this escape?\n\nIf you could design a new shape, what would it look like and what would it do? 👇\n\nMade with AI tools and code. The race physics are real and unedited.",
     "miniature_s": 7.96,
     "sondage": {
-     "question": "If you could design a new shape, what would it look like and what would it do? 👇",
      "choix": [],
+     "commentaire": "If you could design a new shape, what would it look like and what would it do? 👇",
      "ligne": "If you could design a new shape, what would it look like and what would it do? 👇",
-     "commentaire": "If you could design a new shape, what would it look like and what would it do? 👇"
+     "question": "If you could design a new shape, what would it look like and what would it do? 👇"
     },
     "test": false,
     "titre": "No One Believed in the Fawn",
     "youtube_description": "The fawn almost didn't make it. How would you rate this escape?\n\nIf you could design a new shape, what would it look like and what would it do? 👇\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "No One Believed in the Fawn",
+   "valide_le": "2026-11-25T00:09:28.047441+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP086.mp4"
   },
   "EP087": {
@@ -4034,28 +4050,92 @@
     "legende": "Photo finish! Did you see it coming?\n\nBe honest: what part made you watch till the end? 👇\n\nMade with AI tools and code. The race physics are real and unedited.",
     "miniature_s": 13.26,
     "sondage": {
-     "question": "Be honest: what part made you watch till the end? 👇",
      "choix": [],
+     "commentaire": "Be honest: what part made you watch till the end? 👇",
      "ligne": "Be honest: what part made you watch till the end? 👇",
-     "commentaire": "Be honest: what part made you watch till the end? 👇"
+     "question": "Be honest: what part made you watch till the end? 👇"
     },
     "test": false,
     "titre": "Rivals at the Top: Zebra and Kangaroo",
     "youtube_description": "Photo finish! Did you see it coming?\n\nBe honest: what part made you watch till the end? 👇\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Rivals at the Top: Zebra and Kangaroo",
+   "valide_le": "2026-11-25T00:09:28.901334+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP087.mp4"
+  },
+  "EP088": {
+   "creneau_prevu": "2026-12-02T11:00:00+00:00",
+   "envoye_le": "2026-11-25T00:09:32.200409+00:00",
+   "message_id": 404,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP088",
+    "legende": "Betrayal or survival? What would you do?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 6.92,
+    "sondage": {
+     "choix": [],
+     "commentaire": "Give us the most evil level idea you can think of. We'll try to build it 😈",
+     "ligne": "Give us the most evil level idea you can think of. We'll try to build it 😈",
+     "question": "Give us the most evil level idea you can think of. We'll try to build it 😈"
+    },
+    "test": false,
+    "titre": "Elephant Never Saw It Coming",
+    "youtube_description": "Betrayal or survival? What would you do?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Elephant Never Saw It Coming",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP088.mp4"
+  },
+  "EP089": {
+   "creneau_prevu": "2026-12-02T19:00:00+00:00",
+   "envoye_le": "2026-11-25T00:09:37.567863+00:00",
+   "message_id": 407,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP089",
+    "legende": "Teamwork wins. Do you agree?\n\nWhat should the shapes face next? Best idea in the comments gets made 👇\n\nCreated with AI-assisted art and code; every bounce is a real simulation.",
+    "miniature_s": 13.23,
+    "sondage": {
+     "choix": [],
+     "commentaire": "What should the shapes face next? Best idea in the comments gets made 👇",
+     "ligne": "What should the shapes face next? Best idea in the comments gets made 👇",
+     "question": "What should the shapes face next? Best idea in the comments gets made 👇"
+    },
+    "test": false,
+    "titre": "Together: Donkey and Friends Escape",
+    "youtube_description": "Teamwork wins. Do you agree?\n\nWhat should the shapes face next? Best idea in the comments gets made 👇\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Together: Donkey and Friends Escape",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP089.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
  "relais_a_confirmer": [
-  611525870,
-  611525871,
-  611525872,
-  611525873
+  611525874,
+  611525875
  ]
 }
