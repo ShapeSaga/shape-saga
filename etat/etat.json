@@ -4094,9 +4094,10 @@
     "youtube_description": "Betrayal or survival? What would you do?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Elephant Never Saw It Coming",
+   "valide_le": "2026-11-25T08:21:22.926471+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP088.mp4"
   },
   "EP089": {
@@ -4126,16 +4127,17 @@
     "youtube_description": "Teamwork wins. Do you agree?\n\nWhat should the shapes face next? Best idea in the comments gets made 👇\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Together: Donkey and Friends Escape",
+   "valide_le": "2026-11-25T08:21:23.405832+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP089.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
  "relais_a_confirmer": [
-  611525874,
-  611525875
+  611525876,
+  611525877
  ]
 }
