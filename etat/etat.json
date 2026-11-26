@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -2641,6 +2641,7 @@
     "titre": "Whale's Sacrifice",
     "youtube_description": "The whale gave everything. Who deserves a rematch?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af5a5ec37d13e4d8a4cf613",
@@ -2694,6 +2695,7 @@
     "titre": "The Crocodile Who Almost Made It",
     "youtube_description": "Some climbs end before the top. What's your toughest almost?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af6138bd647bbafc5ae5beb",
@@ -3532,7 +3534,7 @@
      "message": "programmé pour 2026-11-26T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "No Mercy in the Prison",
    "valide_le": "2026-11-19T19:12:04.317254+00:00",
@@ -3869,6 +3871,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP081.mp4"
   },
   "EP082": {
+   "creneau": "2026-11-30T11:00:00+00:00",
    "creneau_prevu": "2026-11-30T11:00:00+00:00",
    "envoye_le": "2026-11-23T01:00:14.104023+00:00",
    "message_id": 378,
@@ -3894,15 +3897,29 @@
     "titre": "Shark: The Last One Standing",
     "youtube_description": "Last one standing! Would you survive the prison?\n\nWhich color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6b088d559068b6e0795d3201",
+     "message": "programmé pour 2026-11-30T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b088d531fa409158292e08e",
+     "message": "programmé pour 2026-11-30T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b088d54ce64081689ea99e7",
+     "message": "programmé pour 2026-11-30T11:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "Shark: The Last One Standing",
    "valide_le": "2026-11-24T15:41:26.699652+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP082.mp4"
   },
   "EP083": {
+   "creneau": "2026-11-30T19:00:00+00:00",
    "creneau_prevu": "2026-11-30T19:00:00+00:00",
    "envoye_le": "2026-11-23T01:00:18.887607+00:00",
    "message_id": 381,
@@ -3928,9 +3945,22 @@
     "titre": "One Step Short: The Story of a Lioness",
     "youtube_description": "Have you ever come this close to something? Tell me below.\n\nWhat should we add next: traps, a boss, new shapes, a whole new map? Tell us 👇\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
-   "programme": {},
+   "programme": {
+    "instagram": {
+     "id": "6b088d58ce64081689ea9afc",
+     "message": "programmé pour 2026-11-30T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b088d56ce64081689ea9a69",
+     "message": "programmé pour 2026-11-30T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b088d57c81617797ddafbb0",
+     "message": "programmé pour 2026-11-30T19:00:00.000Z"
+    }
+   },
    "rappel": true,
-   "statut": "valide",
+   "statut": "programme",
    "test": false,
    "titre": "One Step Short: The Story of a Lioness",
    "valide_le": "2026-11-24T15:41:27.397932+00:00",
@@ -4192,9 +4222,10 @@
     "youtube_description": "The rabbit didn't win, but it never quit. Does that count as winning?\n\nName this shape gang. Funniest name gets pinned 😂\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Why the Rabbit Kept Climbing",
+   "valide_le": "2026-11-26T19:49:37.189270+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP090.mp4"
   },
   "EP091": {
@@ -4224,13 +4255,17 @@
     "youtube_description": "Who should play the rematch?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Dolphin and Cow: Who Gets Through?",
+   "valide_le": "2026-11-26T19:49:37.913385+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP091.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525878,
+  611525879
+ ]
 }
