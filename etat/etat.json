@@ -2486,6 +2486,7 @@
     "titre": "The Rabbit's Greatest Escape",
     "youtube_description": "From last place to the exit: the rabbit! Have you ever had a comeback like this?\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af761a981e1228421bab5a6",
@@ -3639,7 +3640,7 @@
      "message": "programmé pour 2026-11-27T11:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Koala Who Almost Made It",
    "valide_le": "2026-11-20T08:40:52.003329+00:00",
@@ -4110,6 +4111,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP086.mp4"
   },
   "EP087": {
+   "creneau": "2026-12-01T19:00:00+00:00",
    "creneau_prevu": "2026-12-01T19:00:00+00:00",
    "envoye_le": "2026-11-24T15:41:37.076934+00:00",
    "message_id": 399,
@@ -4135,8 +4137,21 @@
     "titre": "Rivals at the Top: Zebra and Kangaroo",
     "youtube_description": "Photo finish! Did you see it coming?\n\nBe honest: what part made you watch till the end? 👇\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b09e19ab5cd052fe288c4ca",
+     "message": "programmé pour 2026-12-01T19:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b09e1982ea34800c28e1af9",
+     "message": "programmé pour 2026-12-01T19:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b09e1992ea34800c28e1bb9",
+     "message": "programmé pour 2026-12-01T19:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "Rivals at the Top: Zebra and Kangaroo",
    "valide_le": "2026-11-25T00:09:28.901334+00:00",
