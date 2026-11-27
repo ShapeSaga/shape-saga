@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 2,
+  "clics_recus": 0,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -3586,7 +3586,7 @@
      "message": "programmé pour 2026-11-26T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "The Frog Who Gave Everything",
    "valide_le": "2026-11-19T19:12:03.569510+00:00",
@@ -4260,12 +4260,75 @@
    "titre": "Dolphin and Cow: Who Gets Through?",
    "valide_le": "2026-11-26T19:49:37.913385+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP091.mp4"
+  },
+  "EP092": {
+   "creneau_prevu": "2026-12-04T11:00:00+00:00",
+   "envoye_le": "2026-11-27T02:30:02.397225+00:00",
+   "message_id": 423,
+   "meta": {
+    "hashtags": [
+     "#animation",
+     "#manga",
+     "#storytime",
+     "#emotional",
+     "#hero",
+     "#neverGiveUp",
+     "#friendship"
+    ],
+    "id": "EP092",
+    "legende": "The bear won the cell. Who should fight next?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 10.88,
+    "sondage": {
+     "choix": [],
+     "commentaire": "Give us the most evil level idea you can think of. We'll try to build it 😈",
+     "ligne": "Give us the most evil level idea you can think of. We'll try to build it 😈",
+     "question": "Give us the most evil level idea you can think of. We'll try to build it 😈"
+    },
+    "test": false,
+    "titre": "The Door Opens for Bear",
+    "youtube_description": "The bear won the cell. Who should fight next?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "The Door Opens for Bear",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP092.mp4"
+  },
+  "EP093": {
+   "creneau_prevu": "2026-12-04T19:00:00+00:00",
+   "envoye_le": "2026-11-27T02:30:06.075924+00:00",
+   "message_id": 426,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP093",
+    "legende": "Heroes don't always get to escape. Do you agree?\n\nName this shape gang. Funniest name gets pinned 😂\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 7.62,
+    "sondage": {
+     "choix": [],
+     "commentaire": "Name this shape gang. Funniest name gets pinned 😂",
+     "ligne": "Name this shape gang. Funniest name gets pinned 😂",
+     "question": "Name this shape gang. Funniest name gets pinned 😂"
+    },
+    "test": false,
+    "titre": "Whale Saved Fox",
+    "youtube_description": "Heroes don't always get to escape. Do you agree?\n\nName this shape gang. Funniest name gets pinned 😂\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Whale Saved Fox",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP093.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": [
-  611525878,
-  611525879
- ]
+ "relais_a_confirmer": []
 }
