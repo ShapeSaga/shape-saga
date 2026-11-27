@@ -2431,6 +2431,7 @@
     "titre": "Together: Snail and Friends Escape",
     "youtube_description": "Together is stronger. Tag someone who never leaves you behind.\n\n🗳️ Who makes it out? Vote in the comments: 🔴 Red · 🟢 Green · 🔵 Blue · 🟡 Yellow\n\nCreated with AI-assisted art and code; every bounce is a real simulation.\nEvery Shape Has a Story."
    },
+   "nettoye": true,
    "programme": {
     "instagram": {
      "id": "6af6f6ecbd1182b0d3edd37f",
@@ -4062,6 +4063,7 @@
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP085.mp4"
   },
   "EP086": {
+   "creneau": "2026-12-01T11:00:00+00:00",
    "creneau_prevu": "2026-12-01T11:00:00+00:00",
    "envoye_le": "2026-11-24T15:41:31.452743+00:00",
    "message_id": 396,
@@ -4087,8 +4089,21 @@
     "titre": "No One Believed in the Fawn",
     "youtube_description": "The fawn almost didn't make it. How would you rate this escape?\n\nIf you could design a new shape, what would it look like and what would it do? 👇\n\nMade with AI tools and code. The race physics are real and unedited.\nEvery Shape Has a Story."
    },
-   "programme": {},
-   "statut": "valide",
+   "programme": {
+    "instagram": {
+     "id": "6b09664b658222306c08922a",
+     "message": "programmé pour 2026-12-01T11:00:00.000Z"
+    },
+    "tiktok": {
+     "id": "6b096649e94385a8fd9b32c4",
+     "message": "programmé pour 2026-12-01T11:00:00.000Z"
+    },
+    "youtube": {
+     "id": "6b09664a062ed764a80bf718",
+     "message": "programmé pour 2026-12-01T11:00:00.000Z"
+    }
+   },
+   "statut": "programme",
    "test": false,
    "titre": "No One Believed in the Fawn",
    "valide_le": "2026-11-25T00:09:28.047441+00:00",
