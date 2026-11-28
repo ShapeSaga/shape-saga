@@ -16,7 +16,7 @@
  "annonce": "2026-10-27",
  "correctif_instagram": 1,
  "diag_telegram": {
-  "clics_recus": 0,
+  "clics_recus": 2,
   "mode": "réceptionniste"
  },
  "episodes": {
@@ -3691,7 +3691,7 @@
      "message": "programmé pour 2026-11-27T19:00:00.000Z"
     }
    },
-   "statut": "programme",
+   "statut": "publie",
    "test": false,
    "titre": "Fawn Walled Snail In",
    "valide_le": "2026-11-20T08:40:51.317613+00:00",
@@ -4319,9 +4319,10 @@
     "youtube_description": "The bear won the cell. Who should fight next?\n\nGive us the most evil level idea you can think of. We'll try to build it 😈\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "The Door Opens for Bear",
+   "valide_le": "2026-11-28T02:40:19.689693+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP092.mp4"
   },
   "EP093": {
@@ -4352,13 +4353,82 @@
     "youtube_description": "Heroes don't always get to escape. Do you agree?\n\nName this shape gang. Funniest name gets pinned 😂\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
    },
    "programme": {},
-   "statut": "envoye",
+   "statut": "valide",
    "test": false,
    "titre": "Whale Saved Fox",
+   "valide_le": "2026-11-28T02:40:20.561202+00:00",
    "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP093.mp4"
+  },
+  "EP094": {
+   "creneau_prevu": "2026-12-05T11:00:00+00:00",
+   "envoye_le": "2026-11-28T02:40:23.757898+00:00",
+   "message_id": 432,
+   "meta": {
+    "hashtags": [
+     "#motivation",
+     "#courage",
+     "#friends",
+     "#animals",
+     "#cute",
+     "#inspiration",
+     "#fyp"
+    ],
+    "id": "EP094",
+    "legende": "So close! What would you have done differently?\n\nName this shape gang. Funniest name gets pinned 😂\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 13.97,
+    "sondage": {
+     "choix": [],
+     "commentaire": "Name this shape gang. Funniest name gets pinned 😂",
+     "ligne": "Name this shape gang. Funniest name gets pinned 😂",
+     "question": "Name this shape gang. Funniest name gets pinned 😂"
+    },
+    "test": false,
+    "titre": "Crocodile's Last Climb",
+    "youtube_description": "So close! What would you have done differently?\n\nName this shape gang. Funniest name gets pinned 😂\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "Crocodile's Last Climb",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP094.mp4"
+  },
+  "EP095": {
+   "creneau_prevu": "2026-12-05T19:00:00+00:00",
+   "envoye_le": "2026-11-28T02:40:28.337954+00:00",
+   "message_id": 435,
+   "meta": {
+    "hashtags": [
+     "#gaming",
+     "#indiegame",
+     "#race",
+     "#whowillwin",
+     "#shapes",
+     "#survival"
+    ],
+    "id": "EP095",
+    "legende": "Best move of the game? Comment the moment.\n\nWhich color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇\n\nThis video was made using AI and programming tools. No race is faked.",
+    "miniature_s": 1.0,
+    "sondage": {
+     "choix": [],
+     "commentaire": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇",
+     "ligne": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇",
+     "question": "Which color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇"
+    },
+    "test": false,
+    "titre": "One Wall Too Many for Jaguar",
+    "youtube_description": "Best move of the game? Comment the moment.\n\nWhich color is your main? 🔴🟢🔵🟡 Rep your team in the comments 👇\n\nThis video was made using AI and programming tools. No race is faked.\nEvery Shape Has a Story."
+   },
+   "programme": {},
+   "statut": "envoye",
+   "test": false,
+   "titre": "One Wall Too Many for Jaguar",
+   "video_url": "https://github.com/ShapeSaga/shape-saga/releases/download/videos/EP095.mp4"
   }
  },
  "offset": 611525792,
  "pause": false,
- "relais_a_confirmer": []
+ "relais_a_confirmer": [
+  611525880,
+  611525881
+ ]
 }
